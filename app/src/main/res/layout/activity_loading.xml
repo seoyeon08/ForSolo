@@ -4,13 +4,15 @@
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_gravity="center"
     android:padding="10dp">
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+
         android:background="@null"
-        android:src="@null"/>
+        android:src="@drawable/loading_image"/>
 <!--        사진 넣기-->
 
 </LinearLayout>
