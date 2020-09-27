@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="13dp"
+    >
+
+    <ImageView
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:src="@drawable/find_password"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"
+        />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_cloudy"
+            android:layout_width="300dp"
+            android:layout_height="35dp"
+            android:hint="   E-mail"
+            android:layout_marginBottom="3dp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:background="@drawable/btn_cloudy"
+            android:layout_width="300dp"
+            android:layout_height="35dp"
+            android:hint="   Student-number"
+            android:layout_marginBottom="18dp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RelativeLayout
+        android:layout_gravity="right"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/btn_blue"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#ffffff"
+            android:text="Go   "
+            android:textSize="27dp"
+            android:gravity="right"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

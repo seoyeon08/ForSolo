@@ -18,15 +18,15 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/mate"
-            android:background="@color/cloudyGray"
+            android:src="@drawable/main_mate"
+            android:background="@color/colorCloudyGray"
             android:layout_gravity="center_horizontal"
             android:paddingBottom="10dp"
             />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/cloudyGray"
+            android:background="@color/colorCloudyGray"
             android:text="혼밥 친구 찾기 "
             android:textSize="20dp"
             android:textStyle="italic"
@@ -39,14 +39,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:src="@drawable/exchange"
-            android:background="@color/cloudyGray"
+            android:src="@drawable/main_exchange"
+            android:background="@color/colorCloudyGray"
             android:paddingBottom="10dp"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/cloudyGray"
+            android:background="@color/colorCloudyGray"
             android:text="물품 나눔 친구 찾기 "
             android:textSize="20dp"
             android:textStyle="italic"
@@ -58,16 +58,16 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/recipie"
+            android:src="@drawable/main_recipie"
             android:layout_gravity="center"
-            android:background="@color/cloudyGray"
+            android:background="@color/colorCloudyGray"
             android:paddingBottom="10dp"
             />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/cloudyGray"
+            android:background="@color/colorCloudyGray"
             android:text="레시피 공유하기 "
             android:textSize="20dp"
             android:textStyle="italic"
