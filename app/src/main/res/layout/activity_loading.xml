@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_gravity="center"
@@ -13,6 +13,21 @@
 
         android:background="@null"
         android:src="@drawable/loading_image"/>
-<!--        사진 넣기-->
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="  혼족을 위한"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:paddingTop="160dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="  #For Solo"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        />
 </LinearLayout>
