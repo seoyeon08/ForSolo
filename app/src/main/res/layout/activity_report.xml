@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <View
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:background="@color/colorCloudyGray" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:text="관리자에게 문의하기!"
+        android:textSize="20dp" />
+
+    <EditText
+        android:layout_width="260dp"
+        android:layout_height="1600dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="240dp"
+        android:layout_marginBottom="230dp"
+        android:background="@color/colorWhite"
+        android:gravity="top
+"
+        android:hint="불만/문의 사항을 입력해주세요." />
+
+
+    <Button
+        android:layout_width="240dp"
+        android:layout_height="28dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="190dp"
+        android:background="@color/colorPastelBlue"
+        android:text="보내기" />
+
+</RelativeLayout>
