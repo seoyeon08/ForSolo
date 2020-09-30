@@ -40,4 +40,5 @@
         android:background="@color/colorPastelBlue"
         android:text="보내기" />
 
+    //이걸 어떻게 추가해야 될까......
 </RelativeLayout>
