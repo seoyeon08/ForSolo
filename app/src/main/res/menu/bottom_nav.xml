@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_list"
+        android:enabled="true"
+        android:icon="@drawable/list_item"
+        android:title="글목록"/>
+
+    <item
+        android:id="@+id/action_map"
+        android:enabled="true"
+        android:icon="@drawable/map_icon"
+        android:title="지도로 보기"/>
+
+    <item
+        android:id="@+id/action_edit"
+        android:enabled="true"
+        android:icon="@drawable/edit_icon"
+        android:title="글쓰기"/>
+
+    <item
+        android:id="@+id/action_profile"
+        android:enabled="true"
+        android:icon="@drawable/profile_icon"
+        android:title="내프로필"/>
+
+</menu>
