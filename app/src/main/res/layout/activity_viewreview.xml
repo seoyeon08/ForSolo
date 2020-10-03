@@ -12,7 +12,7 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorTop_light_blue"
+        android:background="@color/colorLightBlue"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         tools:layout_editor_absoluteX="1dp"
@@ -70,7 +70,7 @@
         android:layout_marginTop="400dp"
         android:text="리뷰 쓰기"
         android:textColor="@color/colorPrimaryDark"
-        android:background="@drawable/btn_blue_"
+        android:background="@drawable/btn_blue"
         />
 
 
