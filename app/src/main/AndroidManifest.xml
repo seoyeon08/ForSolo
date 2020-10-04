@@ -17,6 +17,7 @@
         </intent-filter>
         </activity>
         <activity android:name=".LoginActivity"/>
+        <activity android:name=".MainActivity"/>
         <activity android:name=".FindMateActivity"/>
         <activity android:name=".FindActivity"/>
         <activity android:name=".JoinActivity"/>
