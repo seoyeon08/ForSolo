@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#EAEAEA"
+    >
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="#B9DEF6"
+        android:text="  혼밥 친구 찾기"
+        android:gravity="start"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="글제목:"
+        android:textSize="20sp"
+        android:layout_margin="8dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="시간:"
+        android:textSize="20sp"
+        android:layout_margin="8dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="장소:"
+        android:textSize="20sp"
+        android:layout_margin="8dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="인원수:"
+        android:textSize="20sp"
+        android:layout_margin="8dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="내용:"
+        android:textSize="20sp"
+        android:layout_margin="8dp"
+        />
+
+    <ImageView
+        android:layout_width="158dp"
+        android:layout_height="100dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="210dp"
+        android:background="@null"
+        android:src="@drawable/write_sprout" />
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/btn_pink"
+        android:gravity="center"
+        android:text="글 등록하기"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        />
+
+</LinearLayout>
