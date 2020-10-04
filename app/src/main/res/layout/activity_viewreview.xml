@@ -64,6 +64,7 @@
         android:text="음식점 소개를 해야지 룰 루 랄 라?"/>
 
     <Button
+        android:id="@+id/Button_writereview"
         android:layout_width="200dp"
         android:layout_height="60dp"
         android:layout_gravity="center"

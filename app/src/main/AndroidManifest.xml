@@ -10,13 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".LoadingActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"/>
+        <activity android:name=".LoginActivity"/>
+        <activity android:name=".FindMateActivity"/>
+        <activity android:name=".FindActivity"/>
+        <activity android:name=".JoinActivity"/>
+        <activity android:name=".ReportActivity"/>
+
     </application>
 
 </manifest>
