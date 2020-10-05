@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#EAEAEA"
+    >
+
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@null"
+        android:src="@drawable/profile_user"
+        android:layout_margin="10dp"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="글제목:"
+        android:textSize="20sp"
+        android:layout_margin="8dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="물품이름:"
+        android:textSize="20sp"
+        android:layout_margin="8dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="구매날짜:"
+        android:textSize="20sp"
+        android:layout_margin="8dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="내용:"
+        android:textSize="20sp"
+        android:layout_margin="6dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_margin="20dp"
+        android:background="#ffffff"
+        android:text="사진사진"
+        android:gravity="center|bottom"
+        />
+
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="70dp"
+        android:layout_gravity="end"
+        android:background="@null"
+        android:src="@drawable/write_sprout" />
+
+    <Button
+        android:id="@+id/chatting_button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/btn_pink"
+        android:gravity="center"
+        android:text="채팅하기"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        />
+
+</LinearLayout>

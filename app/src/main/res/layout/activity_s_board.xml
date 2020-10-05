@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#EAEAEA"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="글내용:"
+        android:textSize="20sp"
+        android:layout_margin="8dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="내용:"
+        android:textSize="20sp"
+        android:layout_margin="8dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:text="내용:"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:background="@null"
+        android:src="@drawable/map_img"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="40dp"
+        />
+    "
+    <ImageView
+        android:layout_width="158dp"
+        android:layout_height="100dp"
+        android:layout_gravity="end"
+        android:background="@null"
+        android:src="@drawable/write_sprout"
+        android:layout_marginTop="46dp"
+
+        />
+
+    <Button
+        android:id="@+id/chatting_button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/btn_pink"
+        android:gravity="center"
+        android:text="채팅하기"
+        android:textColor="#ffffff"
+        android:textSize="30sp" />
+
+</LinearLayout>

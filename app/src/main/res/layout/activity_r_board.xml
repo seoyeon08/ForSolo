@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#EAEAEA"
+    >
+
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@null"
+        android:src="@drawable/profile_user"
+        android:layout_margin="18dp"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="글제목: 밥도둑 네 이놈!!"
+        android:textSize="20sp"
+        android:layout_margin="8dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="내용:"
+        android:textSize="20sp"
+        android:layout_margin="8dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="1."
+        android:textSize="20sp"
+        android:layout_margin="8dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="2."
+        android:textSize="20sp"
+        android:layout_margin="6dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_margin="20dp"
+        android:background="#ffffff"
+        android:text="사진사진"
+        android:gravity="center|bottom"
+        />
+
+    <ImageView
+        android:layout_width="148dp"
+        android:layout_height="90dp"
+        android:layout_gravity="end"
+        android:background="@null"
+        android:src="@drawable/write_sprout"
+        />
+
+
+
+</LinearLayout>
