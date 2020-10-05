@@ -7,57 +7,86 @@
     android:background="#EAEAEA"
     >
 
-    <Button
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:background="#B9DEF6"
-        android:text="  혼밥 친구 찾기"
-        android:gravity="start"
-        android:textSize="20sp"
-        android:textColor="#ffffff"
-        />
+        android:layout_height="70dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="글제목:"
+            android:textSize="20sp"
+            android:layout_margin="8dp"
+            />
 
-    <TextView
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="글제목:"
-        android:textSize="20sp"
-        android:layout_margin="8dp"
-        />
-    <TextView
+        android:layout_height="70dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="시간:"
+            android:textSize="20sp"
+            android:layout_margin="8dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="시간:"
-        android:textSize="20sp"
-        android:layout_margin="8dp"
-        />
-    <TextView
+        android:layout_height="70dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="장소:"
+            android:textSize="20sp"
+            android:layout_margin="8dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="장소:"
-        android:textSize="20sp"
-        android:layout_margin="8dp"
-        />
-    <TextView
+        android:layout_height="70dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="인원수:"
+            android:textSize="20sp"
+            android:layout_margin="8dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="인원수:"
-        android:textSize="20sp"
-        android:layout_margin="8dp"
-        />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="내용:"
-        android:textSize="20sp"
-        android:layout_margin="8dp"
-        />
+        android:layout_height="70dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="내용:"
+            android:textSize="20sp"
+            android:layout_margin="8dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
 
     <ImageView
         android:layout_width="158dp"

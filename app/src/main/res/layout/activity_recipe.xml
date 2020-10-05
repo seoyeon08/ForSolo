@@ -6,35 +6,36 @@
     android:orientation="vertical"
     android:background="#EAEAEA"
     >
-
-    <Button
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:background="#B9DEF6"
-        android:text="  레시피 글쓰기"
-        android:gravity="start"
-        android:textSize="20sp"
-        android:textColor="#ffffff"
+        android:layout_height="70dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="글제목:"
+            android:textSize="16sp"
+            android:layout_margin="8dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
 
-        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="레시피 순서:"
+            android:textSize="16sp"
+            android:layout_margin="8dp"
+            />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="글제목:"
-        android:textSize="20sp"
-        android:layout_margin="8dp"
-        />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="레시피 순서:"
-        android:textSize="20sp"
-        android:layout_margin="8dp"
-        />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
 
     <Button
         android:layout_width="match_parent"
@@ -51,7 +52,7 @@
         android:layout_gravity="end"
         android:background="@null"
         android:src="@drawable/write_sprout"
-        android:layout_marginTop="86dp"/>
+        android:layout_marginTop="170dp"/>
 
     <Button
         android:id="@+id/register_button"
