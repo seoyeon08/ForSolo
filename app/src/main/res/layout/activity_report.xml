@@ -7,7 +7,7 @@
 
     <View
         android:layout_width="300dp"
-        android:layout_height="300dp"
+        android:layout_height="440dp"
         android:layout_centerInParent="true"
         android:background="@color/colorCloudyGray" />
 
@@ -15,19 +15,18 @@
         android:layout_width="wrap_content"
         android:layout_height="52dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="160dp"
         android:text="관리자에게 문의하기!"
         android:textSize="20dp" />
 
     <EditText
         android:layout_width="260dp"
-        android:layout_height="1600dp"
+        android:layout_height="1500dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="240dp"
-        android:layout_marginBottom="230dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="260dp"
         android:background="@color/colorWhite"
-        android:gravity="top
-"
+        android:gravity="top"
         android:hint="불만/문의 사항을 입력해주세요." />
 
 
@@ -36,9 +35,21 @@
         android:layout_height="28dp"
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="190dp"
-        android:background="@color/colorPastelBlue"
-        android:text="보내기" />
+        android:layout_marginBottom="210dp"
+        android:background="@drawable/btn_blue"
+        android:textColor="@color/colorWhite"
+        android:text="Send" />
+
+    <Button
+        android:id="@+id/btn_backLogin"
+        android:layout_width="240dp"
+        android:layout_height="28dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="170dp"
+        android:background="@drawable/btn_blue"
+        android:textColor="@color/colorWhite"
+        android:text="Back" />
 
     //이걸 어떻게 추가해야 될까......
 </RelativeLayout>

@@ -17,6 +17,7 @@
         tools:ignore="MissingConstraints">
 
         <ImageView
+            android:id="@+id/btn_findMate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:src="@drawable/main_mate"
@@ -37,6 +38,7 @@
             />
 
         <ImageView
+            android:id="@+id/btn_findExchange"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -57,6 +59,7 @@
             />
 
         <ImageView
+            android:id="@+id/btn_recipie"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:src="@drawable/main_recipie"

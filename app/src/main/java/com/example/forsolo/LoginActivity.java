@@ -13,6 +13,7 @@ public class LoginActivity extends AppCompatActivity {
     private TextView btn_join;
     private TextView btn_find;
     private Button btn_report;
+    private TextView btn_login;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,5 +47,13 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
+        btn_login = findViewById(R.id.btn_login);
+        btn_login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                startActivity(intent);  //액티비티 이동
+            }
+        });
     }
 }
