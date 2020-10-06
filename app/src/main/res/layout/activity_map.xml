@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MapsActivity"
+    tools:context=".MapFragment"
     android:orientation="vertical">
 
     <androidx.appcompat.widget.Toolbar
@@ -16,12 +16,11 @@
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="-1dp" />
 
-    <fragment
-        android:name="com.google.android.gms.maps.SupportMapFragment"
-        tools:context=".MapsActivity"
+    <com.google.android.gms.maps.MapView
         android:id="@+id/map"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:ignore="MissingClass" />
+        android:name="com.google.android.gms.maps.MapFragment"
+        />
 
 </LinearLayout>
