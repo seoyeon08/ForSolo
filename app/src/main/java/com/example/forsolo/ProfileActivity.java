@@ -37,6 +37,7 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
     EditText majorView;
     RadioGroup sexView;
     Button addBtn;
+    EditText profileIntro;
     private static final int REQUEST_IMAGE_CAPTURE = 672;
     private String imageFilePath;
     private Uri photoUri;
@@ -46,6 +47,7 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        profileIntro=(EditText)findViewById(R.id.profile_intro);
         nameView=(EditText)findViewById(R.id.add_name);
         ageView=(EditText)findViewById(R.id.add_age);
         majorView=(EditText)findViewById(R.id.add_major);
