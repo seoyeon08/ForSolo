@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "421493807288",
-    "firebase_url": "https://forsolo-21b73.firebaseio.com",
-    "project_id": "forsolo-21b73",
-    "storage_bucket": "forsolo-21b73.appspot.com"
+    "project_number": "985985787686",
+    "firebase_url": "https://for-solo.firebaseio.com",
+    "project_id": "for-solo",
+    "storage_bucket": "for-solo.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:421493807288:android:17450bb87e069eba14fc4d",
+        "mobilesdk_app_id": "1:985985787686:android:febb5755f210cc09d043e7",
         "android_client_info": {
           "package_name": "com.example.forsolo"
         }
       },
       "oauth_client": [
         {
-          "client_id": "421493807288-9fvom944ukpo0te1a81gfqlskegb34mq.apps.googleusercontent.com",
+          "client_id": "985985787686-342o7fhqhl32ed6fa41pdvkl6neoacae.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDWb0wMayTo201d4ic_qz08RzTAIzYHVc8"
+          "current_key": "AIzaSyBTJ5ZMBJ1ouM5h9v1iAb5VpV7yBptmd9w"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "421493807288-9fvom944ukpo0te1a81gfqlskegb34mq.apps.googleusercontent.com",
+              "client_id": "985985787686-342o7fhqhl32ed6fa41pdvkl6neoacae.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

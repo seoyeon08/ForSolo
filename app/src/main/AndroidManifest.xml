@@ -23,6 +23,11 @@
         <activity android:name=".JoinActivity"/>
         <activity android:name=".ReportActivity"/>
 
+        <!--지도!-->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
     </application>
 
 </manifest>
