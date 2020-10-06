@@ -7,18 +7,6 @@
     android:background="#EAEAEA"
     >
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:background="#B9DEF6"
-        android:text=" 글 제목"
-        android:gravity="start"
-        android:textSize="20sp"
-        android:textColor="#ffffff"
-
-        />
-
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

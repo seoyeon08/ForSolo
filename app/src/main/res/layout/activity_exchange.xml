@@ -7,86 +7,116 @@
     android:orientation="vertical"
     android:background="#EAEAEA"
     >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="글제목:"
+            android:textSize="16sp" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:background="#B9DEF6"
-        android:text="  물품교환 글쓰기"
-        android:gravity="start"
-        android:textSize="20sp"
-        android:textColor="#ffffff"
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
 
-        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="물품이름:"
+            android:textSize="16sp"
+            android:layout_margin="8dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="글제목:"
-        android:textSize="20sp"
-        android:layout_margin="8dp"
-        />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="물품이름:"
-        android:textSize="20sp"
-        android:layout_margin="8dp"
-        />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="유통기한/구매날짜:"
-        android:textSize="20sp"
-        android:layout_margin="8dp"
-        />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="교환장소/시간:"
-        android:textSize="20sp"
-        android:layout_margin="8dp"
-        />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="원하는 물품 또는 가격:"
-        android:textSize="20sp"
-        android:layout_margin="8dp"
-        />
+        android:layout_height="60dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="유통기한/구매날짜:"
+            android:textSize="16sp"
+            android:layout_margin="8dp"
+            />
 
-    <TextView
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="내용:"
-        android:textSize="20sp"
-        android:layout_margin="8dp"
-        />
+        android:layout_height="60dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="교환장소/시간:"
+            android:textSize="16sp"
+            android:layout_margin="8dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="원하는 물품 또는 가격:"
+            android:textSize="16sp"
+            android:layout_margin="8dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="내용:"
+            android:textSize="16sp"
+            android:layout_margin="8dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="160dp"
-        android:layout_margin="20dp"
         android:background="#ffffff"
-        android:text="사진등록"
         android:gravity="center|bottom"
-        />
+        android:text="사진등록" />
 
     <ImageView
-        android:layout_width="80dp"
-        android:layout_height="40dp"
+        android:layout_width="160dp"
+        android:layout_height="120dp"
         android:layout_gravity="end"
         android:background="@null"
         android:src="@drawable/write_sprout"
         tools:ignore="ExtraText"
-        android:layout_marginBottom="28dp"
+        android:layout_marginBottom="24dp"
         />
 
     <Button
@@ -98,7 +128,6 @@
         android:gravity="center"
         android:text="글 등록하기"
         android:textColor="#ffffff"
-        android:textSize="30sp"
-        />
+        android:textSize="30sp" />
 
 </LinearLayout>
