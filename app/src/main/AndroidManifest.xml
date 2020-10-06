@@ -22,7 +22,6 @@
         <activity android:name=".FindActivity"/>
         <activity android:name=".JoinActivity"/>
         <activity android:name=".ReportActivity"/>
-        <activity android:name=".MapsActivity"/>
 
         <!--지도!-->
         <meta-data
