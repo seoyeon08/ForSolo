@@ -24,10 +24,15 @@
             android:background="@null"
             android:src="@drawable/user"
             ></ImageView>
-        <TextView
-            android:layout_width="200dp"
+
+        <EditText
+            android:id="@+id/profile_intro"
+            android:layout_width="240dp"
             android:layout_height="100dp"
-            android:background="#70000000"></TextView>
+            android:hint="한줄소개를 입력하세요."
+            android:paddingTop="15dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/profile_intro"></>
     </LinearLayout>
 
     <RelativeLayout
@@ -115,17 +120,17 @@
                 android:textSize="20dp"
                 ></RadioButton>
         </RadioGroup>
+
         <ImageView
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:paddingLeft="300dp"
-            android:paddingTop="10dp"
-            android:src="@drawable/profile_image"
-            >
-        </ImageView>
+            android:layout_marginLeft="270dp"
+            android:layout_marginTop="140dp"
+
+            android:src="@drawable/profile_image"></ImageView>
 
 
-</LinearLayout>
+    </LinearLayout>
     <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
