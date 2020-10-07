@@ -1,16 +1,15 @@
-package com.example.forsolo;
+package com.example.forsolo.findmate;
 
 import android.os.Bundle;
-import android.view.Menu;
 import android.view.MenuItem;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import com.example.forsolo.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class FindMateActivity extends AppCompatActivity {

@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.example.forsolo.findmate.FindMateActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     private ImageView btn_FindMate;

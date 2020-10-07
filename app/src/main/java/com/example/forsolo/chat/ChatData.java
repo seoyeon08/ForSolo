@@ -1,4 +1,4 @@
-package com.example.forsolo;
+package com.example.forsolo.chat;
 
 public class ChatData {
     private String msg;

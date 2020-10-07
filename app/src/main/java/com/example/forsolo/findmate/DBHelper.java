@@ -1,4 +1,4 @@
-package com.example.forsolo;
+package com.example.forsolo.findmate;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;

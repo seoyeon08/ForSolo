@@ -18,12 +18,17 @@
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
         </activity>
+        <!--        로그인-->
         <activity android:name=".LoginActivity"/>
         <activity android:name=".MainActivity"/>
-        <activity android:name=".FindMateActivity"/>
-        <activity android:name=".FindActivity"/>
-        <activity android:name=".JoinActivity"/>
-        <activity android:name=".ReportActivity"/>
+        <activity android:name=".SignUpActivity"/>
+        <activity android:name=".UserFindActivity"/>
+
+        <!--        친구 찾기-->
+        <activity android:name=".findmate.ProfileActivity"/>
+
+        <!--        채팅-->
+        <activity android:name=".chat.ChatActivity"/>
 
         <!--지도!-->
         <meta-data

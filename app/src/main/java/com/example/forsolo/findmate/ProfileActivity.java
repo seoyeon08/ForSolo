@@ -1,4 +1,4 @@
-package com.example.forsolo;
+package com.example.forsolo.findmate;
 
 import android.Manifest;
 import android.content.Intent;
@@ -21,6 +21,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.FileProvider;
 
+import com.example.forsolo.R;
 import com.gun0912.tedpermission.PermissionListener;
 import com.gun0912.tedpermission.TedPermission;
 

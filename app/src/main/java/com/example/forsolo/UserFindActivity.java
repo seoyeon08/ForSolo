@@ -7,7 +7,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class FindActivity extends AppCompatActivity {
+public class UserFindActivity extends AppCompatActivity {
 
     private TextView btn_backLogin;
 
@@ -20,7 +20,7 @@ public class FindActivity extends AppCompatActivity {
         btn_backLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(FindActivity.this, LoginActivity.class);
+                Intent intent = new Intent(UserFindActivity.this, LoginActivity.class);
                 startActivity(intent);  //액티비티 이동
             }
         });

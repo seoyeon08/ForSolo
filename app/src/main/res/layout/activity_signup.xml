@@ -2,7 +2,7 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".JoinActivity"
+    tools:context=".SignUpActivity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -54,7 +54,7 @@
         android:layout_marginBottom="10dp"
         />
 
-    <TextView
+    <Button
         android:id="@+id/btn_signUp"
         android:layout_gravity="center"
         android:layout_width="300dp"
@@ -68,7 +68,7 @@
         android:layout_marginBottom="10dp"
         />
 
-    <TextView
+    <Button
         android:id="@+id/btn_backLogin"
         android:layout_gravity="center"
         android:layout_width="300dp"
