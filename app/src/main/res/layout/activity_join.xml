@@ -11,6 +11,7 @@
     android:paddingRight="16dp"
     android:paddingTop="5dp">
 
+
     <ImageView
         android:layout_marginTop="30dp"
         android:layout_width="wrap_content"
@@ -19,71 +20,42 @@
         android:layout_gravity="center_horizontal"
         />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal">
-        <com.google.android.material.textfield.TextInputEditText
-            android:background="@drawable/btn_cloudy"
-            android:layout_width="300dp"
-            android:layout_height="45dp"
-            android:hint="   학번"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            />
-    </com.google.android.material.textfield.TextInputLayout>
 
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:background="@drawable/btn_cloudy"
+        android:id="@+id/emailEditText"
+        android:hint="   E-Mail"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center">
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/emailEditText"
-            android:background="@drawable/btn_cloudy"
-            android:layout_width="300dp"
-            android:layout_height="45dp"
-            android:hint="   E-Mail"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            />
-    </com.google.android.material.textfield.TextInputLayout>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:background="@drawable/btn_cloudy"
+        android:id="@+id/passwordEditText"
+        android:hint="   PW"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center">
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/passwordEditText"
-            android:background="@drawable/btn_cloudy"
-            android:layout_width="300dp"
-            android:layout_height="45dp"
-            android:hint="   PW"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            />
-    </com.google.android.material.textfield.TextInputLayout>
-
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center">
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/passwordCheckEditText"
-            android:background="@drawable/btn_cloudy"
-            android:layout_width="300dp"
-            android:layout_height="45dp"
-            android:hint="   PW확인"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            />
-    </com.google.android.material.textfield.TextInputLayout>
-
-
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:background="@drawable/btn_cloudy"
+        android:id="@+id/passwordCheckEditText"
+        android:hint="   PW확인"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        />
 
     <TextView
+        android:id="@+id/btn_signUp"
         android:layout_gravity="center"
         android:layout_width="300dp"
         android:layout_height="45dp"
