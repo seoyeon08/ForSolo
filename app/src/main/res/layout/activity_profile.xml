@@ -32,7 +32,8 @@
             android:hint="한줄소개를 입력하세요."
             android:paddingTop="15dp"
             android:gravity="center_horizontal"
-            android:background="@drawable/profile_intro"></>
+            android:background="@drawable/profile_intro"/>
+
     </LinearLayout>
 
     <RelativeLayout
