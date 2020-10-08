@@ -1,4 +1,4 @@
-package com.example.forsolo.findmate;
+package com.example.forsolo.findmate.fragment;
 
 import android.os.Bundle;
 import android.text.Layout;

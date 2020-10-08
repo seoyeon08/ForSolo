@@ -1,4 +1,4 @@
-package com.example.forsolo.findmate;
+package com.example.forsolo.findmate.activity;
 
 import android.Manifest;
 import android.content.Intent;
@@ -22,6 +22,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.FileProvider;
 
 import com.example.forsolo.R;
+import com.example.forsolo.findmate.DBHelper;
 import com.gun0912.tedpermission.PermissionListener;
 import com.gun0912.tedpermission.TedPermission;
 

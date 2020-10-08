@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ForSolo</string>
+    <string name="bord_uploadText">내용 :</string>
 </resources>

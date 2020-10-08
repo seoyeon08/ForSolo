@@ -1,4 +1,4 @@
-package com.example.forsolo.findmate;
+package com.example.forsolo.findmate.activity;
 
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -10,6 +10,9 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.example.forsolo.R;
+import com.example.forsolo.findmate.fragment.ListFragment;
+import com.example.forsolo.findmate.fragment.MapFragment;
+import com.example.forsolo.findmate.fragment.ProfileFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class FindMateActivity extends AppCompatActivity {
@@ -17,7 +20,6 @@ public class FindMateActivity extends AppCompatActivity {
     private BottomNavigationView bottomNavigationView;  //bottom navigation view
     private FragmentManager fm;
     private FragmentTransaction ft;
-    private EditFragment editFragment;
     private ListFragment listFragment;
     private MapFragment mapFragment;
     private ProfileFragment profileFragment;
@@ -38,18 +40,14 @@ public class FindMateActivity extends AppCompatActivity {
                     case R.id.action_map :
                         setFrag(1);
                         break;
-                    case R.id.action_edit :
-                        setFrag(2);
-                        break;
                     case R.id.action_profile :
-                        setFrag(3);
+                        setFrag(2);
                         break;
                 }
 
                 return true;
             }
         });
-        editFragment = new EditFragment();
         listFragment = new ListFragment();
         mapFragment = new MapFragment();
         profileFragment = new ProfileFragment();
@@ -71,10 +69,6 @@ public class FindMateActivity extends AppCompatActivity {
                 ft.commit();
                 break;
             case 2:
-                ft.replace(R.id.frame_content, editFragment);
-                ft.commit();
-                break;
-            case 3:
                 ft.replace(R.id.frame_content, profileFragment);
                 ft.commit();
                 break;
