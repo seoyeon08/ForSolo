@@ -23,6 +23,7 @@
         <activity android:name=".MainActivity"/>
         <activity android:name=".SignUpActivity"/>
         <activity android:name=".UserFindActivity"/>
+        <activity android:name=".ReportActivity"/>
 
         <!--        친구 찾기-->
         <activity android:name=".findmate.ProfileActivity"/>

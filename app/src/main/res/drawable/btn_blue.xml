@@ -1,22 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <item android:state_enabled="true">
+        <shape>
+            <solid android:color="#B2DFFC">
 
+            </solid>
+            <corners android:radius="40dp">
+
+            </corners >
+        </shape>
+    </item>
     <item android:state_pressed="true">
         <shape>
-            <solid android:color="@color/colorYellow"/>
-        </shape>
-    </item>
-    <item>
-        <shape android:shape="rectangle">
-            <corners android:radius="100dp"/>
-            <solid android:color="@color/colorPastelBlue"/>
-        </shape>
-    </item>
-    <item android:state_enabled="false">
-        <shape android:shape="rectangle">
-            <corners android:radius="100dp"/>
-            <solid android:color="@color/colorPastelBlue"/>
-        </shape>
-    </item>
+            <solid android:color="@android:color/white">
 
+            </solid>
+            <corners android:radius="40dp">
+
+            </corners>
+        </shape>
+    </item>
 </selector>
