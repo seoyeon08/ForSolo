@@ -27,6 +27,7 @@
 
         <!--        친구 찾기-->
         <activity android:name=".findmate.ProfileActivity"/>
+        <activity android:name=".findmate.FindMateActivity"/>
 
         <!--        채팅-->
         <activity android:name=".chat.ChatActivity"/>

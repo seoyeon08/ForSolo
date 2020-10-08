@@ -113,14 +113,43 @@
                 android:textSize="20dp"
                 ></RadioButton>
         </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_marginTop="20dp"
+            android:background="#ffffff">
+
+            <Button
+                android:id="@+id/btnLogOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_pink"
+                android:gravity="center"
+                android:text="로그아웃"/>
+
+            <Button
+                android:id="@+id/btnSignOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/btn_pink"
+                android:gravity="center"
+                android:text="회원탈퇴"/>
+        </LinearLayout>
+
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingLeft="300dp"
-            android:paddingTop="10dp"
-            android:src="@drawable/profile_image"
-            >
+            android:layout_gravity="right"
+            android:src="@drawable/profile_image">
         </ImageView>
+
+
 
     </LinearLayout>
 
