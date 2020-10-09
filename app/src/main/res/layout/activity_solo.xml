@@ -13,7 +13,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="10dp"
         android:background="@drawable/bord_bg"
-        android:elevation="4dp">
+        android:elevation="8dp">
 
 
         <LinearLayout
@@ -58,7 +58,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
-                android:lines="1" />
+                android:maxLength="300" />
 
         </LinearLayout>
 
@@ -83,7 +83,8 @@
             android:elevation="4dp"
             android:text="글 등록하기"
             android:textColor="@android:color/white"
-            android:textSize="10pt"
+            android:textSize="8pt"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
