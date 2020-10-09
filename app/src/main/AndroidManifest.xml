@@ -11,23 +11,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LoadingActivity">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".LoadingActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <!--        로그인-->
         <activity android:name=".LoginActivity"/>
-        <activity android:name=".MainActivity"/>
+        <activity android:name=".MainActivity">
+        </activity>
         <activity android:name=".SignUpActivity"/>
         <activity android:name=".UserFindActivity"/>
         <activity android:name=".ReportActivity"/>
+        <activity android:name=".findmate.activity.WritePostActivity" />
+        <activity android:name=".findmate.activity.FindMateActivity" />
 
         <!--        친구 찾기-->
-        <activity android:name=".findmate.ProfileActivity"/>
-        <activity android:name=".findmate.FindMateActivity"/>
+        <activity android:name=".findmate.activity.ProfileActivity"/>
 
         <!--        채팅-->
         <activity android:name=".chat.ChatActivity"/>
@@ -36,6 +38,8 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
+
+        <!--        게시판-->
 
     </application>
 
