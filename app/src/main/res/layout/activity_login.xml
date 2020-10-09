@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".LoginActivity"
     android:layout_width="match_parent"
@@ -26,21 +25,20 @@
         android:layout_gravity="center"
         android:id="@+id/main_email"
         android:background="@drawable/btn_lightgray"
-        android:hint="  ID"
+        android:hint="  E-Mail"
         android:layout_marginBottom="20dp"
         />
 
+
     <EditText
+        android:inputType="textPassword"
+        android:id="@+id/main_password"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
-        android:id="@+id/main_password"
-        android:background="@drawable/btn_lightgray"
-        android:hint=" Password"
         android:layout_marginBottom="20dp"
-        />
-
-
+        android:background="@drawable/btn_lightgray"
+        android:hint=" Password" />
 
     <RelativeLayout
         android:id="@+id/RelativeLayout_login"
