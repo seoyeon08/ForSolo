@@ -138,7 +138,7 @@
         android:background="#ffffff">
 
         <Button
-            android:id="@+id/btnLogOut"
+            android:id="@null"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
@@ -148,7 +148,7 @@
             android:text="로그아웃"></Button>
 
         <Button
-            android:id="@+id/btnSignOut"
+            android:id="@null"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
