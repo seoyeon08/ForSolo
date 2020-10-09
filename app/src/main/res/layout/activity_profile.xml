@@ -85,7 +85,7 @@
             android:textSize="20dp"></TextView>
 
         <EditText
-            android:id="@+id/ageEditText"
+            android:id="@+id/add_age"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="나이를 입력해주세요."
@@ -113,7 +113,6 @@
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingRight="20dp"
                 android:text="남자"
                 android:textColor="#000000"
                 android:textSize="20dp" />
@@ -123,7 +122,8 @@
                 android:layout_height="wrap_content"
                 android:text="여자"
                 android:textColor="#000000"
-                android:textSize="20dp"></RadioButton>
+                android:textSize="20dp"
+                ></RadioButton>
         </RadioGroup>
 
         <ImageView
@@ -139,28 +139,37 @@
             android:layout_marginTop="20dp"
             android:background="#ffffff">
 
-            <Button
-                android:id="@null"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/btn_pink"
-                android:gravity="center"
-                android:text="로그아웃"></Button>
+        <Button
+            android:id="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_pink"
+            android:gravity="center"
+            android:text="로그아웃"></Button>
 
-            <Button
-                android:id="@null"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
-                android:background="@drawable/btn_pink"
-                android:gravity="center"
-                android:text="회원탈퇴"></Button>
-        </LinearLayout>
+        <Button
+            android:id="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_pastelblue"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:text="회원탈퇴"/>
+
+        <ImageView
+            android:layout_marginLeft="90dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/profile_image">
+        </ImageView>
     </LinearLayout>
+
 
     <RelativeLayout
         android:layout_width="fill_parent"
@@ -171,7 +180,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="#EBC1FB"
+            android:background="@drawable/btn_pink"
             android:text="저장하기"
             android:textColor="#FFFFFF"
             android:textSize="30dp"></Button>

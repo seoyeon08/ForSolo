@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bord_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@drawable/bord_item_bg"
+    android:elevation="8dp">
+
+    <TextView
+        android:id="@+id/bord_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="제목입니당."
+        android:textSize="10pt"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/bord_item_subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bord_item_title"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="요것은 장소 입니당" />
+
+
+</RelativeLayout>

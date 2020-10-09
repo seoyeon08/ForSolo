@@ -26,17 +26,17 @@
                     android:host="google.com" />
             </intent-filter>
         </activity>
+
         <!--        로그인-->
         <activity android:name=".LoginActivity"/>
-        <activity android:name=".MainActivity">
-        </activity>
+        <activity android:name=".MainActivity"/>
         <activity android:name=".SignUpActivity"/>
         <activity android:name=".UserFindActivity"/>
         <activity android:name=".ReportActivity"/>
-        <activity android:name=".findmate.activity.WritePostActivity" />
-        <activity android:name=".findmate.activity.FindMateActivity" />
 
         <!--        친구 찾기-->
+        <activity android:name=".findmate.activity.WritePostActivity" />
+        <activity android:name=".findmate.activity.FindMateActivity" />
         <activity android:name=".findmate.activity.ProfileActivity"/>
 
         <!--        채팅-->

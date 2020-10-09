@@ -26,7 +26,7 @@
         android:layout_gravity="center"
         android:background="@drawable/btn_cloudy"
         android:id="@+id/sign_id"
-        android:hint="   ID"
+        android:hint="   Student Number"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
         />
@@ -74,10 +74,10 @@
         android:layout_width="300dp"
         android:layout_height="45dp"
         android:textColor="#ffffff"
-        android:text="JOIN"
+        android:text="SIGN UP"
         android:textSize="29dp"
         android:gravity="center"
-        android:background="@drawable/btn_blue"
+        android:background="@drawable/btn_pastelblue"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
         />

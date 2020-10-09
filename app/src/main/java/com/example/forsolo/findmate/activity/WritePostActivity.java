@@ -12,15 +12,15 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.forsolo.R;
-import com.example.forsolo.WriteInfo;
+import com.example.forsolo.findmate.data.WriteInfo;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.FirebaseFirestore;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.Calendar;
+import java.util.Date;
 
 public class WritePostActivity extends AppCompatActivity {
     private static final String Tag = "WritePostActivity";
@@ -38,8 +38,11 @@ public class WritePostActivity extends AppCompatActivity {
 
     Button upload_btn;
 
-    // EditText에서 가져온 데이텅
+    // EditText에서 가져온 데이터
     String title, time, place, memberCount, content = null;
+
+    // 업로드 시간을 체크하는 데이터
+    String uploadTimeText = "";
 
     private FirebaseUser user;
     private FirebaseFirestore fireStore;
@@ -94,7 +97,6 @@ public class WritePostActivity extends AppCompatActivity {
     }
 
 
-    // 요거는 인클루드된 뷰들의 텍스트를 바꾸는 구간
     private void setting() {
         titleTextView.setText("글 제목 :");
         timeTextView.setText("시간 :");
@@ -102,7 +104,6 @@ public class WritePostActivity extends AppCompatActivity {
         memberCountTextView.setText("인원수 :");
     }
 
-    // 업로드 버튼을 누르면 요 메서드가 딱! 호출되서 EditText의 데이터를 가져와서 변수에 저장하는 메서드
     private void getData() {
 
         title = titleEditText.getText().toString();
@@ -111,9 +112,10 @@ public class WritePostActivity extends AppCompatActivity {
         memberCount = memberEditText.getText().toString();
         content = contentEditText.getText().toString();
 
+        Date uploadTime = new Date(System.currentTimeMillis());
+        uploadTimeText = uploadTime.toString();
     }
 
-    // 본격적으로 FireStore 에 데이터를 올리는 부분
     private void uploadData() {
         fireStore = FirebaseFirestore.getInstance();
         auth = FirebaseAuth.getInstance().getCurrentUser();
@@ -122,7 +124,7 @@ public class WritePostActivity extends AppCompatActivity {
             email = auth.getEmail();
         }
 
-        WriteInfo data = new WriteInfo(title, time, place, memberCount, content, email);
+        WriteInfo data = new WriteInfo(title, time, place, memberCount, content, email, uploadTimeText);
 
         fireStore.collection("solo_runch").document(title).set(data)
                 .addOnCompleteListener(new OnCompleteListener<Void>() {
