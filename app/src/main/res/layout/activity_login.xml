@@ -20,34 +20,26 @@
         android:layout_gravity="center"
         android:layout_marginBottom="20dp"/>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center">
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/main_email"
-            android:background="@drawable/btn_lightgray"
-            android:layout_width="300dp"
-            android:layout_height="50dp"
-            android:hint="  ID"
-            android:layout_marginBottom="10dp"
-            />
-    </com.google.android.material.textfield.TextInputLayout>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:id="@+id/main_email"
+        android:background="@drawable/btn_lightgray"
+        android:hint="  ID"
+        android:layout_marginBottom="10dp"
+        />
 
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:id="@+id/main_password"
+        android:background="@drawable/btn_lightgray"
+        android:hint=" Password"
+        android:layout_marginBottom="10dp"
+        />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center">
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/main_pwd"
-            android:background="@drawable/btn_lightgray"
-            android:layout_width="300dp"
-            android:layout_height="50dp"
-            android:hint=" Password"
-            android:layout_marginBottom="25dp"
-            />
-    </com.google.android.material.textfield.TextInputLayout>
 
 
     <RelativeLayout
@@ -91,7 +83,7 @@
             android:layout_weight="5"/>
 
         <TextView
-            android:id="@+id/btn_join"
+            android:id="@+id/btn_signUp_join"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="15dp"
             android:background="@drawable/btn_cloudy"
@@ -106,13 +98,25 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/btn_custom"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:text="비회원"
+        android:textSize="20dp"
+        android:background="@color/colorWhite"
+        android:layout_gravity="right">
+    </Button>
+
+    <Button
         android:id="@+id/btn_report"
-        android:layout_width="200dp"
+        android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_marginTop="20dp"
         android:text="문의"
         android:textSize="20dp"
         android:background="@color/colorWhite"
-        android:layout_gravity="center">
+        android:layout_gravity="right">
     </Button>
+
 </LinearLayout>

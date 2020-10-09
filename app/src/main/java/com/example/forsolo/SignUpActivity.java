@@ -23,7 +23,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
 
     private static final String TAG = "SignUpActivity";
 
-    public EditText emailId, passwd;
+    public EditText id, name, emailId, passwd;
     private Button btnSignUp;
 
     // 추가 코드
@@ -37,10 +37,13 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
 
+        id = findViewById(R.id.sign_id);
+        name = findViewById(R.id.sign_name);
         emailId = findViewById(R.id.emailEditText);
         passwd = findViewById(R.id.passwordEditText);
 
         btnSignUp = findViewById(R.id.btn_signUp);
+
 
         firebaseAuth = FirebaseAuth.getInstance();
 
@@ -56,12 +59,14 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
 
     @Override
     public void onClick(View v) {
-        final String emailID = emailId.getText().toString();
+        String emailID = emailId.getText().toString();
         String paswd = passwd.getText().toString();
+        String userID = id.getText().toString();
+        final String userName = name.getText().toString();
 
         if (v.getId() == R.id.btn_signUp) {
-            if (!emailID.equals("") && !paswd.equals("")) {
-                UserData userInfor = new UserData(emailID, paswd);
+            if (!userID.equals("") && !userName.equals("") && !emailID.equals("") && !paswd.equals("")) {
+//                UserData userInfor = new UserData(userID, userName, emailID, paswd);
 
                 firebaseAuth.createUserWithEmailAndPassword(emailID, paswd)
                         .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
@@ -72,7 +77,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
                                     UserProfileChangeRequest profileUpdate;
 
                                     profileUpdate = new UserProfileChangeRequest.Builder()
-                                            .setDisplayName(emailID)
+                                            .setDisplayName(userName)
                                             .build();
 
                                     user = firebaseAuth.getCurrentUser();
@@ -80,7 +85,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
                                             .addOnCompleteListener(new OnCompleteListener<Void>() {
                                                 @Override
                                                 public void onComplete(@NonNull Task<Void> task) {
-                                                    if (task.isSuccessful()) {
+                                                    if(task.isSuccessful()) {
                                                         ManagementData.registerUser(user);
                                                     }
                                                 }
@@ -89,6 +94,8 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
                                     //myRef.child(Constant.DB_CHILD_USER).child(userID).setValue(userInfor);
                                     toastMessage("New Information has been saved.");
 
+                                    id.setText("");
+                                    name.setText("");
                                     emailId.setText("");
                                     passwd.setText("");
                                 }
