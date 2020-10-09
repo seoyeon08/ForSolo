@@ -16,14 +16,13 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.forsolo.R;
-import com.example.forsolo.adapter.GalleryAdapter;
 
 import java.util.ArrayList;
 
-import static com.example.forsolo.Util.GALLERY_IMAGE;
-import static com.example.forsolo.Util.GALLERY_VIDEO;
-import static com.example.forsolo.Util.INTENT_MEDIA;
-import static com.example.forsolo.Util.showToast;
+import static com.example.forsolo.findmate.Util.GALLERY_IMAGE;
+import static com.example.forsolo.findmate.Util.GALLERY_VIDEO;
+import static com.example.forsolo.findmate.Util.INTENT_MEDIA;
+import static com.example.forsolo.findmate.Util.showToast;
 
 public class GalleryActivity extends BasicActivity {
 
@@ -43,7 +42,7 @@ public class GalleryActivity extends BasicActivity {
                     Manifest.permission.READ_EXTERNAL_STORAGE)) {
 
             } else {
-                showToast(GalleryActivity.this, getResources().getString(R.string.please_grant_permission));
+                showToast(GalleryActivity.this, "권한을 허용해 주세요.");
             }
         } else {
             recyclerInit();
@@ -58,7 +57,7 @@ public class GalleryActivity extends BasicActivity {
                     recyclerInit();
                 } else {
                     finish();
-                    showToast(GalleryActivity.this, getResources().getString(R.string.please_grant_permission));
+                    showToast(GalleryActivity.this, "권한을 허용해 주세요");
                 }
             }
         }
@@ -67,7 +66,7 @@ public class GalleryActivity extends BasicActivity {
     private void recyclerInit(){
         final int numberOfColumns = 3;
 
-        RecyclerView recyclerView = findViewById(R.id.recyclerView);
+        RecyclerView recyclerView = findViewById(R.id.recyclerview);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new GridLayoutManager(this, numberOfColumns));
 

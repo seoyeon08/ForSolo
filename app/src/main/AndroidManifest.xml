@@ -3,7 +3,7 @@
     package="com.example.forsolo">
 
     <uses-permission android:name="android.permission.INTERNET" />
-
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera.autofocus" />
@@ -18,8 +18,12 @@
         <activity android:name=".LoadingActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
                 <category android:name="android.intent.category.LAUNCHER" />
+                <data
+                    android:scheme="http"
+                    android:host="google.com" />
             </intent-filter>
         </activity>
         <!--        로그인-->
@@ -33,8 +37,7 @@
         <activity android:name=".findmate.activity.FindMateActivity" />
 
         <!--        친구 찾기-->
-        <activity android:name=".findmate.ProfileActivity"/>
-        <activity android:name=".findmate.FindMateActivity"/>
+        <activity android:name=".findmate.activity.ProfileActivity"/>
 
         <!--        채팅-->
         <activity android:name=".chat.ChatActivity"/>
@@ -46,6 +49,9 @@
 
         <!--카메라!-->
         <activity android:name=".findmate.CameraActivity"/>
+
+        <!--갤러리!-->
+        <activity android:name=".findmate.GalleryActivity"/>
 
 
         <!--        게시판-->

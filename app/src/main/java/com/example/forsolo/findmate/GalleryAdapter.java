@@ -16,7 +16,7 @@ import com.example.forsolo.R;
 
 import java.util.ArrayList;
 
-import static com.example.forsolo.Util.INTENT_PATH;
+import static com.example.forsolo.findmate.Util.INTENT_PATH;
 
 public class GalleryAdapter extends RecyclerView.Adapter<GalleryAdapter.GalleryViewHolder> {
     private ArrayList<String> mDataset;

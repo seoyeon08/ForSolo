@@ -29,7 +29,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.nio.ByteBuffer;
 
-import static com.example.forsolo.Util.INTENT_PATH;
+import static com.example.forsolo.findmate.Util.INTENT_PATH;
 
 public class CameraActivity extends BasicActivity {
     private Camera2BasicFragment camera2BasicFragment;

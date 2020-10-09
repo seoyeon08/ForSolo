@@ -1,23 +1,13 @@
 package com.example.forsolo.findmate.activity;
 
-import android.Manifest;
 import android.app.Activity;
 import android.content.Intent;
-import android.database.sqlite.SQLiteDatabase;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.graphics.Matrix;
-import android.media.ExifInterface;
 import android.net.Uri;
 import android.os.Bundle;
-import android.os.Environment;
-import android.provider.MediaStore;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.RadioGroup;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
@@ -25,9 +15,12 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.FileProvider;
 
+import com.example.forsolo.UserInfo;
+import com.bumptech.glide.Glide;
 import com.example.forsolo.R;
+import com.example.forsolo.findmate.CameraActivity;
+import com.example.forsolo.findmate.GalleryActivity;
 import com.google.android.gms.tasks.Continuation;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -35,23 +28,18 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.auth.UserInfo;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
-import com.example.forsolo.findmate.DBHelper;
-import com.gun0912.tedpermission.PermissionListener;
-import com.gun0912.tedpermission.TedPermission;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.io.InputStream;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
+
+import static com.example.forsolo.findmate.Util.INTENT_PATH;
+import static com.example.forsolo.findmate.Util.showToast;
 
 public class ProfileActivity extends AppCompatActivity{
     private static final String TAG = "ProfileActivity";
@@ -65,7 +53,7 @@ public class ProfileActivity extends AppCompatActivity{
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
-
+        //setToolbarTitle("회원정보");
         //loaderLayout = findViewById(R.id.LoaderLayout);
         profileImageView =findViewById(R.id.profileImageView);
         buttonBackgroundLayout = findViewById(R.id.buttonsBackgroundLayout);
@@ -75,9 +63,6 @@ public class ProfileActivity extends AppCompatActivity{
         findViewById(R.id.checkButton).setOnClickListener(onClickListener);
         findViewById(R.id.picture).setOnClickListener(onClickListener);
         findViewById(R.id.gallery).setOnClickListener(onClickListener);
-
-
-
 
 
     }
@@ -94,7 +79,7 @@ public class ProfileActivity extends AppCompatActivity{
             case 0: {
                 if (resultCode == Activity.RESULT_OK) {
                     profilePath = data.getStringExtra(INTENT_PATH);
-                    Glide.with(this).load(profilePath).centerCrop().override(500).into(profileImageVIew);
+                    Glide.with(this).load(profilePath).centerCrop().override(500).into(profileImageView);
                     buttonBackgroundLayout.setVisibility(View.GONE);
                 }
                 break;
@@ -129,27 +114,30 @@ public class ProfileActivity extends AppCompatActivity{
         final String name = ((EditText) findViewById(R.id.nameEditText)).getText().toString();
         final String major = ((EditText) findViewById(R.id.majorEditText)).getText().toString();
         final String age = ((EditText) findViewById(R.id.ageEditText)).getText().toString();
+        final String Intro = ((EditText) findViewById(R.id.profile_intro)).getText().toString();
         final RadioGroup sex = ((RadioGroup) findViewById(R.id.add_sex));
 
         if(name.length()>0 && major.length()>2 && age.length()>1&&sex!=null){
-            FirbaseStorge storge = FirebaseStorage.getInstance();
+            //loaderLayout.setVisibility(View.VISIBLE);
+            FirebaseStorage storage = FirebaseStorage.getInstance();
+            StorageReference storageRef = storage.getReference();
             user = FirebaseAuth.getInstance().getCurrentUser();
             final StorageReference mountainImageRef = storageRef.child("users/" + user.getUid() + "/profileImage.jpg");
 
             if (profilePath == null) {
-                UserInfo userInfo = new UserInfo(name, major, age, sex);
+                UserInfo userInfo = new UserInfo(name, age, major, Intro);
                 storeUploader(userInfo);
             } else {
                 try {
                     InputStream stream = new FileInputStream(new File(profilePath));
-                    UploadTask uploadTask = mountainImagesRef.putStream(stream);
+                    UploadTask uploadTask = mountainImageRef.putStream(stream);
                     uploadTask.continueWithTask(new Continuation<UploadTask.TaskSnapshot, Task<Uri>>() {
                         @Override
                         public Task<Uri> then(@NonNull Task<UploadTask.TaskSnapshot> task) throws Exception {
                             if (!task.isSuccessful()) {
                                 throw task.getException();
                             }
-                            return mountainImagesRef.getDownloadUrl();
+                            return mountainImageRef.getDownloadUrl();
                         }
                     }).addOnCompleteListener(new OnCompleteListener<Uri>() {
                         @Override
@@ -157,7 +145,7 @@ public class ProfileActivity extends AppCompatActivity{
                             if (task.isSuccessful()) {
                                 Uri downloadUri = task.getResult();
 
-                                UserInfo userInfo = new UserInfo(name, major, age, downloadUri.toString());
+                                UserInfo userInfo = new UserInfo(name, age,major,Intro,downloadUri.toString());
                                 storeUploader(userInfo);
                             } else {
                                 Toast.makeText(ProfileActivity.this, "회원정보를 보내는데 실패하였습니다.", Toast.LENGTH_SHORT).show();
@@ -169,14 +157,10 @@ public class ProfileActivity extends AppCompatActivity{
                 }
             }
         } else {
-            Toast.makeText(ProfileActivity.this, "회원정보를 입력해주세요.", Toast.LENGTH_SHORT).show();
+            showToast(ProfileActivity.this, "회원정보를 입력해주세요.");
         }
 
-        @Override
-        public void onPermissionDenied(ArrayList<String> deniedPermissions) {
-            Toast.makeText(getApplicationContext(), "권한이 거부됨",Toast.LENGTH_SHORT).show();
-        }
-    };
+    }
 
     private void storeUploader(UserInfo userInfo) {
         FirebaseFirestore db = FirebaseFirestore.getInstance();
@@ -201,7 +185,5 @@ public class ProfileActivity extends AppCompatActivity{
         Intent intent = new Intent(this, c);
         startActivityForResult(intent, 0);
     }
-    }
-
 
 }
