@@ -20,7 +20,7 @@ public class LoginActivity extends AppCompatActivity {
 
     public EditText loginEmailId, logInpasswd;
     private TextView btnLogIn, btn_join;
-    private Button btn_custom;
+    private Button btn_custom, btn_report;
 
     FirebaseAuth firebaseAuth;
     private FirebaseAuth.AuthStateListener authStateListener;
@@ -37,12 +37,19 @@ public class LoginActivity extends AppCompatActivity {
         logInpasswd = findViewById(R.id.main_password);
         btnLogIn = findViewById(R.id.btn_login);
         btn_join = findViewById(R.id.btn_signUp_join);
-
-        btn_join = findViewById(R.id.btn_signUp_join);
         btn_custom = findViewById(R.id.btn_custom);
-//        btn_report = findViewById(R.id.btn_report);
+        btn_report = findViewById(R.id.btn_report);
 
-        // 비밀번호 찾기 , 문의 버튼 만들기
+        // 비밀번호 찾기 버튼 만들기
+
+        // 문의 이동 버튼
+        btn_report.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LoginActivity.this, ReportActivity.class);
+                startActivity(intent);  //액티비티 이동
+            }
+        });
 
         // 회원가입 이동 버튼
         btn_join.setOnClickListener(new View.OnClickListener() {
