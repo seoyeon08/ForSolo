@@ -6,6 +6,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RadioGroup;
@@ -16,6 +17,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.forsolo.LoginActivity;
+import com.example.forsolo.SignUpActivity;
 import com.example.forsolo.UserInfo;
 import com.bumptech.glide.Glide;
 import com.example.forsolo.R;
@@ -48,6 +51,7 @@ public class ProfileActivity extends AppCompatActivity{
     private RelativeLayout buttonBackgroundLayout;
     private String profilePath;
     private FirebaseUser user;
+    private Button write_btn;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
