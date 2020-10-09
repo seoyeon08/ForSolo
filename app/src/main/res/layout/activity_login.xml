@@ -18,7 +18,7 @@
         android:background="@null"
         android:src="@drawable/login_friend"
         android:layout_gravity="center"
-        android:layout_marginBottom="20dp"/>
+        android:layout_marginBottom="80dp"/>
 
     <EditText
         android:layout_width="300dp"
@@ -27,7 +27,7 @@
         android:id="@+id/main_email"
         android:background="@drawable/btn_lightgray"
         android:hint="  ID"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="20dp"
         />
 
     <EditText
@@ -37,7 +37,7 @@
         android:id="@+id/main_password"
         android:background="@drawable/btn_lightgray"
         android:hint=" Password"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="20dp"
         />
 
 
@@ -66,6 +66,7 @@
     </RelativeLayout>
 
     <LinearLayout
+        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -112,7 +113,7 @@
         android:id="@+id/btn_report"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:text="문의"
         android:textSize="20dp"
         android:background="@color/colorWhite"
