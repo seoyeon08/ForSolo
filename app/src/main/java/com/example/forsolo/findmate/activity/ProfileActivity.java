@@ -1,4 +1,4 @@
-package com.example.forsolo.findmate;
+package com.example.forsolo.findmate.activity;
 
 import android.Manifest;
 import android.app.Activity;
@@ -40,6 +40,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
+import com.example.forsolo.findmate.DBHelper;
 import com.gun0912.tedpermission.PermissionListener;
 import com.gun0912.tedpermission.TedPermission;
 
@@ -74,6 +75,7 @@ public class ProfileActivity extends AppCompatActivity{
         findViewById(R.id.checkButton).setOnClickListener(onClickListener);
         findViewById(R.id.picture).setOnClickListener(onClickListener);
         findViewById(R.id.gallery).setOnClickListener(onClickListener);
+
 
 
 
@@ -169,7 +171,12 @@ public class ProfileActivity extends AppCompatActivity{
         } else {
             Toast.makeText(ProfileActivity.this, "회원정보를 입력해주세요.", Toast.LENGTH_SHORT).show();
         }
+
+        @Override
+        public void onPermissionDenied(ArrayList<String> deniedPermissions) {
+            Toast.makeText(getApplicationContext(), "권한이 거부됨",Toast.LENGTH_SHORT).show();
         }
+    };
 
     private void storeUploader(UserInfo userInfo) {
         FirebaseFirestore db = FirebaseFirestore.getInstance();

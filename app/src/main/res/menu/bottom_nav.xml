@@ -13,11 +13,7 @@
         android:icon="@drawable/map_icon"
         android:title="지도로 보기"/>
 
-    <item
-        android:id="@+id/action_edit"
-        android:enabled="true"
-        android:icon="@drawable/edit_icon"
-        android:title="글쓰기"/>
+
 
     <item
         android:id="@+id/action_profile"

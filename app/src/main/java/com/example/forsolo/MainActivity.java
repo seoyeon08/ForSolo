@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
-import com.example.forsolo.findmate.FindMateActivity;
+import com.example.forsolo.findmate.activity.FindMateActivity;
 
 public class MainActivity extends AppCompatActivity {
 
