@@ -62,6 +62,7 @@
         android:background="@drawable/btn_cloudy"
         android:id="@+id/passwordEditText"
         android:hint="   PW"
+        android:inputType="textPassword"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
         />
