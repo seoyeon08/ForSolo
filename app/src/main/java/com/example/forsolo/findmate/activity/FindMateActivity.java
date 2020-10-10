@@ -59,6 +59,7 @@ public class FindMateActivity extends AppCompatActivity {
     private void setFrag(int n){
         fm = getSupportFragmentManager();
         ft = fm.beginTransaction();     //실제적인 fragment 교체
+
         switch (n){
             case 0:
                 ft.replace(R.id.frame_content, listFragment);

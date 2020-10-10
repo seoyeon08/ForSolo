@@ -1,6 +1,7 @@
 package com.example.forsolo.findmate.activity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -13,17 +14,22 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.forsolo.R;
 import com.example.forsolo.findmate.data.WriteInfo;
+import com.example.forsolo.findmate.fragment.ListFragment;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.FirebaseFirestore;
 
-import java.util.Calendar;
+import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
+import java.util.Random;
 
 public class WritePostActivity extends AppCompatActivity {
     private static final String Tag = "WritePostActivity";
+
+    String itemRandomString;
 
     TextView titleTextView;
     TextView timeTextView;
@@ -63,6 +69,7 @@ public class WritePostActivity extends AppCompatActivity {
 
                 if (title != null && time != null && place != null && memberCount != null && content != null) {
                     uploadData();
+                    finish();
                 } else {
                     Toast showText = Toast.makeText(getApplicationContext(), "내용을 다 채워주세요~", Toast.LENGTH_SHORT);
                     showText.show();
@@ -113,7 +120,10 @@ public class WritePostActivity extends AppCompatActivity {
         content = contentEditText.getText().toString();
 
         Date uploadTime = new Date(System.currentTimeMillis());
-        uploadTimeText = uploadTime.toString();
+
+        SimpleDateFormat mFormat = new SimpleDateFormat("MM/dd HH:mm:ss");
+
+        uploadTimeText = mFormat.format(uploadTime);
     }
 
     private void uploadData() {
@@ -123,10 +133,13 @@ public class WritePostActivity extends AppCompatActivity {
         if (auth != null) {
             email = auth.getEmail();
         }
+        getRandomString();
 
-        WriteInfo data = new WriteInfo(title, time, place, memberCount, content, email, uploadTimeText);
+        String sc = itemRandomString;
 
-        fireStore.collection("solo_runch").document(title).set(data)
+        WriteInfo data = new WriteInfo(title, time, place, memberCount, content, email, uploadTimeText, sc);
+
+        fireStore.collection("solo_runch").document(sc).set(data)
                 .addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
@@ -137,6 +150,30 @@ public class WritePostActivity extends AppCompatActivity {
                         }
                     }
                 });
+    }
+
+    private void getRandomString() {
+        StringBuffer temp = new StringBuffer();
+        Random rnd = new Random();
+        for (int i = 0; i < 20; i++) {
+            int rIndex = rnd.nextInt(3);
+            switch (rIndex) {
+                case 0:
+                    // a-z
+                    temp.append((char) ((int) (rnd.nextInt(26)) + 97));
+                    break;
+                case 1:
+                    // A-Z
+                    temp.append((char) ((int) (rnd.nextInt(26)) + 65));
+                    break;
+                case 2:
+                    // 0-9
+                    temp.append((rnd.nextInt(10)));
+                    break;
+            }
+        }
+
+        itemRandomString = temp.toString();
     }
 }
 

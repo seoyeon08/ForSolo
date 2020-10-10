@@ -3,6 +3,9 @@
     android:id="@+id/bord_item_layout"
     android:layout_width="match_parent"
     android:layout_height="100dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
     android:background="@drawable/bord_item_bg"
     android:elevation="8dp">
 
@@ -29,5 +32,13 @@
         android:maxLines="1"
         android:text="요것은 장소 입니당" />
 
+    <TextView
+        android:id="@+id/bord_item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="요것은 시간"
+        android:layout_marginEnd="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"/>
 
 </RelativeLayout>

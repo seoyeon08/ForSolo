@@ -15,24 +15,25 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.forsolo.R;
 import com.example.forsolo.findmate.activity.SbordActivity;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 
 public class BordAdapter extends RecyclerView.Adapter<BordAdapter.itemViewHolder> {
 
     private ArrayList<BordInfo> listData = new ArrayList<>();
-    private Context context;
+    private Context contexts;
 
 
     public void addData(BordInfo data) {
         listData.add(data);
     }
 
-    public void setContextAdapter(Context context) {
-        context = this.context;
+    public BordAdapter(Context context){
+        contexts = context;
     }
 
-    public Context getContextAdapter() {
-        return context;
+    public void refresh(){
+        listData.clear();
     }
 
     @NonNull
@@ -54,18 +55,16 @@ public class BordAdapter extends RecyclerView.Adapter<BordAdapter.itemViewHolder
         return listData.size();
     }
 
-    static class itemViewHolder extends RecyclerView.ViewHolder {
+    class itemViewHolder extends RecyclerView.ViewHolder {
 
 
-        String title, time, place, memberCount, content, uploadTimeText, email = null;
+        String title, time, place, memberCount, content, uploadTimeText, email, sc = null;
 
         private TextView titleTextView;
         private TextView subjectTextView;
+        private TextView timeTextView;
         private View itemLayout;
 
-        BordAdapter bordAdapter = new BordAdapter();
-
-        Context context = bordAdapter.getContextAdapter();
 
         itemViewHolder(View itemView) {
             super(itemView);
@@ -73,6 +72,7 @@ public class BordAdapter extends RecyclerView.Adapter<BordAdapter.itemViewHolder
             titleTextView = itemView.findViewById(R.id.bord_item_title);
             subjectTextView = itemView.findViewById(R.id.bord_item_subject);
             itemLayout = itemView.findViewById(R.id.bord_item_layout);
+            timeTextView = itemView.findViewById(R.id.bord_item_time);
 
             itemClickListener();
         }
@@ -82,7 +82,7 @@ public class BordAdapter extends RecyclerView.Adapter<BordAdapter.itemViewHolder
             itemLayout.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent intent = new Intent(context, SbordActivity.class);
+                    Intent intent = new Intent(contexts, SbordActivity.class);
                     intent.putExtra("title", title);
                     intent.putExtra("time", time);
                     intent.putExtra("place", place);
@@ -90,7 +90,8 @@ public class BordAdapter extends RecyclerView.Adapter<BordAdapter.itemViewHolder
                     intent.putExtra("content", content);
                     intent.putExtra("email", email);
                     intent.putExtra("uploadTimeText", uploadTimeText);
-                    ContextCompat.startActivity(context, intent, new Bundle());
+                    intent.putExtra("sc", sc);
+                    ContextCompat.startActivity(contexts, intent, new Bundle());
                 }
             });
         }
@@ -107,6 +108,9 @@ public class BordAdapter extends RecyclerView.Adapter<BordAdapter.itemViewHolder
             content = data.getContents();
             email = data.getEmail();
             uploadTimeText = data.getDate();
+            sc = data.getSC();
+
+            timeTextView.setText(uploadTimeText);
 
         }
     }
