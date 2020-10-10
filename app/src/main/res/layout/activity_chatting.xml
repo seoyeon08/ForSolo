@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".chat.ChattingActivity">
+    tools:context=".chat.ChattingActivity"
+    android:background="@drawable/chatbackground">
     <ListView
         android:id="@+id/listview"
         android:layout_width="match_parent"

@@ -151,8 +151,8 @@ public class ChatActivity extends AppCompatActivity {
                         editor.putString("profileUrl", G.porfileUrl);
 
                         editor.commit();
-                        //저장이 완료되었으니 ChatActivity로 전환
-                        Intent intent=new Intent(ChatActivity.this, ChatActivity.class);
+                        //저장이 완료되었으니 ChattingActivity로 전환
+                        Intent intent=new Intent(ChatActivity.this, ChattingActivity.class);
                         startActivity(intent);
                         finish();
 
