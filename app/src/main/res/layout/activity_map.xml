@@ -13,8 +13,7 @@
         android:background="@color/colorLightBlue"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="-1dp" />
+        tools:layout_editor_absoluteX="1dp"/>
 
     <com.google.android.gms.maps.MapView
         android:id="@+id/map"
@@ -22,5 +21,7 @@
         android:layout_height="match_parent"
         android:name="com.google.android.gms.maps.MapFragment"
         />
+
+
 
 </LinearLayout>
