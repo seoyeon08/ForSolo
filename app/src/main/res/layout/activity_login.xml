@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".LoginActivity"
     android:layout_width="match_parent"
@@ -18,7 +17,7 @@
         android:background="@null"
         android:src="@drawable/login_friend"
         android:layout_gravity="center"
-        android:layout_marginBottom="20dp"/>
+        android:layout_marginBottom="80dp"/>
 
     <EditText
         android:layout_width="300dp"
@@ -26,21 +25,20 @@
         android:layout_gravity="center"
         android:id="@+id/main_email"
         android:background="@drawable/btn_lightgray"
-        android:hint="  ID"
-        android:layout_marginBottom="10dp"
+        android:hint="  E-Mail"
+        android:layout_marginBottom="20dp"
         />
 
+
     <EditText
+        android:inputType="textPassword"
+        android:id="@+id/main_password"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
-        android:id="@+id/main_password"
+        android:layout_marginBottom="20dp"
         android:background="@drawable/btn_lightgray"
-        android:hint=" Password"
-        android:layout_marginBottom="10dp"
-        />
-
-
+        android:hint=" Password" />
 
     <RelativeLayout
         android:id="@+id/RelativeLayout_login"
@@ -48,7 +46,7 @@
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:orientation="horizontal"
-        android:background="@drawable/btn_blue"
+        android:background="@drawable/btn_pastelblue"
         >
 
         <TextView
@@ -66,6 +64,7 @@
     </RelativeLayout>
 
     <LinearLayout
+        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -112,7 +111,7 @@
         android:id="@+id/btn_report"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:text="문의"
         android:textSize="20dp"
         android:background="@color/colorWhite"
