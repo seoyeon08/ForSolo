@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "365114491877",
+    "firebase_url": "https://forsolo-bed7b.firebaseio.com",
+    "project_id": "forsolo-bed7b",
+    "storage_bucket": "forsolo-bed7b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:365114491877:android:08eced8c5328471501250c",
+        "android_client_info": {
+          "package_name": "com.example.forsolo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "365114491877-tka7300rh6jcv4lharppcdjkn7h0m1ji.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.forsolo",
+            "certificate_hash": "77034b35698452f585eaed98b1512c6b3d8c7cba"
+          }
+        },
+        {
+          "client_id": "365114491877-fbujhg2746p5b7fur43j4jiur8nsgrc2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALtYeSLuMEgMW_EonFyPgWi5Ie0bjf6Pg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "365114491877-fbujhg2746p5b7fur43j4jiur8nsgrc2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
