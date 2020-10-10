@@ -3,6 +3,10 @@
     package="com.example.forsolo">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
 
     <application
         android:allowBackup="true"
@@ -14,8 +18,12 @@
         <activity android:name=".LoadingActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
                 <category android:name="android.intent.category.LAUNCHER" />
+                <data
+                    android:scheme="http"
+                    android:host="google.com" />
             </intent-filter>
         </activity>
 
@@ -39,6 +47,13 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
+
+        <!--카메라!-->
+        <activity android:name=".findmate.CameraActivity"/>
+
+        <!--갤러리!-->
+        <activity android:name=".findmate.GalleryActivity"/>
+
 
         <!--        게시판-->
 
