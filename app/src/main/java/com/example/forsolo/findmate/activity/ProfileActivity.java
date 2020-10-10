@@ -51,8 +51,6 @@ public class ProfileActivity extends AppCompatActivity{
     private RelativeLayout buttonBackgroundLayout;
     private String profilePath;
     private FirebaseUser user;
-    private Button write_btn;
-
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -119,9 +117,9 @@ public class ProfileActivity extends AppCompatActivity{
         final String major = ((EditText) findViewById(R.id.majorEditText)).getText().toString();
         final String age = ((EditText) findViewById(R.id.ageEditText)).getText().toString();
         final String Intro = ((EditText) findViewById(R.id.profile_intro)).getText().toString();
-        final RadioGroup sex = ((RadioGroup) findViewById(R.id.add_sex));
+        //final RadioGroup sex = ((RadioGroup) findViewById(R.id.add_sex));
 
-        if(name.length()>0 && major.length()>2 && age.length()>1&&sex!=null){
+        if(name.length()>0 && major.length()>2 && age.length()>1&&Intro.length()>0){
             //loaderLayout.setVisibility(View.VISIBLE);
             FirebaseStorage storage = FirebaseStorage.getInstance();
             StorageReference storageRef = storage.getReference();

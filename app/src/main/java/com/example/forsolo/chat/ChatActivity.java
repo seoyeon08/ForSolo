@@ -1,9 +1,13 @@
 package com.example.forsolo.chat;
 
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -12,100 +16,160 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.forsolo.R;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
+import com.google.firebase.storage.UploadTask;
+import com.squareup.picasso.Picasso;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 public class ChatActivity extends AppCompatActivity {
+    EditText etName;
+    CircleImageView ivProfile;
 
-    private RecyclerView recyclerView;
-    private RecyclerView.Adapter mAdapter;
-    private RecyclerView.LayoutManager layoutManager;
-    private List<ChatData> chatList;
-    private String nick = "nick1";
+    Uri imgUri;//선택한 프로필 이미지 경로 Uri
 
-    private EditText EditText_chat;
-    private Button Button_send;
-    private DatabaseReference myRef;
+    boolean isFirst= true; //앱을 처음 실행한 것인가?
+    boolean isChanged= false; //프로필을 변경한 적이 있는가?
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chat);
 
-        Button_send = findViewById(R.id.Button_send);
-        EditText_chat = findViewById(R.id.EditText_chat);
+        etName=findViewById(R.id.et_name);
+        ivProfile=findViewById(R.id.iv_profile);
 
-        Button_send.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String msg = EditText_chat.getText().toString(); //msg
+        //폰에 저장되어 있는 프로필 읽어오기
+        loadData();
+        if(G.nickName!=null){
+            etName.setText(G.nickName);
+            Picasso.get().load(G.porfileUrl).into(ivProfile);
 
-                if(msg != null) {
-                    ChatData chat = new ChatData();
-                    chat.setNickname(nick);
-                    chat.setMsg(msg);
-                    myRef.push().setValue(chat);
+            //처음이 아니다, 즉, 이미 접속한 적이 있다.
+            isFirst=false;
+
+        }
+    }
+
+    public void clickImage(View view) {
+        //프로필 이미지 선택하도록 Gallery 앱 실행
+        Intent intent= new Intent(Intent.ACTION_PICK);
+        intent.setType("image/*");
+        startActivityForResult(intent,10);
+    }
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        switch (requestCode){
+            case 10:
+                if(resultCode==RESULT_OK){
+                    imgUri= data.getData();
+                    //Glide.with(this).load(imgUri).into(ivProfile);
+                    //Glide는 이미지를 읽어와서 보여줄때 내 device의 외장메모리에 접근하는 퍼미션이 요구됨.
+                    //(퍼미션이 없으면 이미지가 보이지 않음.)
+                    //Glide를 사용할 때는 동적 퍼미션 필요함.
+
+                    //Picasso 라이브러리는 퍼미션 없어도 됨.
+                    Picasso.get().load(imgUri).into(ivProfile);
+
+                    //변경된 이미지가 있다.
+                    isChanged=true;
                 }
-                EditText_chat.setText("");
+                break;
+        }
+    }
+    public void clickBtn(View view) {
+
+        //바꾼것도 없고, 처음 접속도 아니고..
+        if(!isChanged && !isFirst){
+            //ChatActivity로 전환
+            Intent intent= new Intent(this, ChatActivity.class);
+            startActivity(intent);
+            finish();
+        }else{
+            //1. save작업
+            saveData();
+        }
+    }
+
+    void saveData(){
+        //EditText의 닉네임 가져오기 [전역변수에]
+        G.nickName= etName.getText().toString();
+
+        //이미지를 선택하지 않았을 수도 있으므로
+        if(imgUri==null) return;
+
+        //Firebase storage에 이미지 저장하기 위해 파일명 만들기(날짜를 기반으로)
+        SimpleDateFormat sdf= new SimpleDateFormat("yyyMMddhhmmss"); //20191024111224
+        String fileName= sdf.format(new Date())+".png";
+
+        //Firebase storage에 저장하기
+        FirebaseStorage firebaseStorage= FirebaseStorage.getInstance();
+        final StorageReference imgRef= firebaseStorage.getReference("profileImages/"+fileName);
+
+        //파일 업로드
+        UploadTask uploadTask=imgRef.putFile(imgUri);
+        uploadTask.addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+            @Override
+            public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                //이미지 업로드가 성공되었으므로...
+                //곧바로 firebase storage의 이미지 파일 다운로드 URL을 얻어오기
+                imgRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+                    @Override
+                    public void onSuccess(Uri uri) {
+                        //파라미터로 firebase의 저장소에 저장되어 있는
+                        //이미지에 대한 다운로드 주소(URL)을 문자열로 얻어오기
+                        G.porfileUrl= uri.toString();
+                        Toast.makeText(ChatActivity.this, "프로필 저장 완료", Toast.LENGTH_SHORT).show();
+
+                        //1. Firebase Database에 nickName, profileUrl을 저장
+                        //firebase DB관리자 객체 소환
+                        FirebaseDatabase firebaseDatabase=FirebaseDatabase.getInstance();
+                        //'profiles'라는 이름의 자식 노드 참조 객체 얻어오기
+                        DatabaseReference profileRef= firebaseDatabase.getReference("profiles");
+
+                        //닉네임을 key 식별자로 하고 프로필 이미지의 주소를 값으로 저장
+                        profileRef.child(G.nickName).setValue(G.porfileUrl);
+
+                        //2. 내 phone에 nickName, profileUrl을 저장
+                        SharedPreferences preferences= getSharedPreferences("account",MODE_PRIVATE);
+                        SharedPreferences.Editor editor=preferences.edit();
+
+                        editor.putString("nickName",G.nickName);
+                        editor.putString("profileUrl", G.porfileUrl);
+
+                        editor.commit();
+                        //저장이 완료되었으니 ChatActivity로 전환
+                        Intent intent=new Intent(ChatActivity.this, ChatActivity.class);
+                        startActivity(intent);
+                        finish();
+
+                    }
+                });
             }
         });
+    }//saveData() ..
 
-        recyclerView=findViewById(R.id.my_recycler_view);
-        recyclerView.setHasFixedSize(true);
-        layoutManager = new LinearLayoutManager(this);
-        recyclerView.setLayoutManager(layoutManager);
-
-        chatList = new ArrayList<>();
-        mAdapter = new ChatAdapter(chatList, ChatActivity.this, nick);
-        recyclerView.setAdapter(mAdapter);
-
-
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
-        myRef = database.getReference("message");
-
-
-        myRef.addChildEventListener(new ChildEventListener() {
-            @Override
-            public void onChildAdded(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
-                ChatData chat = snapshot. getValue(ChatData.class);
-                ((ChatAdapter) mAdapter).addChat(chat);
-                recyclerView.scrollToPosition(chatList.size()-1);
-
-            }
-
-            @Override
-            public void onChildChanged(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
-
-            }
-
-            @Override
-            public void onChildRemoved(@NonNull DataSnapshot snapshot) {
-
-            }
-
-            @Override
-            public void onChildMoved(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
-
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-            }
-        });
-        //1. recyclerView - 반복
-        //2. 디비 내용을 넣는다
-        //3. 상대방폰에 채팅 내용이 보임 - get
-
-        //1-1. recyclerview - chat data
-        //1. message, nickname, isMine - Data Transfer Object
+    //내 phone에 저장되어 있는 프로필정보 읽어오기
+    void loadData(){
+        SharedPreferences preferences=getSharedPreferences("account",MODE_PRIVATE);
+        G.nickName=preferences.getString("nickName", null);
+        G.porfileUrl=preferences.getString("profileUrl", null);
 
 
     }
-
 }
+
+
