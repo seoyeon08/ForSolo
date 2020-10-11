@@ -29,14 +29,11 @@ public class ManagementData {
         this.userData = userData;
     }
 
-//    // UserData 반환
-//    public UserData getUserData() {
-//        return userData;
-//    }
 
     // 디비에 유저 등록
+    // 싱글톤 객체(앱상에서 전반적인 데이터 관리)
     public static void registerUser(final FirebaseUser user) {
-        ManagementData mData;   // 싱글톤 객체(앱상에서 전반적인 데이터 관리)
+        ManagementData mData;
 
         // 싱글톤 객체에 유저 정보 등록
         mData = ManagementData.getInstance();

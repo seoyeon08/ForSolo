@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.forsolo">
 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.CAMERA" />
@@ -35,10 +36,8 @@
         <activity android:name=".ReportActivity"/>
 
         <!--        친구 찾기-->
-        <activity android:name=".findmate.activity.WritePostActivity" />
         <activity android:name=".findmate.activity.FindMateActivity" />
         <activity android:name=".findmate.activity.ProfileActivity"/>
-        <activity android:name=".findmate.activity.SbordActivity" />
 
         <!--        채팅-->
         <activity android:name=".chat.ChatActivity"/>
@@ -54,8 +53,9 @@
         <!--갤러리!-->
         <activity android:name=".findmate.GalleryActivity"/>
 
-
-        <!--        게시판-->
+        <!--게시판-->
+        <activity android:name=".findmate.activity.WritePostActivity" />
+        <activity android:name=".findmate.activity.SbordActivity" />
 
     </application>
 

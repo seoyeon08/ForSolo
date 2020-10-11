@@ -1,37 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@drawable/chatbackground"
-    android:weightSum="1">
+    tools:context=".chat.ChatActivity"
+   >
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/my_recycler_view"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:scrollbars="vertical"
-        android:layout_weight="1"/>
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:maxLength="10"
+        android:layout_centerInParent="true"
+        android:hint="Input nick name"
+        android:inputType="text"
+        android:gravity="center"
+        android:padding="8dp"
+        android:background="@drawable/back_et_name"
+        android:textCursorDrawable="@drawable/et_name_cursor"/>
+    <!--    ems최소 글자로-->
+    <!--    android:textCursorDrawable="@null" 이면 글씨 색과 같은 커서색-->
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_profile"
+        android:layout_width="80dp"
         android:layout_height="80dp"
-        android:orientation="horizontal">
-        <EditText
-            android:id="@+id/EditText_chat"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-        </EditText>
-        <Button
-            android:id="@+id/Button_send"
-            android:text="전송"
-            android:layout_width="80dp"
-            android:layout_height="match_parent">
-        </Button>
+        android:layout_centerInParent="true"
+        android:layout_above="@id/et_name"
+        android:layout_marginBottom="16dp"
+        android:src="@mipmap/ic_launcher"
+        android:clickable="true"
+        android:onClick="clickImage"/>
 
-    </LinearLayout>
-
-</LinearLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/profile_image"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        ></ImageView>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="입장"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:background="@drawable/btn_blue"
+        android:onClick="clickBtn"/>
+</RelativeLayout>

@@ -76,9 +76,9 @@ public class ProfileFragment extends Fragment {
                                         Glide.with(getActivity()).load(document.getData().get("photoUrl")).centerCrop().override(500).into(profileImageView);
                                     }
                                     nameTextView.setText(document.getData().get("name").toString());
-                                    ageTextView.setText(document.getData().get("phoneNumber").toString());
-                                    majorTextView.setText(document.getData().get("birthDay").toString());
-                                    introTextView.setText(document.getData().get("address").toString());
+                                    ageTextView.setText(document.getData().get("age").toString());
+                                    majorTextView.setText(document.getData().get("major").toString());
+                                    introTextView.setText(document.getData().get("intro").toString());
                                 } else {
                                     Log.d(TAG, "No such document");
                                 }
