@@ -69,7 +69,7 @@ public class ListFragment extends Fragment {
 
         recyclerView.setLayoutManager(layoutManager);
 
-        bordAdapter = new BordAdapter();
+        //bordAdapter = new BordAdapter();
 
 
         recyclerView.setAdapter(bordAdapter);
@@ -84,14 +84,14 @@ public class ListFragment extends Fragment {
 
     public void setData() {
 
-        bordAdapter.setContextAdapter(getActivity());
+       // bordAdapter.setContextAdapter(getActivity());
 
         for (int i = 0; i < titleList.size(); i++) {
 
-            BordInfo data = new BordInfo(titleList.get(i), timeList.get(i), placeList.get(i),
-                    memberCountList.get(i), contentsList.get(i), emailList.get(i), dateList.get(i));
+           // BordInfo data = new BordInfo(titleList.get(i), timeList.get(i), placeList.get(i),
+                 //  memberCountList.get(i), contentsList.get(i), emailList.get(i), dateList.get(i));
 
-            bordAdapter.addData(data);
+           // bordAdapter.addData(data);
         }
 
         bordAdapter.notifyDataSetChanged();
