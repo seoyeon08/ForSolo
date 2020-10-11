@@ -77,7 +77,7 @@ public class LoginActivity extends AppCompatActivity {
                 if (user != null) {
                     ManagementData mData;
 
-                    Toast.makeText(LoginActivity.this, "User logged in ", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginActivity.this, "로그인에 성공하였습니다.", Toast.LENGTH_SHORT).show();
 
                     // 앱 상에서 전반적인 유저 데이터 저장
                     mData = ManagementData.getInstance();
@@ -86,7 +86,7 @@ public class LoginActivity extends AppCompatActivity {
                     Intent I = new Intent(LoginActivity.this, MainActivity.class);
                     startActivity(I);
                 } else {
-                    Toast.makeText(LoginActivity.this, "Login to continue", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginActivity.this, "로그인 후 이용해주세요", Toast.LENGTH_SHORT).show();
                 }
             }
         };
@@ -98,10 +98,10 @@ public class LoginActivity extends AppCompatActivity {
                 String userPaswd = logInpasswd.getText().toString();
 
                 if (userEmail.isEmpty()) {
-                    loginEmailId.setError("Provide your Email first!");
+                    loginEmailId.setError("이메일을 입력하세요!");
                     loginEmailId.requestFocus();
                 } else if (userPaswd.isEmpty()) {
-                    logInpasswd.setError("Enter Password!");
+                    logInpasswd.setError("비밀번호를 입력하세요!");
                     logInpasswd.requestFocus();
                 } else if (userEmail.isEmpty() && userPaswd.isEmpty()) {
                     Toast.makeText(LoginActivity.this, "Fields Empty!", Toast.LENGTH_SHORT).show();
