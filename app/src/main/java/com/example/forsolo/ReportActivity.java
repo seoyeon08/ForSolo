@@ -12,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class ReportActivity extends AppCompatActivity{
 
     private Button btn_backLogin;
-    private ImageView btn_kakao;
+    private ImageView btn_kakao;    //오픈채팅으로 연결하는 그림 변수
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +33,7 @@ public class ReportActivity extends AppCompatActivity{
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://open.kakao.com/o/g4h4n5Ac"));
+                //카카오톡 오픈채팅으로 연결
                 startActivity(intent);  //액티비티 이동
             }
         });

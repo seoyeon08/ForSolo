@@ -9,9 +9,10 @@ public class BordInfo {
     private String email;
     private String date;
     private String sc;
+    private String userName;
+    private String userProfileUrl;
 
-
-    public BordInfo(String title, String time, String place, String person, String contents, String email, String date, String sc) {
+    public BordInfo(String title, String time, String place, String person, String contents, String email, String date, String sc, String userName, String userProfileUrl) {
         this.title = title;
         this.time = time;
         this.place = place;
@@ -20,6 +21,8 @@ public class BordInfo {
         this.email = email;
         this.date = date;
         this.sc = sc;
+        this.userName = userName;
+        this.userProfileUrl = userProfileUrl;
     }
 
     public BordInfo(){}
@@ -53,4 +56,8 @@ public class BordInfo {
     }
 
     public String getSC() {return this.sc;}
+
+    public String getUserName(){return this.userName;}
+
+    public String getUserProfileUrl() {return this.userProfileUrl;}
 }

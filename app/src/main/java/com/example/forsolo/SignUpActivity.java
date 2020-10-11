@@ -92,21 +92,25 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
                                             });
 
                                     //myRef.child(Constant.DB_CHILD_USER).child(userID).setValue(userInfor);
-                                    toastMessage("New Information has been saved.");
+                                    toastMessage("회원가입이 완료되었습니다.");
 
                                     id.setText("");
                                     name.setText("");
                                     emailId.setText("");
                                     passwd.setText("");
+
+                                    finish();
+                                    onBackPressed();
+
                                 }
                             }
                         });
             } else if (emailID.isEmpty()) {
-                emailId.setError("Provide your Email first!");
+                emailId.setError("E-Mail을 입력해주세요!");
                 emailId.requestFocus();
 
             } else if (paswd.isEmpty()) {
-                passwd.setError("Set your password");
+                passwd.setError("Password를 입력해주세요!");
                 passwd.requestFocus();
 
             } else if (emailID.isEmpty() && paswd.isEmpty()) {
