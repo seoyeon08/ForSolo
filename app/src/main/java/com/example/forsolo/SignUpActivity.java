@@ -98,6 +98,10 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
                                     name.setText("");
                                     emailId.setText("");
                                     passwd.setText("");
+
+                                    finish();
+                                    onBackPressed();
+
                                 }
                             }
                         });

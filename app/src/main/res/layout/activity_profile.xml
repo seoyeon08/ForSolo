@@ -7,39 +7,39 @@
     android:orientation="vertical"
     android:paddingTop="20dp"
     tools:context=".MainActivity">
+
     <LinearLayout
-        android:paddingLeft="20dp"
-        android:paddingRight="16dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="16dp">
+
         <ImageView
             android:id="@+id/profileImageView"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginRight="25dp"
-            android:scaleType="fitCenter"
             android:background="@null"
-            android:src="@drawable/user"
-            ></ImageView>
+            android:scaleType="fitCenter"
+            android:src="@drawable/user"></ImageView>
 
         <EditText
             android:id="@+id/profile_intro"
             android:layout_width="240dp"
             android:layout_height="100dp"
-            android:hint="한줄소개를 입력하세요."
-            android:paddingTop="15dp"
+            android:background="@drawable/profile_intro"
             android:gravity="center_horizontal"
-            android:background="@drawable/profile_intro"/>
+            android:hint="한줄소개를 입력하세요."
+            android:paddingTop="15dp" />
 
     </LinearLayout>
 
     <RelativeLayout
         android:layout_width="115dp"
         android:layout_height="30dp"
-        android:layout_marginTop="5dp"
         android:layout_marginLeft="15dp"
-        >
+        android:layout_marginTop="5dp">
 
         <Button
             android:id="@+id/btn_capture"
@@ -51,14 +51,14 @@
             android:textColor="#ffffff"
             android:textSize="15dp"></Button>
     </RelativeLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="535dp"
         android:orientation="vertical"
         android:paddingLeft="20dp"
-        android:paddingRight="16dp"
         android:paddingTop="30dp"
-        >
+        android:paddingRight="16dp">
 
         <TextView
             android:layout_width="match_parent"
@@ -86,8 +86,8 @@
             android:id="@+id/ageEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="나이를 입력해주세요."
-            />
+            android:hint="나이를 입력해주세요." />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -95,12 +95,13 @@
             android:text="학과"
             android:textColor="#000000"
             android:textSize="20dp"></TextView>
+
         <EditText
             android:id="@+id/majorEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="학과를 입력해주세요."
-            />
+            android:hint="학과를 입력해주세요." />
+
         <RadioGroup
             android:id="@+id/add_sex"
             android:layout_width="wrap_content"
@@ -120,8 +121,7 @@
                 android:layout_height="wrap_content"
                 android:text="여자"
                 android:textColor="#000000"
-                android:textSize="20dp"
-                ></RadioButton>
+                android:textSize="20dp"></RadioButton>
         </RadioGroup>
 
         <ImageView
@@ -133,56 +133,57 @@
             android:src="@drawable/profile_image"></ImageView>
 
 
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="bottom">
-        <Button
-            android:id="@+id/checkButton"
-            android:layout_width="fill_parent"
+        <RelativeLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@drawable/btn_pink"
-            android:text="저장하기"
-            android:textColor="#FFFFFF"
-            android:textSize="30dp"></Button>
-    </RelativeLayout>
+            android:gravity="bottom">
 
-    <RelativeLayout
-        android:id="@+id/buttonsBackgroundLayout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#9AC2F8"
-        android:visibility="gone">
+            <Button
+                android:id="@+id/checkButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/btn_pink"
+                android:text="저장하기"
+                android:textColor="#FFFFFF"
+                android:textSize="30dp"></Button>
+        </RelativeLayout>
 
-        <androidx.cardview.widget.CardView
+        <RelativeLayout
+            android:id="@+id/buttonsBackgroundLayout"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:elevation="10dp"
-            app:cardCornerRadius="15dp">
+            android:layout_height="match_parent"
+            android:background="#9AC2F8"
+            android:visibility="gone">
 
-            <LinearLayout
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:padding="5dp">
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:elevation="10dp"
+                app:cardCornerRadius="15dp">
 
-                <Button
-                    android:id="@+id/picture"
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="사진촬영" />
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="5dp">
 
-                <Button
-                    android:id="@+id/gallery"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="갤러리" />
-            </LinearLayout>
+                    <Button
+                        android:id="@+id/picture"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="사진촬영" />
 
-        </androidx.cardview.widget.CardView>
+                    <Button
+                        android:id="@+id/gallery"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="갤러리" />
+                </LinearLayout>
 
-    </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
     </LinearLayout>
 </LinearLayout>
