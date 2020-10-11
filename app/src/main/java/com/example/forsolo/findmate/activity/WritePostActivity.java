@@ -12,11 +12,9 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.bumptech.glide.Glide;
 import com.example.forsolo.R;
 import com.example.forsolo.findmate.data.UserInfo;
 import com.example.forsolo.findmate.data.WriteInfo;
-import com.example.forsolo.findmate.fragment.ListFragment;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
@@ -26,15 +24,13 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
-import com.google.firebase.firestore.auth.User;
 
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
 import java.util.Random;
 
 public class WritePostActivity extends AppCompatActivity {
@@ -68,7 +64,7 @@ public class WritePostActivity extends AppCompatActivity {
     private FirebaseUser auth;
 
     private FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
-    private DatabaseReference databaseReference = firebaseDatabase.getReference();
+    private DatabaseReference databaseReference = firebaseDatabase.getReference("users");
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -157,7 +153,6 @@ public class WritePostActivity extends AppCompatActivity {
         Log.d("asd", sc);
 
 
-
         WriteInfo data = new WriteInfo(title, time, place, memberCount, content, email, uploadTimeText, sc, name, userProfileUrl);
 
         fireStore.collection("solo_runch").document(sc).set(data)
@@ -175,32 +170,18 @@ public class WritePostActivity extends AppCompatActivity {
 
     private void getUserProfile() {
 
-        String auth = FirebaseAuth.getInstance().getUid();
+        FirebaseUser auth = FirebaseAuth.getInstance().getCurrentUser();
+        String uid = auth.getUid();
 
+        Log.d("uid", uid);
 
-        databaseReference.child("users").orderByChild(auth).addChildEventListener(new ChildEventListener() {
+        databaseReference.child(uid).addValueEventListener(new ValueEventListener() {
             @Override
-            public void onChildAdded(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
-
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
                 UserInfo userInfo = snapshot.getValue(UserInfo.class);
-                if (userInfo != null) {
-                    name = userInfo.getUserName();
-                }
-            }
 
-            @Override
-            public void onChildChanged(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
-
-            }
-
-            @Override
-            public void onChildRemoved(@NonNull DataSnapshot snapshot) {
-
-            }
-
-            @Override
-            public void onChildMoved(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
-
+                Log.d("userInfo", userInfo.toString());
+                name = userInfo.getUser_Name();
             }
 
             @Override
