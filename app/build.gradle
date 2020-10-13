@@ -76,5 +76,8 @@ dependencies {
 
     // UI Design
     implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    //Gson
+    implementation 'com.google.code.gson:gson:2.8.6'
 }
 apply plugin: 'com.google.gms.google-services'
