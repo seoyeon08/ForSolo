@@ -12,15 +12,20 @@ import androidx.annotation.NonNull;
 import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.example.forsolo.R;
 import com.example.forsolo.findmate.activity.SbordActivity;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Locale;
+
+import de.hdodenhof.circleimageview.CircleImageView;
 
 public class BordAdapter extends RecyclerView.Adapter<BordAdapter.itemViewHolder> {
 
     private ArrayList<BordInfo> listData = new ArrayList<>();
+    private ArrayList<BordInfo> arrayList;
     private Context contexts;
 
 
@@ -28,12 +33,37 @@ public class BordAdapter extends RecyclerView.Adapter<BordAdapter.itemViewHolder
         listData.add(data);
     }
 
-    public BordAdapter(Context context){
+    public BordAdapter(Context context) {
         contexts = context;
     }
 
-    public void refresh(){
+    public void refresh() {
         listData.clear();
+    }
+
+    public void setList() {
+        arrayList = new ArrayList<>();
+        arrayList.addAll(listData);
+    }
+
+    public void filter(String searchText) {
+        searchText = searchText.toLowerCase(Locale.getDefault());
+        listData.clear();
+        if (searchText.length() == 0) {
+            if (arrayList != null) {
+                listData.addAll(arrayList);
+            }
+        } else {
+            if (arrayList != null) {
+                for (BordInfo bordInfo : arrayList) {
+                    String name = bordInfo.getTitle();
+                    if (name.toLowerCase().contains(searchText)) {
+                        listData.add(bordInfo);
+                    }
+                }
+            }
+        }
+        notifyDataSetChanged();
     }
 
     @NonNull
@@ -58,12 +88,13 @@ public class BordAdapter extends RecyclerView.Adapter<BordAdapter.itemViewHolder
     class itemViewHolder extends RecyclerView.ViewHolder {
 
 
-        String title, time, place, memberCount, content, uploadTimeText, email, sc = null;
+        String title, time, place, memberCount, content, uploadTimeText, email, sc, userName, userProfileUrl = null;
 
         private TextView titleTextView;
         private TextView subjectTextView;
         private TextView timeTextView;
         private View itemLayout;
+        private CircleImageView circleImageView;
 
 
         itemViewHolder(View itemView) {
@@ -73,6 +104,7 @@ public class BordAdapter extends RecyclerView.Adapter<BordAdapter.itemViewHolder
             subjectTextView = itemView.findViewById(R.id.bord_item_subject);
             itemLayout = itemView.findViewById(R.id.bord_item_layout);
             timeTextView = itemView.findViewById(R.id.bord_item_time);
+            circleImageView = itemView.findViewById(R.id.bord_item_Image);
 
             itemClickListener();
         }
@@ -91,6 +123,8 @@ public class BordAdapter extends RecyclerView.Adapter<BordAdapter.itemViewHolder
                     intent.putExtra("email", email);
                     intent.putExtra("uploadTimeText", uploadTimeText);
                     intent.putExtra("sc", sc);
+                    intent.putExtra("name", userName);
+                    intent.putExtra("profileUrl", userProfileUrl);
                     ContextCompat.startActivity(contexts, intent, new Bundle());
                 }
             });
@@ -109,9 +143,14 @@ public class BordAdapter extends RecyclerView.Adapter<BordAdapter.itemViewHolder
             email = data.getEmail();
             uploadTimeText = data.getDate();
             sc = data.getSC();
-
             timeTextView.setText(uploadTimeText);
 
+            userName = data.getUserName();
+            userProfileUrl = data.getUserProfileUrl();
+
+            if (userProfileUrl != null){
+                Glide.with(contexts).load(userProfileUrl).into(circleImageView);
+            }
         }
     }
 }

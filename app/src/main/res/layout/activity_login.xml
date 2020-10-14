@@ -25,7 +25,8 @@
         android:layout_gravity="center"
         android:id="@+id/main_email"
         android:background="@drawable/btn_lightgray"
-        android:hint="  E-Mail"
+        android:hint="E-Mail"
+        android:paddingStart="14dp"
         android:layout_marginBottom="20dp"
         />
 
@@ -37,8 +38,9 @@
         android:layout_height="50dp"
         android:layout_gravity="center"
         android:layout_marginBottom="20dp"
+        android:paddingStart="14dp"
         android:background="@drawable/btn_lightgray"
-        android:hint=" Password" />
+        android:hint="Password" />
 
     <RelativeLayout
         android:id="@+id/RelativeLayout_login"

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ffffff">
@@ -20,6 +21,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <EditText
+        android:id="@+id/titleEditText"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/contentLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/contentLayout"
@@ -34,6 +44,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/s_title_textView">
+
+        <ImageView
+            android:id="@+id/cute"
+            android:layout_width="148dp"
+            android:layout_height="90dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/write_sprout"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/userProfile_s"
@@ -54,7 +74,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginTop="45dp"
-            android:text="이름"
+            android:text="익명"
             android:textColor="@android:color/black"
             android:textSize="7pt"
             android:textStyle="bold"
@@ -73,6 +93,42 @@
             app:layout_constraintTop_toBottomOf="@+id/userName_s" />
 
 
+        <Button
+            android:id="@+id/update_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="10dp"
+            android:background="@android:color/transparent"
+            android:text="수정 완료"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/modify_btn"
+            android:layout_width="55dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/transparent"
+            android:text="수정"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/justLine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/del_btn" />
+
+        <Button
+            android:id="@+id/del_btn"
+            android:layout_width="55dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/transparent"
+            android:text="삭제"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/justLine"
+            app:layout_constraintEnd_toEndOf="parent" />
+
         <LinearLayout
             android:id="@+id/justLine"
             android:layout_width="match_parent"
@@ -81,6 +137,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginEnd="20dp"
             android:background="@android:color/darker_gray"
+            android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/userProfile_s" />
@@ -123,15 +180,55 @@
 
         <TextView
             android:id="@+id/contentText"
-            android:layout_width="wrap_content"
+            android:layout_width="320dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
+            android:layout_marginStart="6dp"
             android:layout_marginTop="20dp"
             android:text="내용 : "
             android:textColor="@color/colorBlack"
             android:textSize="8pt"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/memberCountText" />
+
+        <EditText
+            android:id="@+id/placeEditText"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:visibility="invisible"
+            app:layout_constraintStart_toEndOf="@id/placeText"
+            app:layout_constraintTop_toBottomOf="@id/justLine" />
+
+        <EditText
+            android:id="@+id/timeEditText"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:visibility="invisible"
+            app:layout_constraintStart_toEndOf="@+id/timeText"
+            app:layout_constraintTop_toBottomOf="@+id/placeEditText" />
+
+        <EditText
+            android:id="@+id/memberCountEditText"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:visibility="invisible"
+            app:layout_constraintStart_toEndOf="@+id/memberCountText"
+            app:layout_constraintTop_toBottomOf="@+id/timeEditText" />
+
+        <EditText
+            android:id="@+id/contentEditText"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="40dp"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/memberCountEditText" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

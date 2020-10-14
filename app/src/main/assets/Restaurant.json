@@ -1,0 +1,2633 @@
+{
+  "info" : [
+    {
+      "BIZPLC_NM": "(BHC)비에이치씨역북점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 역북동 377-8번지 1층일부 ",
+      "REFINE_WGS84_LAT": "37.2390560357",
+      "REFINE_WGS84_LOGT": "127.1905753166"
+    },
+    {
+      "BIZPLC_NM": "(주)명지푸드항아리보쌈",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 역북동 605-1번지 외 2필지",
+      "REFINE_WGS84_LAT": "37.2268597",
+      "REFINE_WGS84_LOGT": "127.1873259"
+    },
+    {
+      "BIZPLC_NM": "153포인츠부대찌개 명지대점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 역북동 598-3번지 ",
+      "REFINE_WGS84_LAT": "37.2291378",
+      "REFINE_WGS84_LOGT": "127.1882667"
+    },
+    {
+      "BIZPLC_NM": "1943용인역북점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 15-15, 골든프라자 2층 203,204,205호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2312757659",
+      "REFINE_WGS84_LOGT": "127.1867065968"
+    },
+    {
+      "BIZPLC_NM": "249커피(coffee)",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 23-5 (역북동, 1층)",
+      "REFINE_WGS84_LAT": "37.2297706",
+      "REFINE_WGS84_LOGT": "127.1869611"
+    },
+    {
+      "BIZPLC_NM": "2도비어역북점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-4, 102호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2309539732",
+      "REFINE_WGS84_LOGT": "127.1877337821"
+    },
+    {
+      "BIZPLC_NM": "4326함바그",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로16번길 9-11, YB테라스 1층 121호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2332483906",
+      "REFINE_WGS84_LOGT": "127.1871048630"
+    },
+    {
+      "BIZPLC_NM": "60계용인역북점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 13, 연세프라자 1층 102호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2323309634",
+      "REFINE_WGS84_LOGT": "127.1869164240"
+    },
+    {
+      "BIZPLC_NM": "88포차",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 금학로 245, 1층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2380542",
+      "REFINE_WGS84_LOGT": "127.1906777"
+    },
+    {
+      "BIZPLC_NM": "달밤",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 23-17, 1층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2295744235",
+      "REFINE_WGS84_LOGT": "127.1875816502"
+    },
+    {
+      "BIZPLC_NM": "肉꼬막포차",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 10, 3층 302호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2326892787",
+      "REFINE_WGS84_LOGT": "127.1874077587"
+    },
+    {
+      "BIZPLC_NM": "가도상회",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로 24, 용인역북THE럭스나인 1층 124호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2338867863",
+      "REFINE_WGS84_LOGT": "127.1879628538"
+    },
+    {
+      "BIZPLC_NM": "가라와라국물닭발",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 15-17, 골든프라자2 2층 204호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2309695",
+      "REFINE_WGS84_LOGT": "127.1866035"
+    },
+    {
+      "BIZPLC_NM": "가마치통닭역북점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 낙은로 38, SK빌딩 1층 일부 (역북동)",
+      "REFINE_WGS84_LAT": "37.2407178",
+      "REFINE_WGS84_LOGT": "127.1984267"
+    },
+    {
+      "BIZPLC_NM": "가온누리",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로1299번길 14 (역북동, 2층일부)",
+      "REFINE_WGS84_LAT": "37.2372989",
+      "REFINE_WGS84_LOGT": "127.1897404"
+    },
+    {
+      "BIZPLC_NM": "가장맛있는족발",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-14, 2층 202호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2322167274",
+      "REFINE_WGS84_LOGT": "127.1880329538"
+    },
+    {
+      "BIZPLC_NM": "갈매기사랑",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 낙은로 117, 1층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2451870087",
+      "REFINE_WGS84_LOGT": "127.1911252892"
+    },
+    {
+      "BIZPLC_NM": "갈비찜클라쓰",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-11, 유니버스트윈2 103호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2315566878",
+      "REFINE_WGS84_LOGT": "127.1872690950"
+    },
+    {
+      "BIZPLC_NM": "갈풍집",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로 21, 1층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2339662",
+      "REFINE_WGS84_LOGT": "127.1889885"
+    },
+    {
+      "BIZPLC_NM": "강남대패n샤브",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 13, 2층 204,205호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2322485981",
+      "REFINE_WGS84_LOGT": "127.1868770572"
+    },
+    {
+      "BIZPLC_NM": "강릉교동짬뽕",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로1299번길 10, 1층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2370074534",
+      "REFINE_WGS84_LOGT": "127.1896592201"
+    },
+    {
+      "BIZPLC_NM": "강스시",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 9, 308,309호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2322209188",
+      "REFINE_WGS84_LOGT": "127.1872939308"
+    },
+    {
+      "BIZPLC_NM": "강씨가문의족발",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로 1216, 용인센트럴 코업 1층 106호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2374143780",
+      "REFINE_WGS84_LOGT": "127.1799843907"
+    },
+    {
+      "BIZPLC_NM": "강한상회",
+      "LICENSG_DE": "20180704",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 금학로241번길 8, 1층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2385768893",
+      "REFINE_WGS84_LOGT": "127.1906790265"
+    },
+    {
+      "BIZPLC_NM": "개미집",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로 31, 101,102,103호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2331644",
+      "REFINE_WGS84_LOGT": "127.1889302"
+    },
+    {
+      "BIZPLC_NM": "갯마을조개구이",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로 111, 1층 일부 (역북동)",
+      "REFINE_WGS84_LAT": "37.2261647134",
+      "REFINE_WGS84_LOGT": "127.1881017318"
+    },
+    {
+      "BIZPLC_NM": "겅겅위화이",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 33-17, 1층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2293562748",
+      "REFINE_WGS84_LOGT": "127.1868812984"
+    },
+    {
+      "BIZPLC_NM": "경성술집",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-4, 2층 204, 205호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2309539732",
+      "REFINE_WGS84_LOGT": "127.1877337821"
+    },
+    {
+      "BIZPLC_NM": "경자국밥",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 낙은로 120, 1층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2455401383",
+      "REFINE_WGS84_LOGT": "127.1917327139"
+    },
+    {
+      "BIZPLC_NM": "계탄집",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로16번길 9-23 (역북동, 1층 일부, 110호)",
+      "REFINE_WGS84_LAT": "37.2329945",
+      "REFINE_WGS84_LOGT": "127.1880733"
+    },
+    {
+      "BIZPLC_NM": "고기원칙",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-12, 1층 101, 102호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2317695",
+      "REFINE_WGS84_LOGT": "127.1878449"
+    },
+    {
+      "BIZPLC_NM": "고래포차",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 15-15, 2층 201호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2311857",
+      "REFINE_WGS84_LOGT": "127.1866603"
+    },
+    {
+      "BIZPLC_NM": "고봉민김밥人용인역북점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 4 (역북동, 1층일부, 111호)",
+      "REFINE_WGS84_LAT": "37.2326342321",
+      "REFINE_WGS84_LOGT": "127.1880386735"
+    },
+    {
+      "BIZPLC_NM": "고양이부엌",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 15-7, 리치타워 101호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2318883",
+      "REFINE_WGS84_LOGT": "127.1867973"
+    },
+    {
+      "BIZPLC_NM": "고칸",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-3, 1층 108호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2310227",
+      "REFINE_WGS84_LOGT": "127.1871557"
+    },
+    {
+      "BIZPLC_NM": "고피자용인역북점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로16번길 9-23, 1층 103호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2330643347",
+      "REFINE_WGS84_LOGT": "127.1881421958"
+    },
+    {
+      "BIZPLC_NM": "곤드레찜드레",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로 31, 104, 105호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2331644",
+      "REFINE_WGS84_LOGT": "127.1889302"
+    },
+    {
+      "BIZPLC_NM": "골목식당",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 금학로265번길 14-1 (역북동)",
+      "REFINE_WGS84_LAT": "37.2390227",
+      "REFINE_WGS84_LOGT": "127.1935989"
+    },
+    {
+      "BIZPLC_NM": "곱창고명지대점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-11, 유니버스트윈 2동 106호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2315566878",
+      "REFINE_WGS84_LOGT": "127.1872690950"
+    },
+    {
+      "BIZPLC_NM": "곱창의신·마약곱창",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로1299번길 5 (역북동)",
+      "REFINE_WGS84_LAT": "37.2367681711",
+      "REFINE_WGS84_LOGT": "127.1891869865"
+    },
+    {
+      "BIZPLC_NM": "곱창주점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-3, 121호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2310227",
+      "REFINE_WGS84_LOGT": "127.1871557"
+    },
+    {
+      "BIZPLC_NM": "공리",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 성산로 159, 1층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2503532659",
+      "REFINE_WGS84_LOGT": "127.1907420607"
+    },
+    {
+      "BIZPLC_NM": "공만치킨(역북점)",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-12, 용인H탑2 108호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2317695430",
+      "REFINE_WGS84_LOGT": "127.1878449931"
+    },
+    {
+      "BIZPLC_NM": "곶간채푸드",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 학산로 3-2 (역북동, 1층 2호)",
+      "REFINE_WGS84_LAT": "37.2391859089",
+      "REFINE_WGS84_LOGT": "127.1989967232"
+    },
+    {
+      "BIZPLC_NM": "교실포차",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 15-17, 골든프라자2 1층 111호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2310322701",
+      "REFINE_WGS84_LOGT": "127.1866625118"
+    },
+    {
+      "BIZPLC_NM": "국수나무역북점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 9, 지석프라자 1층 102호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2322209",
+      "REFINE_WGS84_LOGT": "127.1872939"
+    },
+    {
+      "BIZPLC_NM": "굽네치킨(용인역북점)",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 35-16, 상가동 지1층 13호 (역북동, 역북지웰푸르지오)",
+      "REFINE_WGS84_LAT": "37.2307761983",
+      "REFINE_WGS84_LOGT": "127.1834366010"
+    },
+    {
+      "BIZPLC_NM": "궁",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 성산로 96, 1층 일부 (역북동)",
+      "REFINE_WGS84_LAT": "37.2442720648",
+      "REFINE_WGS84_LOGT": "127.1902648779"
+    },
+    {
+      "BIZPLC_NM": "귀래",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 15-9, 유니버스트윈1 106호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2316274587",
+      "REFINE_WGS84_LOGT": "127.1867615078"
+    },
+    {
+      "BIZPLC_NM": "그레인스퀘어",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 14-2, 1층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2307698213",
+      "REFINE_WGS84_LOGT": "127.1862690396"
+    },
+    {
+      "BIZPLC_NM": "기장산꼼장어",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로1299번길 6, 1층 101호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2366325",
+      "REFINE_WGS84_LOGT": "127.1895134"
+    },
+    {
+      "BIZPLC_NM": "길용각",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 성산로 8, 1층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2375481",
+      "REFINE_WGS84_LOGT": "127.1859320"
+    },
+    {
+      "BIZPLC_NM": "김가네김밥",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-14, 1층 110호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2321297",
+      "REFINE_WGS84_LOGT": "127.1879585"
+    },
+    {
+      "BIZPLC_NM": "김남희한우",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 용인대학로 98, 2층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2307985821",
+      "REFINE_WGS84_LOGT": "127.1735641433"
+    },
+    {
+      "BIZPLC_NM": "김스시",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로16번길 26, 상가119동 지면과맞닿은 지1층 123호 (역북동, 역북동원로얄듀크)",
+      "REFINE_WGS84_LAT": "37.2356373",
+      "REFINE_WGS84_LOGT": "127.1862992"
+    },
+    {
+      "BIZPLC_NM": "김씨네푸드",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로1343번길 5, 104,105호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2357935513",
+      "REFINE_WGS84_LOGT": "127.1942751973"
+    },
+    {
+      "BIZPLC_NM": "김이네행복한역북동족발집",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로1331번길 7, 1층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2361589",
+      "REFINE_WGS84_LOGT": "127.1926564"
+    },
+    {
+      "BIZPLC_NM": "김한정의격포소곱창",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 8, 111호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2326617734",
+      "REFINE_WGS84_LOGT": "127.1877119476"
+    },
+    {
+      "BIZPLC_NM": "깐부치킨용인역북점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로16번길 9-11, YB테라스 116,117호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2332688899",
+      "REFINE_WGS84_LOGT": "127.1870929211"
+    },
+    {
+      "BIZPLC_NM": "깡통집",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 15-9, 유니버스트윈1 107호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2316274587",
+      "REFINE_WGS84_LOGT": "127.1867615078"
+    },
+    {
+      "BIZPLC_NM": "꼬꼬아찌역북명지대점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-12, 1층 104호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2317695",
+      "REFINE_WGS84_LOGT": "127.1878449"
+    },
+    {
+      "BIZPLC_NM": "꼬지사께용인역북점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 15-9, 유니버스트윈1 108호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2316274587",
+      "REFINE_WGS84_LOGT": "127.1867615078"
+    },
+    {
+      "BIZPLC_NM": "꼬치만개",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-13, 201호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2318244",
+      "REFINE_WGS84_LOGT": "127.1872929"
+    },
+    {
+      "BIZPLC_NM": "꽃피는화덕피자D485(용인역북점)",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 8, 201,202호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2326617734",
+      "REFINE_WGS84_LOGT": "127.1877119476"
+    },
+    {
+      "BIZPLC_NM": "나무이야기",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로 1216, 1층 117~124호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2374143780",
+      "REFINE_WGS84_LOGT": "127.1799843907"
+    },
+    {
+      "BIZPLC_NM": "나성켄터키(역북점)",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로16번길 9-11, YB테라스 1층 115호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2332483906",
+      "REFINE_WGS84_LOGT": "127.1871048630"
+    },
+    {
+      "BIZPLC_NM": "남자피자 용인처인점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 37-12, 1층 일부 (역북동)",
+      "REFINE_WGS84_LAT": "37.2288523973",
+      "REFINE_WGS84_LOGT": "127.1864293475"
+    },
+    {
+      "BIZPLC_NM": "낭만오뎅",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-3, 2층 202호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2310227",
+      "REFINE_WGS84_LOGT": "127.1871557"
+    },
+    {
+      "BIZPLC_NM": "내밥상",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 학산로 3-2, 1층 일부 (역북동)",
+      "REFINE_LOTNO_ADDR": "경기도 용인시 처인구 역북동 467-2번지 ",
+      "REFINE_WGS84_LOGT": "127.1989636"
+    },
+    {
+      "BIZPLC_NM": "넝쿨째오이소박이냉국수",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 9, 2층 204호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2322784578",
+      "REFINE_WGS84_LOGT": "127.1875141269"
+    },
+    {
+      "BIZPLC_NM": "노랑통닭 역북점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 16, 1층 102호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2327440",
+      "REFINE_WGS84_LOGT": "127.1869571"
+    },
+    {
+      "BIZPLC_NM": "니꼬내꼬",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로1313번길 20-18 (역북동,1층)",
+      "REFINE_WGS84_LAT": "37.2364817530",
+      "REFINE_WGS84_LOGT": "127.1920063554"
+    },
+    {
+      "BIZPLC_NM": "다니식당",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-3, 1층 116호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2310227",
+      "REFINE_WGS84_LOGT": "127.1871557"
+    },
+    {
+      "BIZPLC_NM": "단케(DANKE)",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 성산로121번길 28, 1층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2494368",
+      "REFINE_WGS84_LOGT": "127.1890716"
+    },
+    {
+      "BIZPLC_NM": "달달하게",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로16번길 9-11, YB테라스 202호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2332483906",
+      "REFINE_WGS84_LOGT": "127.1871048630"
+    },
+    {
+      "BIZPLC_NM": "달빛맥주",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-11, 유니버스트윈2 113호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2315566878",
+      "REFINE_WGS84_LOGT": "127.1872690950"
+    },
+    {
+      "BIZPLC_NM": "닭쇼",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 낙은로 111-1 (역북동, 1층)",
+      "REFINE_WGS84_LAT": "37.2446034231",
+      "REFINE_WGS84_LOGT": "127.1915392661"
+    },
+    {
+      "BIZPLC_NM": "담벼락",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 33-11, 1층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2294108",
+      "REFINE_WGS84_LOGT": "127.1865208"
+    },
+    {
+      "BIZPLC_NM": "담어",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 용인대학로 106, 1층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2298817818",
+      "REFINE_WGS84_LOGT": "127.1728760498"
+    },
+    {
+      "BIZPLC_NM": "대가푸드",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로1331번길 7 (역북동)",
+      "REFINE_WGS84_LAT": "37.2361589712",
+      "REFINE_WGS84_LOGT": "127.1926564181"
+    },
+    {
+      "BIZPLC_NM": "대동집역북점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 15-4, 1층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2304291110",
+      "REFINE_WGS84_LOGT": "127.1869581067"
+    },
+    {
+      "BIZPLC_NM": "대명닭집",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 금학로265번길 4 (역북동, 1층일부)",
+      "REFINE_WGS84_LAT": "37.2380233",
+      "REFINE_WGS84_LOGT": "127.1931569"
+    },
+    {
+      "BIZPLC_NM": "대박집",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 23-31, 1층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2289521638",
+      "REFINE_WGS84_LOGT": "127.1874714892"
+    },
+    {
+      "BIZPLC_NM": "대원생고기전문점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 용문로 82 (역북동,(지층,1층,2층))",
+      "REFINE_WGS84_LAT": "37.2366330",
+      "REFINE_WGS84_LOGT": "127.1948213"
+    },
+    {
+      "BIZPLC_NM": "더가맥집",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 16, 파스텔시티 302호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2328269983",
+      "REFINE_WGS84_LOGT": "127.1870158335"
+    },
+    {
+      "BIZPLC_NM": "더김치찌개",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 23-6 (역북동, 1층 일부)",
+      "REFINE_WGS84_LAT": "37.2295544",
+      "REFINE_WGS84_LOGT": "127.1869381"
+    },
+    {
+      "BIZPLC_NM": "더진국용인명지대점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로16번길 9-23 (역북동, 1층, 108호)",
+      "REFINE_WGS84_LAT": "37.2329945910",
+      "REFINE_WGS84_LOGT": "127.1880733610"
+    },
+    {
+      "BIZPLC_NM": "더참오브주",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-4, 베르뉴스퀘어, 201호 일부 (역북동)",
+      "REFINE_WGS84_LAT": "37.2308867",
+      "REFINE_WGS84_LOGT": "127.1876850"
+    },
+    {
+      "BIZPLC_NM": "데이즈",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-13, 3층 304호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2319084399",
+      "REFINE_WGS84_LOGT": "127.1873465550"
+    },
+    {
+      "BIZPLC_NM": "데이즈(DAZE)",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-11, 유니버스트윈2 105호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2315566878",
+      "REFINE_WGS84_LOGT": "127.1872690950"
+    },
+    {
+      "BIZPLC_NM": "도원양꼬치",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-14, 201호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2321297",
+      "REFINE_WGS84_LOGT": "127.1879585"
+    },
+    {
+      "BIZPLC_NM": "도쿄술집&호박치킨&러키떡볶이",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-12, 2층 205,206호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2317695430",
+      "REFINE_WGS84_LOGT": "127.1878449931"
+    },
+    {
+      "BIZPLC_NM": "독립기념관",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 15-7, 2층 206호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2318883088",
+      "REFINE_WGS84_LOGT": "127.1867973015"
+    },
+    {
+      "BIZPLC_NM": "돈까스광장",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-10, 1층 111호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2315533",
+      "REFINE_WGS84_LOGT": "127.1878219"
+    },
+    {
+      "BIZPLC_NM": "돈까스짱",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 낙은로 60, 120동 104호 (역북동, 역북1단지 우남퍼스트빌)",
+      "REFINE_WGS84_LAT": "37.2422550913",
+      "REFINE_WGS84_LOGT": "127.1971918241"
+    },
+    {
+      "BIZPLC_NM": "돈방석",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로1331번길 11 (역북동,(1층))",
+      "REFINE_WGS84_LAT": "37.2364919",
+      "REFINE_WGS84_LOGT": "127.1929051"
+    },
+    {
+      "BIZPLC_NM": "돈암동그집",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로1331번길 7, 로얄프라자 1층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2361589712",
+      "REFINE_WGS84_LOGT": "127.1926564181"
+    },
+    {
+      "BIZPLC_NM": "돈코복코",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로 113 (역북동,지1층)",
+      "REFINE_WGS84_LAT": "37.2261371181",
+      "REFINE_WGS84_LOGT": "127.1884622327"
+    },
+    {
+      "BIZPLC_NM": "돈호원",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 금학로235번길 10 (역북동)",
+      "REFINE_WGS84_LAT": "37.2390459954",
+      "REFINE_WGS84_LOGT": "127.1903195602"
+    },
+    {
+      "BIZPLC_NM": "돌빙커피본사직영점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로16번길 26, B102,B103호 (역북동, 역북동원로얄듀크)",
+      "REFINE_WGS84_LAT": "37.2356373",
+      "REFINE_WGS84_LOGT": "127.1862992"
+    },
+    {
+      "BIZPLC_NM": "돌체(Dolce)",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-13, 102호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2318244658",
+      "REFINE_WGS84_LOGT": "127.1872929653"
+    },
+    {
+      "BIZPLC_NM": "동경에서먹었던규동 역북점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 8, 1층 102호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2326617734",
+      "REFINE_WGS84_LOGT": "127.1877119476"
+    },
+    {
+      "BIZPLC_NM": "동신참치",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 10, 301호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2326892787",
+      "REFINE_WGS84_LOGT": "127.1874077587"
+    },
+    {
+      "BIZPLC_NM": "동태랑갑오징어",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 15-7, 106~107호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2318883088",
+      "REFINE_WGS84_LOGT": "127.1867973015"
+    },
+    {
+      "BIZPLC_NM": "돼지나라",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 용문로 30 (역북동)",
+      "REFINE_WGS84_LAT": "37.2378853",
+      "REFINE_WGS84_LOGT": "127.1892686"
+    },
+    {
+      "BIZPLC_NM": "두둥실",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 15-17, 골든프라자2 108호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2310322701",
+      "REFINE_WGS84_LOGT": "127.1866625118"
+    },
+    {
+      "BIZPLC_NM": "두마리치킨마당(역북점)",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로1281번길 10-18, 101호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2371026135",
+      "REFINE_WGS84_LOGT": "127.1885116457"
+    },
+    {
+      "BIZPLC_NM": "두찜(용인명지대점)",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로1281번길 6-15, 1층 일부 (역북동)",
+      "REFINE_WGS84_LAT": "37.2372202237",
+      "REFINE_WGS84_LOGT": "127.1882076599"
+    },
+    {
+      "BIZPLC_NM": "둠벙",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로1299번길 9 (역북동)",
+      "REFINE_WGS84_LAT": "37.2369663",
+      "REFINE_WGS84_LOGT": "127.1892325"
+    },
+    {
+      "BIZPLC_NM": "둥이네떡.김",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 낙은로 60, 120동 1층 101호 (역북동, 역북1단지 우남퍼스트빌)",
+      "REFINE_WGS84_LAT": "37.2422550913",
+      "REFINE_WGS84_LOGT": "127.1971918241"
+    },
+    {
+      "BIZPLC_NM": "드래곤짬뽕Z",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 13, 연세프라자 2층 201호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2322485",
+      "REFINE_WGS84_LOGT": "127.1868770"
+    },
+    {
+      "BIZPLC_NM": "드렁큰프로그(Drunken Frog)",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-3, J1주차타워 113호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2311147665",
+      "REFINE_WGS84_LOGT": "127.1871807350"
+    },
+    {
+      "BIZPLC_NM": "든든",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 15-15, 1층 109호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2311857",
+      "REFINE_WGS84_LOGT": "127.1866603"
+    },
+    {
+      "BIZPLC_NM": "등촌샤브칼국수",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 9, 지석프라자 202-1,203호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2322784578",
+      "REFINE_WGS84_LOGT": "127.1875141269"
+    },
+    {
+      "BIZPLC_NM": "디델리",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 4, 1층 108호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2326342",
+      "REFINE_WGS84_LOGT": "127.1880386"
+    },
+    {
+      "BIZPLC_NM": "딜리삼겹,닭식탕",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로1331번길 10-18, 1층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2361261061",
+      "REFINE_WGS84_LOGT": "127.1939018160"
+    },
+    {
+      "BIZPLC_NM": "따뜻한밥상",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로1353번길 17, 1층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2364155569",
+      "REFINE_WGS84_LOGT": "127.1955758081"
+    },
+    {
+      "BIZPLC_NM": "땅땅치킨역북점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 금학로 247, 1층일부 (역북동)",
+      "REFINE_WGS84_LAT": "37.2379908095",
+      "REFINE_WGS84_LOGT": "127.1909367719"
+    },
+    {
+      "BIZPLC_NM": "땡초우동인(in)포차",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-3, J1주차타워 1층 114호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2310227598",
+      "REFINE_WGS84_LOGT": "127.1871557911"
+    },
+    {
+      "BIZPLC_NM": "떡이랑 뎅이랑",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로 15-6 (역북동,1층)",
+      "REFINE_WGS84_LAT": "37.2343259",
+      "REFINE_WGS84_LOGT": "127.1894288"
+    },
+    {
+      "BIZPLC_NM": "또래오래",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로 25-5 (역북동, 1층일부)",
+      "REFINE_WGS84_LAT": "37.2338578",
+      "REFINE_WGS84_LOGT": "127.1891572"
+    },
+    {
+      "BIZPLC_NM": "또오래분식",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로16번길 9-11, YB테라스 1층 113호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2332483906",
+      "REFINE_WGS84_LOGT": "127.1871048630"
+    },
+    {
+      "BIZPLC_NM": "또와또와",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 금학로265번길 8 (역북동)",
+      "REFINE_WGS84_LAT": "37.2384375",
+      "REFINE_WGS84_LOGT": "127.1932706"
+    },
+    {
+      "BIZPLC_NM": "뚱보집(용인역북점)",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 10, 1층 106호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2326892",
+      "REFINE_WGS84_LOGT": "127.1874077"
+    },
+    {
+      "BIZPLC_NM": "라무진 용인역북점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-3, 1층 115호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2310227598",
+      "REFINE_WGS84_LOGT": "127.1871557911"
+    },
+    {
+      "BIZPLC_NM": "라보(LAVO)",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 15-28, 1층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2299141",
+      "REFINE_WGS84_LOGT": "127.1873446"
+    },
+    {
+      "BIZPLC_NM": "런던펍",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로 25-7, 1층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2337137181",
+      "REFINE_WGS84_LOGT": "127.1891569333"
+    },
+    {
+      "BIZPLC_NM": "롤링파스타용인역북점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로16번길 9-23, 201호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2330643347",
+      "REFINE_WGS84_LOGT": "127.1881421958"
+    },
+    {
+      "BIZPLC_NM": "롯데시네마용인역북스위트샵",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로 1294, 5층 일부 (역북동)",
+      "REFINE_WGS84_LAT": "37.2354540483",
+      "REFINE_WGS84_LOGT": "127.1883047593"
+    },
+    {
+      "BIZPLC_NM": "루프탑1992",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-13, 7층 701호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2318244658",
+      "REFINE_WGS84_LOGT": "127.1872929653"
+    },
+    {
+      "BIZPLC_NM": "룰루커피(LoollooCoffee)",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 낙은로 47, 1층 일부 (역북동)",
+      "REFINE_WGS84_LAT": "37.2412420460",
+      "REFINE_WGS84_LOGT": "127.1974363747"
+    },
+    {
+      "BIZPLC_NM": "리춘시장 용인역북점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-4, 2층 206호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2308867801",
+      "REFINE_WGS84_LOGT": "127.1876850784"
+    },
+    {
+      "BIZPLC_NM": "마라순코우마라탕",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로 24, 용인역북THE럭스나인 1층 101호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2338867863",
+      "REFINE_WGS84_LOGT": "127.1879628538"
+    },
+    {
+      "BIZPLC_NM": "마라양꼬치",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 23-21, 1층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2293219141",
+      "REFINE_WGS84_LOGT": "127.1875376005"
+    },
+    {
+      "BIZPLC_NM": "마음둘곳",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로1313번길 6-18, 1층 일부 (역북동)",
+      "REFINE_WGS84_LAT": "37.2357985",
+      "REFINE_WGS84_LOGT": "127.1926555"
+    },
+    {
+      "BIZPLC_NM": "마일로케이크(MILO cake)",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 낙은로 26, 1층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2395461",
+      "REFINE_WGS84_LOGT": "127.1986266"
+    },
+    {
+      "BIZPLC_NM": "마틸다(MATILDA)",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로1281번길 10-18, 1층 일부 (역북동)",
+      "REFINE_WGS84_LAT": "37.2371026",
+      "REFINE_WGS84_LOGT": "127.1885116"
+    },
+    {
+      "BIZPLC_NM": "막썰어횟집",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로1331번길 7, 로얄프라자 1층 114호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2361589712",
+      "REFINE_WGS84_LOGT": "127.1926564181"
+    },
+    {
+      "BIZPLC_NM": "만나네마라탕",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 15-29, 1층 일부 (역북동)",
+      "REFINE_WGS84_LAT": "37.2296615",
+      "REFINE_WGS84_LOGT": "127.1875694"
+    },
+    {
+      "BIZPLC_NM": "만나샤브",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 낙은로 23-1, 1층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2396080151",
+      "REFINE_WGS84_LOGT": "127.1983862266"
+    },
+    {
+      "BIZPLC_NM": "만나손칼국수",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로1281번길 10-28 (역북동,, 1층)",
+      "REFINE_WGS84_LAT": "37.2370207250",
+      "REFINE_WGS84_LOGT": "127.1890185672"
+    },
+    {
+      "BIZPLC_NM": "만사성",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 용인대학로 1 (역북동)",
+      "REFINE_WGS84_LAT": "37.2376930",
+      "REFINE_WGS84_LOGT": "127.1795200"
+    },
+    {
+      "BIZPLC_NM": "말술클럽",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 금학로265번길 1-1, 1층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2379696",
+      "REFINE_WGS84_LOGT": "127.1929088"
+    },
+    {
+      "BIZPLC_NM": "맘드림찬",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 13, 1층 110호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2322485",
+      "REFINE_WGS84_LOGT": "127.1868770"
+    },
+    {
+      "BIZPLC_NM": "매일반찬",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 9, 지석프라자 1층 104호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2322784578",
+      "REFINE_WGS84_LOGT": "127.1875141269"
+    },
+    {
+      "BIZPLC_NM": "맥아BEER",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 8, 2층 205호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2327478369",
+      "REFINE_WGS84_LOGT": "127.1877602042"
+    },
+    {
+      "BIZPLC_NM": "맵도리탕(용인역북지구점)",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 15-7, 1층 108호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2319701972",
+      "REFINE_WGS84_LOGT": "127.1868390028"
+    },
+    {
+      "BIZPLC_NM": "멕시카나 역북점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 학산로 3-8, 1층 일부 (역북동)",
+      "REFINE_WGS84_LAT": "37.2393294327",
+      "REFINE_WGS84_LOGT": "127.1989077936"
+    },
+    {
+      "BIZPLC_NM": "명가옛날통닭",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 16, 1층 110호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2327440",
+      "REFINE_WGS84_LOGT": "127.1869571"
+    },
+    {
+      "BIZPLC_NM": "명가칼국수",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로 1215 (역북동)",
+      "REFINE_WGS84_LAT": "37.2382688",
+      "REFINE_WGS84_LOGT": "127.1800961"
+    },
+    {
+      "BIZPLC_NM": "명가한식",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 16, 2층 201호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2327440",
+      "REFINE_WGS84_LOGT": "127.1869571"
+    },
+    {
+      "BIZPLC_NM": "명륜진사갈비용인역북점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 4, 링크153 201호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2326342321",
+      "REFINE_WGS84_LOGT": "127.1880386735"
+    },
+    {
+      "BIZPLC_NM": "명현네간장게장칼국수",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 용인대학로 102, 1층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2301067",
+      "REFINE_WGS84_LOGT": "127.1731019"
+    },
+    {
+      "BIZPLC_NM": "모듬전",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로1331번길 12 (역북동)",
+      "REFINE_WGS84_LAT": "37.2364374",
+      "REFINE_WGS84_LOGT": "127.1931867"
+    },
+    {
+      "BIZPLC_NM": "모찌가카페본점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로16번길 25, 지하1층 108호 (역북동, 우미 린 센트럴파크)",
+      "REFINE_WGS84_LAT": "37.2339986",
+      "REFINE_WGS84_LOGT": "127.1855741"
+    },
+    {
+      "BIZPLC_NM": "무한리필쏘고기(무쏘)",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 15-7, 201,202,203호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2318883088",
+      "REFINE_WGS84_LOGT": "127.1867973015"
+    },
+    {
+      "BIZPLC_NM": "문어로용인역삼점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 성산로121번길 5, 1~2층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2469678",
+      "REFINE_WGS84_LOGT": "127.1892120"
+    },
+    {
+      "BIZPLC_NM": "미드나잇프로젝트",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 33-12, 1층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2291857",
+      "REFINE_WGS84_LOGT": "127.1864639"
+    },
+    {
+      "BIZPLC_NM": "미스터오징어역북점",
+      "LICENSG_DE": "20200207",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 15-15, 골든프라자 110,111호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2311857155",
+      "REFINE_WGS84_LOGT": "127.1866603730"
+    },
+    {
+      "BIZPLC_NM": "미식회관",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 20-4, 1층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2301053001",
+      "REFINE_WGS84_LOGT": "127.1861281384"
+    },
+    {
+      "BIZPLC_NM": "미정국수0410 용인역북점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로 24, 용인역북THE럭스나인 B101호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2338867863",
+      "REFINE_WGS84_LOGT": "127.1879628538"
+    },
+    {
+      "BIZPLC_NM": "민속촌감자탕",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 용문로 70 (역북동)",
+      "REFINE_WGS84_LAT": "37.2366354",
+      "REFINE_WGS84_LOGT": "127.1933450"
+    },
+    {
+      "BIZPLC_NM": "바른치킨용인역북점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 9, 지석프라자 1층 105호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2322209",
+      "REFINE_WGS84_LOGT": "127.1872939"
+    },
+    {
+      "BIZPLC_NM": "방이편백육분삼십역북점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 15-9, 유니버스트윈1 112호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2316274587",
+      "REFINE_WGS84_LOGT": "127.1867615078"
+    },
+    {
+      "BIZPLC_NM": "배부장찌개가",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-4, 1층 115~116호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2308867",
+      "REFINE_WGS84_LOGT": "127.1876850"
+    },
+    {
+      "BIZPLC_NM": "백리향",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 금학로 197 (역북동,외2필지)",
+      "REFINE_WGS84_LAT": "37.2389361884",
+      "REFINE_WGS84_LOGT": "127.1856311060"
+    },
+    {
+      "BIZPLC_NM": "백채김치찌개용인명지대점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 9, 지석프라자 1층 101호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2322209",
+      "REFINE_WGS84_LOGT": "127.1872939"
+    },
+    {
+      "BIZPLC_NM": "뱀비어(BAAM Beer)",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-3, 1층 117호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2310227598",
+      "REFINE_WGS84_LOGT": "127.1871557911"
+    },
+    {
+      "BIZPLC_NM": "버튼보드카페",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 8, 301호 302호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2327478369",
+      "REFINE_WGS84_LOGT": "127.1877602042"
+    },
+    {
+      "BIZPLC_NM": "벨라스벤치",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 15-13 (역북동, 지1층~1층)",
+      "REFINE_WGS84_LAT": "37.2306021916",
+      "REFINE_WGS84_LOGT": "127.1876450483"
+    },
+    {
+      "BIZPLC_NM": "보고싶다용인역북점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 15-17, 2층 203호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2309695557",
+      "REFINE_WGS84_LOGT": "127.1866035060"
+    },
+    {
+      "BIZPLC_NM": "보드빌",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 4, 4층 402호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2326342",
+      "REFINE_WGS84_LOGT": "127.1880386"
+    },
+    {
+      "BIZPLC_NM": "복돼지식당",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로1331번길 6-3, 1층 일부 (역북동)",
+      "REFINE_WGS84_LAT": "37.2359691406",
+      "REFINE_WGS84_LOGT": "127.1930390960"
+    },
+    {
+      "BIZPLC_NM": "본도시락용인역북점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-14, 1층 101호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2321297",
+      "REFINE_WGS84_LOGT": "127.1879585"
+    },
+    {
+      "BIZPLC_NM": "본죽&비빔밥카페 용인역북점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 4 (역북동, 1층일부, 103호)",
+      "REFINE_WGS84_LAT": "37.2327126723",
+      "REFINE_WGS84_LOGT": "127.1880985507"
+    },
+    {
+      "BIZPLC_NM": "봉이치킨",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로1331번길 8 (역북동)",
+      "REFINE_WGS84_LAT": "37.2361313",
+      "REFINE_WGS84_LOGT": "127.1930395"
+    },
+    {
+      "BIZPLC_NM": "봉평메밀막국수",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 성산로81번길 1, 지면과 맞닿은 지1층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2432970173",
+      "REFINE_WGS84_LOGT": "127.1888103609"
+    },
+    {
+      "BIZPLC_NM": "부라보쪽갈비",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 15-7, 1층 102,103호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2318883",
+      "REFINE_WGS84_LOGT": "127.1867973"
+    },
+    {
+      "BIZPLC_NM": "부산(釜山)양대창 역북점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 15-17, 105호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2310322701",
+      "REFINE_WGS84_LOGT": "127.1866625118"
+    },
+    {
+      "BIZPLC_NM": "부산댁",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-11, 유니버스트윈2 104호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2315566878",
+      "REFINE_WGS84_LOGT": "127.1872690950"
+    },
+    {
+      "BIZPLC_NM": "부자곱",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로 24, 109~110호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2338867863",
+      "REFINE_WGS84_LOGT": "127.1879628538"
+    },
+    {
+      "BIZPLC_NM": "부쳐부쳐",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로1299번길 10, 1층 일부 (역북동)",
+      "REFINE_WGS84_LAT": "37.2369116",
+      "REFINE_WGS84_LOGT": "127.1896268"
+    },
+    {
+      "BIZPLC_NM": "분식상회",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-3, 1층 118호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2310227598",
+      "REFINE_WGS84_LOGT": "127.1871557911"
+    },
+    {
+      "BIZPLC_NM": "불닭발땡초동대문엽기떡볶이",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로 1309, 낙원빌딩 1층 102호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2361353",
+      "REFINE_WGS84_LOGT": "127.1905152"
+    },
+    {
+      "BIZPLC_NM": "브롱스용인명지대점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 16, 2층 203호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2327440",
+      "REFINE_WGS84_LOGT": "127.1869571"
+    },
+    {
+      "BIZPLC_NM": "브이랩(V.lab)",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 23-37, 1층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2286545548",
+      "REFINE_WGS84_LOGT": "127.1874163536"
+    },
+    {
+      "BIZPLC_NM": "비비큐치킨",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로1299번길 14 (역북동, 1층일부)",
+      "REFINE_WGS84_LAT": "37.2372989",
+      "REFINE_WGS84_LOGT": "127.1897404"
+    },
+    {
+      "BIZPLC_NM": "비어첸용인역북점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-12, 204호, 203호 일부 (역북동)",
+      "REFINE_WGS84_LAT": "37.2317695",
+      "REFINE_WGS84_LOGT": "127.1878449"
+    },
+    {
+      "BIZPLC_NM": "비에뜨반미명지대점",
+      "LICENSG_DE": "20190422",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-14, 1층 112호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2321297",
+      "REFINE_WGS84_LOGT": "127.1879585"
+    },
+    {
+      "BIZPLC_NM": "비엔나커피하우스용인역북점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-4, 1,2층 107,203호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2308867",
+      "REFINE_WGS84_LOGT": "127.1876850"
+    },
+    {
+      "BIZPLC_NM": "빨간석쇠구이(용인명지대점)",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 9, 지석프라자 116호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2322209188",
+      "REFINE_WGS84_LOGT": "127.1872939308"
+    },
+    {
+      "BIZPLC_NM": "뽕뜨락피자(용인점)",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로 24, 104호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2339744457",
+      "REFINE_WGS84_LOGT": "127.1880257114"
+    },
+    {
+      "BIZPLC_NM": "삐약스핏커피",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 낙은로 60, 120동 3층 2호 (역북동, 역북1단지 우남퍼스트빌)",
+      "REFINE_WGS84_LAT": "37.2422550913",
+      "REFINE_WGS84_LOGT": "127.1971918241"
+    },
+    {
+      "BIZPLC_NM": "사랑해 꽃돼지",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로1353번길 15 (역북동)",
+      "REFINE_WGS84_LAT": "37.2362714",
+      "REFINE_WGS84_LOGT": "127.1955416"
+    },
+    {
+      "BIZPLC_NM": "사랑해사랑해호프",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로1353번길 15 (역북동)",
+      "REFINE_WGS84_LAT": "37.2362714",
+      "REFINE_WGS84_LOGT": "127.1955416"
+    },
+    {
+      "BIZPLC_NM": "산골흑돼지",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 용인대학로 102-12, 1층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2298822",
+      "REFINE_WGS84_LOGT": "127.1725154"
+    },
+    {
+      "BIZPLC_NM": "산마루",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 성산로109번길 21 (역북동,1동 1층)",
+      "REFINE_WGS84_LAT": "37.2468248",
+      "REFINE_WGS84_LOGT": "127.1884227"
+    },
+    {
+      "BIZPLC_NM": "삼촌네",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-11, 유니버스트윈2 108호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2315566878",
+      "REFINE_WGS84_LOGT": "127.1872690950"
+    },
+    {
+      "BIZPLC_NM": "색동다리분식",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로 1305, 흥양빌딩 1층 일부 (역북동)",
+      "REFINE_WGS84_LAT": "37.2361633451",
+      "REFINE_WGS84_LOGT": "127.1899067306"
+    },
+    {
+      "BIZPLC_NM": "생활맥주",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-3, 1층 120호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2310227598",
+      "REFINE_WGS84_LOGT": "127.1871557911"
+    },
+    {
+      "BIZPLC_NM": "서룡해장국",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 용인대학로 102-13 (역북동, 1층일부)",
+      "REFINE_WGS84_LAT": "37.2296297",
+      "REFINE_WGS84_LOGT": "127.1727064"
+    },
+    {
+      "BIZPLC_NM": "서린정",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로1313번길 20-23 (역북동)",
+      "REFINE_WGS84_LAT": "37.2366456149",
+      "REFINE_WGS84_LOGT": "127.1926257570"
+    },
+    {
+      "BIZPLC_NM": "선비만두역북점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-14, 103호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2321297",
+      "REFINE_WGS84_LOGT": "127.1879585"
+    },
+    {
+      "BIZPLC_NM": "선술집모로미",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-3, 1층 106호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2310227598",
+      "REFINE_WGS84_LOGT": "127.1871557911"
+    },
+    {
+      "BIZPLC_NM": "설악삼계탕추어탕",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 성산로 102-3, 1층 일부 (역북동)",
+      "REFINE_WGS84_LAT": "37.2443250725",
+      "REFINE_WGS84_LOGT": "127.1909299669"
+    },
+    {
+      "BIZPLC_NM": "설화참치",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-13, 202호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2319084399",
+      "REFINE_WGS84_LOGT": "127.1873465550"
+    },
+    {
+      "BIZPLC_NM": "성산고을",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로 19-5 (역북동)",
+      "REFINE_WGS84_LAT": "37.2341911",
+      "REFINE_WGS84_LOGT": "127.1892144"
+    },
+    {
+      "BIZPLC_NM": "소꿈돼지꿈",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로1331번길 7, 로얄빌딩 1층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2361589",
+      "REFINE_WGS84_LOGT": "127.1926564"
+    },
+    {
+      "BIZPLC_NM": "소담촌용인역북점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-14 (역북동, 2층, 203~204호)",
+      "REFINE_WGS84_LAT": "37.2321297",
+      "REFINE_WGS84_LOGT": "127.1879585"
+    },
+    {
+      "BIZPLC_NM": "소정풍천민물장어",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 9, 지석프라자 2층 208~209호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2322784578",
+      "REFINE_WGS84_LOGT": "127.1875141269"
+    },
+    {
+      "BIZPLC_NM": "소학당(역북점)",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-4, 103호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2309539732",
+      "REFINE_WGS84_LOGT": "127.1877337821"
+    },
+    {
+      "BIZPLC_NM": "속초왕코다리",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 4, 2층 205호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2326342321",
+      "REFINE_WGS84_LOGT": "127.1880386735"
+    },
+    {
+      "BIZPLC_NM": "손가네족발",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 금학로265번길 6, 1층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2383024",
+      "REFINE_WGS84_LOGT": "127.1932928"
+    },
+    {
+      "BIZPLC_NM": "손맛집푸드",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 용문로 90, 1층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2366047729",
+      "REFINE_WGS84_LOGT": "127.1955762896"
+    },
+    {
+      "BIZPLC_NM": "솔가의집",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로 77-2, 솔가의집 1층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2289394634",
+      "REFINE_WGS84_LOGT": "127.1883789539"
+    },
+    {
+      "BIZPLC_NM": "송술",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 37-6, 1층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2288259246",
+      "REFINE_WGS84_LOGT": "127.1860687020"
+    },
+    {
+      "BIZPLC_NM": "수춘천닭갈비",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로16번길 9-11, YB테라스 2층 203호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2332483906",
+      "REFINE_WGS84_LOGT": "127.1871048630"
+    },
+    {
+      "BIZPLC_NM": "숙이호프",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 낙은로 1-2 (역북동,1층)",
+      "REFINE_WGS84_LAT": "37.2376369",
+      "REFINE_WGS84_LOGT": "127.1980469"
+    },
+    {
+      "BIZPLC_NM": "순수치킨 용인역북점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로 24, 용인역북THE럭스나인 119호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2339744457",
+      "REFINE_WGS84_LOGT": "127.1880257114"
+    },
+    {
+      "BIZPLC_NM": "순수펍카페",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로 24, 용인역북THE럭스나인 1층 143,144호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2338867863",
+      "REFINE_WGS84_LOGT": "127.1879628538"
+    },
+    {
+      "BIZPLC_NM": "스시도도",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-10, 1층 101호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2315533",
+      "REFINE_WGS84_LOGT": "127.1878219"
+    },
+    {
+      "BIZPLC_NM": "스시환",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로1331번길 6-2 (역북동, 1층 일부)",
+      "REFINE_WGS84_LAT": "37.2357440",
+      "REFINE_WGS84_LOGT": "127.1929371"
+    },
+    {
+      "BIZPLC_NM": "스츠미",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-13, 101호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2318244658",
+      "REFINE_WGS84_LOGT": "127.1872929653"
+    },
+    {
+      "BIZPLC_NM": "스토리오브쉐프뉴욕",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로 1218, 109호~115호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2373079152",
+      "REFINE_WGS84_LOGT": "127.1806161883"
+    },
+    {
+      "BIZPLC_NM": "시그널(Signal)",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로1331번길 7, 1층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2361589712",
+      "REFINE_WGS84_LOGT": "127.1926564181"
+    },
+    {
+      "BIZPLC_NM": "신길양꼬치",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로1299번길 14, 1층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2372989",
+      "REFINE_WGS84_LOGT": "127.1897404"
+    },
+    {
+      "BIZPLC_NM": "신묘한떡볶이",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 9, 1층 109호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2322209188",
+      "REFINE_WGS84_LOGT": "127.1872939308"
+    },
+    {
+      "BIZPLC_NM": "신전떡볶이(역북점)",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-14, 1층 109호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2321297",
+      "REFINE_WGS84_LOGT": "127.1879585"
+    },
+    {
+      "BIZPLC_NM": "신참떡볶이용인역북점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 15-17, 103호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2309695",
+      "REFINE_WGS84_LOGT": "127.1866035"
+    },
+    {
+      "BIZPLC_NM": "신통치킨역북우남점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 낙은로 59, 220동 1층 104호 (역북동, 역북2단지 우남퍼스트빌)",
+      "REFINE_WGS84_LAT": "37.2420736",
+      "REFINE_WGS84_LOGT": "127.1958156"
+    },
+    {
+      "BIZPLC_NM": "신통치킨용인명지대점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 13, 1층 109호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2322485",
+      "REFINE_WGS84_LOGT": "127.1868770"
+    },
+    {
+      "BIZPLC_NM": "싱싱참치",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로1313번길 20-21 (역북동)",
+      "REFINE_WGS84_LAT": "37.2366098",
+      "REFINE_WGS84_LOGT": "127.1924096"
+    },
+    {
+      "BIZPLC_NM": "싸움의고수(용인역북점)",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-11, 유니버스트윈2 1층 117호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2315566878",
+      "REFINE_WGS84_LOGT": "127.1872690950"
+    },
+    {
+      "BIZPLC_NM": "쌀로만피자",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 37-18, 1층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2287437",
+      "REFINE_WGS84_LOGT": "127.1867671"
+    },
+    {
+      "BIZPLC_NM": "써니김밥",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 15-7, 104호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2318883",
+      "REFINE_WGS84_LOGT": "127.1867973"
+    },
+    {
+      "BIZPLC_NM": "썸ing",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 15-17, 골든프라자2 110호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2309695",
+      "REFINE_WGS84_LOGT": "127.1866035"
+    },
+    {
+      "BIZPLC_NM": "썸타임(Time)",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로 24, 용인역북THE럭스나인 2층 227호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2338867863",
+      "REFINE_WGS84_LOGT": "127.1879628538"
+    },
+    {
+      "BIZPLC_NM": "아띠",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로1281번길 10-1 (역북동, 1층일부)",
+      "REFINE_WGS84_LAT": "37.2375544320",
+      "REFINE_WGS84_LOGT": "127.1876788131"
+    },
+    {
+      "BIZPLC_NM": "아리랑아지트",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 15-7, 105호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2318883",
+      "REFINE_WGS84_LOGT": "127.1867973"
+    },
+    {
+      "BIZPLC_NM": "아리랑옹심이메밀칼국수",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 용문로 62, 1층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2367988460",
+      "REFINE_WGS84_LOGT": "127.1925678671"
+    },
+    {
+      "BIZPLC_NM": "아무술집명지대점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 15-9, 유니버스트윈1 104,105호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2316274587",
+      "REFINE_WGS84_LOGT": "127.1867615078"
+    },
+    {
+      "BIZPLC_NM": "아밀리Amilli",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-11, 유니버스트윈 2동 101호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2315566878",
+      "REFINE_WGS84_LOGT": "127.1872690950"
+    },
+    {
+      "BIZPLC_NM": "아비꼬(용인역북점)",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 15-17, 104호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2309695",
+      "REFINE_WGS84_LOGT": "127.1866035"
+    },
+    {
+      "BIZPLC_NM": "아자아자장어구이역북동본점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 낙은로 115 (역북동, 1층)",
+      "REFINE_WGS84_LAT": "37.2449641",
+      "REFINE_WGS84_LOGT": "127.1913711"
+    },
+    {
+      "BIZPLC_NM": "애플하우스",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 금학로 155, 가동 1층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2403649425",
+      "REFINE_WGS84_LOGT": "127.1810880945"
+    },
+    {
+      "BIZPLC_NM": "앨리스17(ALICE17)",
+      "LICENSG_DE": "20200803",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 15-9, 유니버스트윈 1동 101호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2316274587",
+      "REFINE_WGS84_LOGT": "127.1867615078"
+    },
+    {
+      "BIZPLC_NM": "야참있는집",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 금학로241번길 2, 1층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2381355",
+      "REFINE_WGS84_LOGT": "127.1905426"
+    },
+    {
+      "BIZPLC_NM": "양대감600&제주도야지",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 8, 204호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2326617734",
+      "REFINE_WGS84_LOGT": "127.1877119476"
+    },
+    {
+      "BIZPLC_NM": "양대포역북점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-3, 1층 101호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2311147665",
+      "REFINE_WGS84_LOGT": "127.1871807350"
+    },
+    {
+      "BIZPLC_NM": "양평뚝배기해장국(구 행랑채)",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로 1219-7 (역북동)",
+      "REFINE_WGS84_LAT": "37.2381047620",
+      "REFINE_WGS84_LOGT": "127.1813466716"
+    },
+    {
+      "BIZPLC_NM": "어고흐(agoh)",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 16-2, 1층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2301053",
+      "REFINE_WGS84_LOGT": "127.1861281"
+    },
+    {
+      "BIZPLC_NM": "어웨이크키친역북점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로16번길 9-11, YB테라스 105호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2332688899",
+      "REFINE_WGS84_LOGT": "127.1870929211"
+    },
+    {
+      "BIZPLC_NM": "어흥푸드",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로 111, 1층 일부 (역북동)",
+      "REFINE_WGS84_LAT": "37.2262315263",
+      "REFINE_WGS84_LOGT": "127.1880801548"
+    },
+    {
+      "BIZPLC_NM": "언더리프(Uner Leaf)",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 성산로 102-3, 1층 103호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2443127167",
+      "REFINE_WGS84_LOGT": "127.1911514076"
+    },
+    {
+      "BIZPLC_NM": "엄마손김밥",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-4, 1층 106호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2308867801",
+      "REFINE_WGS84_LOGT": "127.1876850784"
+    },
+    {
+      "BIZPLC_NM": "엉클스치킨",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 35-29, 1층 104호 (역북동, 골드클래스)",
+      "REFINE_WGS84_LAT": "37.2294687",
+      "REFINE_WGS84_LOGT": "127.1840757"
+    },
+    {
+      "BIZPLC_NM": "에그드랍용인역북점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 8, 105호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2326617734",
+      "REFINE_WGS84_LOGT": "127.1877119476"
+    },
+    {
+      "BIZPLC_NM": "에그셀런트용인역북점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-4, 114호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2309539732",
+      "REFINE_WGS84_LOGT": "127.1877337821"
+    },
+    {
+      "BIZPLC_NM": "여장군역북점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-13, 1층 105, 106호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2318244",
+      "REFINE_WGS84_LOGT": "127.1872929"
+    },
+    {
+      "BIZPLC_NM": "역북동 화덕고등어",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 15-15, 2층 202호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2311857155",
+      "REFINE_WGS84_LOGT": "127.1866603730"
+    },
+    {
+      "BIZPLC_NM": "역북동그집",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로1299번길 9 (역북동)",
+      "REFINE_WGS84_LAT": "37.2369663",
+      "REFINE_WGS84_LOGT": "127.1892325"
+    },
+    {
+      "BIZPLC_NM": "역북동냉면집",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 15-21, 1층 일부 (역북동)",
+      "REFINE_WGS84_LAT": "37.2301299",
+      "REFINE_WGS84_LOGT": "127.1876494"
+    },
+    {
+      "BIZPLC_NM": "역북집",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 10, 2층 202호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2327830005",
+      "REFINE_WGS84_LOGT": "127.1874218575"
+    },
+    {
+      "BIZPLC_NM": "역전할머니맥주 역북점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-3, J1주차타워 122,123호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2310227598",
+      "REFINE_WGS84_LOGT": "127.1871557911"
+    },
+    {
+      "BIZPLC_NM": "연어가",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 15-15, 1층 113~114호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2311857155",
+      "REFINE_WGS84_LOGT": "127.1866603730"
+    },
+    {
+      "BIZPLC_NM": "영덕대게전문점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로 1271 (역북동)",
+      "REFINE_WGS84_LAT": "37.2369077",
+      "REFINE_WGS84_LOGT": "127.1863812"
+    },
+    {
+      "BIZPLC_NM": "예지현",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로16번길 9-23, 3층 304호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2329945",
+      "REFINE_WGS84_LOGT": "127.1880733"
+    },
+    {
+      "BIZPLC_NM": "오복식당",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 용문로 30-5 (역북동)",
+      "REFINE_WGS84_LAT": "37.2375521",
+      "REFINE_WGS84_LOGT": "127.1891551"
+    },
+    {
+      "BIZPLC_NM": "오볼리오(O.Voglio)",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 19-1, 1층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2302847687",
+      "REFINE_WGS84_LOGT": "127.1869136113"
+    },
+    {
+      "BIZPLC_NM": "오사카부루스(용인명지대역점)",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 금학로 237, 2층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2383968394",
+      "REFINE_WGS84_LOGT": "127.1901270419"
+    },
+    {
+      "BIZPLC_NM": "오영쪽갈비",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로1331번길 6-21 (역북동)",
+      "REFINE_WGS84_LAT": "37.2357692",
+      "REFINE_WGS84_LOGT": "127.1940415"
+    },
+    {
+      "BIZPLC_NM": "오직한우",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 10, SK프라자 203호,201호 일부 (역북동)",
+      "REFINE_WGS84_LAT": "37.2326892",
+      "REFINE_WGS84_LOGT": "127.1874077"
+    },
+    {
+      "BIZPLC_NM": "오쭈용인역북점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 15-17, 205호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2309695",
+      "REFINE_WGS84_LOGT": "127.1866035"
+    },
+    {
+      "BIZPLC_NM": "올리바바훠궈&참숯구이(역북점)",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 9, 지석프라자 205~206호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2322209",
+      "REFINE_WGS84_LOGT": "127.1872939"
+    },
+    {
+      "BIZPLC_NM": "올리앤용인명지대점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 4, 2층 202,203호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2326342321",
+      "REFINE_WGS84_LOGT": "127.1880386735"
+    },
+    {
+      "BIZPLC_NM": "올스타선봉대",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 금학로235번길 26, 지하1층 (역북동, 온누리마을)",
+      "REFINE_WGS84_LAT": "37.2424688",
+      "REFINE_WGS84_LOGT": "127.1910155"
+    },
+    {
+      "BIZPLC_NM": "와인다인떙큐",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 37-10, 102호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2289219926",
+      "REFINE_WGS84_LOGT": "127.1862879680"
+    },
+    {
+      "BIZPLC_NM": "와플칸",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 15-9, 유니버스트윈1 114호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2316274587",
+      "REFINE_WGS84_LOGT": "127.1867615078"
+    },
+    {
+      "BIZPLC_NM": "왓츠버거(What's burger)",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로16번길 9-24, 116호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2332340247",
+      "REFINE_WGS84_LOGT": "127.1875440035"
+    },
+    {
+      "BIZPLC_NM": "용인골곱창",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 금학로265번길 1 (역북동)",
+      "REFINE_WGS84_LAT": "37.2378525",
+      "REFINE_WGS84_LOGT": "127.1928747"
+    },
+    {
+      "BIZPLC_NM": "용인관",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-3, J1주차타워 2층 204호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2311147665",
+      "REFINE_WGS84_LOGT": "127.1871807350"
+    },
+    {
+      "BIZPLC_NM": "용인야다이",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-13, 2층 203호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2318244",
+      "REFINE_WGS84_LOGT": "127.1872929"
+    },
+    {
+      "BIZPLC_NM": "용인역북남부점 빽다방",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-13, 108호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2318244",
+      "REFINE_WGS84_LOGT": "127.1872929"
+    },
+    {
+      "BIZPLC_NM": "용천야채곱창",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 8, 101호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2326617734",
+      "REFINE_WGS84_LOGT": "127.1877119476"
+    },
+    {
+      "BIZPLC_NM": "우남어시장",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 낙은로 60, 120동 108, 109호 (역북동, 역북1단지 우남퍼스트빌)",
+      "REFINE_WGS84_LAT": "37.2422159879",
+      "REFINE_WGS84_LOGT": "127.1969317208"
+    },
+    {
+      "BIZPLC_NM": "우슬초",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로 19-8 (역북동)",
+      "REFINE_WGS84_LAT": "37.2339659",
+      "REFINE_WGS84_LOGT": "127.1891800"
+    },
+    {
+      "BIZPLC_NM": "우육면",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 15-7, 리치타워 205호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2318883",
+      "REFINE_WGS84_LOGT": "127.1867973"
+    },
+    {
+      "BIZPLC_NM": "월남국수역북점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 16, 1층 105호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2327440",
+      "REFINE_WGS84_LOGT": "127.1869571"
+    },
+    {
+      "BIZPLC_NM": "위꾸냥마라탕",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로 24, 용인역북THE럭스나인 2층 237호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2338867863",
+      "REFINE_WGS84_LOGT": "127.1879628538"
+    },
+    {
+      "BIZPLC_NM": "윙윙치킨",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 금학로265번길 9 (역북동,,17)",
+      "REFINE_WGS84_LAT": "37.2384919",
+      "REFINE_WGS84_LOGT": "127.1930679"
+    },
+    {
+      "BIZPLC_NM": "유로코피자 용인처인점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로1313번길 17, 101호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2368998473",
+      "REFINE_WGS84_LOGT": "127.1898738673"
+    },
+    {
+      "BIZPLC_NM": "육품참숯화로구이",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 13, 2층 202호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2322485",
+      "REFINE_WGS84_LOGT": "127.1868770"
+    },
+    {
+      "BIZPLC_NM": "육회지존용인역북점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 15-17, 골든프라자2 1층 112호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2309695557",
+      "REFINE_WGS84_LOGT": "127.1866035060"
+    },
+    {
+      "BIZPLC_NM": "이모네식당",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 금학로265번길 8 (역북동)",
+      "REFINE_WGS84_LAT": "37.2384375",
+      "REFINE_WGS84_LOGT": "127.1932706"
+    },
+    {
+      "BIZPLC_NM": "이차돌 용인역북명지대점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 15-9, 유니버스트윈1 ,117,118,119호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2316274587",
+      "REFINE_WGS84_LOGT": "127.1867615078"
+    },
+    {
+      "BIZPLC_NM": "이태리부엌",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 15-17, 골든프라자2 2층 201호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2309695",
+      "REFINE_WGS84_LOGT": "127.1866035"
+    },
+    {
+      "BIZPLC_NM": "이통닭",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 10, 1층 107호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2326892",
+      "REFINE_WGS84_LOGT": "127.1874077"
+    },
+    {
+      "BIZPLC_NM": "이포막국수",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 용문로 80-1 (역북동)",
+      "REFINE_WGS84_LAT": "37.2365794",
+      "REFINE_WGS84_LOGT": "127.1945394"
+    },
+    {
+      "BIZPLC_NM": "이향가든역북점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로55번길 17-1, 1층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2305225278",
+      "REFINE_WGS84_LOGT": "127.1901294360"
+    },
+    {
+      "BIZPLC_NM": "인쌩맥주 용인역북점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-3, 1층 110,111호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2311147665",
+      "REFINE_WGS84_LOGT": "127.1871807350"
+    },
+    {
+      "BIZPLC_NM": "일광식당",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 금학로265번길 2 (역북동)",
+      "REFINE_WGS84_LAT": "37.2378521",
+      "REFINE_WGS84_LOGT": "127.1931565"
+    },
+    {
+      "BIZPLC_NM": "자담치킨",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로 1216, 용인센트럴 코업 105호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2374143780",
+      "REFINE_WGS84_LOGT": "127.1799843907"
+    },
+    {
+      "BIZPLC_NM": "자연산생선나라",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로1331번길 7, 로얄프라자, 1층 일부 (역북동)",
+      "REFINE_WGS84_LAT": "37.2361589712",
+      "REFINE_WGS84_LOGT": "127.1926564181"
+    },
+    {
+      "BIZPLC_NM": "장미맨숀역북점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 15-27, 1층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2297966570",
+      "REFINE_WGS84_LOGT": "127.1876035401"
+    },
+    {
+      "BIZPLC_NM": "장수불고기&샤브샤브",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로1343번길 14-17, 1~2층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2363463068",
+      "REFINE_WGS84_LOGT": "127.1954003576"
+    },
+    {
+      "BIZPLC_NM": "장수손칼국수",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 9, 지석프라자 1층 110호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2322209188",
+      "REFINE_WGS84_LOGT": "127.1872939308"
+    },
+    {
+      "BIZPLC_NM": "장인족발608",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 10, 1층 104,105호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2326892",
+      "REFINE_WGS84_LOGT": "127.1874077"
+    },
+    {
+      "BIZPLC_NM": "전곱",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로1299번길 10 (역북동)",
+      "REFINE_WGS84_LAT": "37.2369116",
+      "REFINE_WGS84_LOGT": "127.1896268"
+    },
+    {
+      "BIZPLC_NM": "전복어장",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로 71, 1층 일부 (역북동)",
+      "REFINE_WGS84_LAT": "37.2295791",
+      "REFINE_WGS84_LOGT": "127.1883805"
+    },
+    {
+      "BIZPLC_NM": "전부인",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-10, 1층 110호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2315533",
+      "REFINE_WGS84_LOGT": "127.1878219"
+    },
+    {
+      "BIZPLC_NM": "정다율짬뽕",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-12, 1층 106호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2317695",
+      "REFINE_WGS84_LOGT": "127.1878449"
+    },
+    {
+      "BIZPLC_NM": "정통집 역북명지대점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-3, J1주차타워 105호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2310227598",
+      "REFINE_WGS84_LOGT": "127.1871557911"
+    },
+    {
+      "BIZPLC_NM": "제일추어탕",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로 25, 1층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2338507710",
+      "REFINE_WGS84_LOGT": "127.1889844729"
+    },
+    {
+      "BIZPLC_NM": "제주둘레국수용인점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 14-1, 1층 101호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2306635",
+      "REFINE_WGS84_LOGT": "127.1863999"
+    },
+    {
+      "BIZPLC_NM": "조선양평해장국(용인역북점)",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-12, 1층 107호, 108호 일부 (역북동)",
+      "REFINE_WGS84_LAT": "37.2317695430",
+      "REFINE_WGS84_LOGT": "127.1878449931"
+    },
+    {
+      "BIZPLC_NM": "조선팔도순대국",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 성산로81번길 2, 1층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2438232",
+      "REFINE_WGS84_LOGT": "127.1891818"
+    },
+    {
+      "BIZPLC_NM": "족발슈퍼",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 15-7, 109호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2318883088",
+      "REFINE_WGS84_LOGT": "127.1867973015"
+    },
+    {
+      "BIZPLC_NM": "족발야시장 용인역북점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-11, 유니버스트윈2 111,112호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2315566878",
+      "REFINE_WGS84_LOGT": "127.1872690950"
+    },
+    {
+      "BIZPLC_NM": "좋구먼반상",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 성산로 102-3, 1층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2443127167",
+      "REFINE_WGS84_LOGT": "127.1911514076"
+    },
+    {
+      "BIZPLC_NM": "좋은친구들(Good friends)",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로1299번길 14 (역북동, 1층 일부)",
+      "REFINE_WGS84_LAT": "37.2373592923",
+      "REFINE_WGS84_LOGT": "127.1897705185"
+    },
+    {
+      "BIZPLC_NM": "주)역북회직판장",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-13, 1층 103, 104호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2319084399",
+      "REFINE_WGS84_LOGT": "127.1873465550"
+    },
+    {
+      "BIZPLC_NM": "주선생",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 금학로 295 (역북동)",
+      "REFINE_WGS84_LAT": "37.2376306",
+      "REFINE_WGS84_LOGT": "127.1963452"
+    },
+    {
+      "BIZPLC_NM": "즐거운맥주더루프탑",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-13, 탑3빌딩 601호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2319084399",
+      "REFINE_WGS84_LOGT": "127.1873465550"
+    },
+    {
+      "BIZPLC_NM": "즐삼프리미엄생고기",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로16번길 9-11, YB테라스 2층 205호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2332483906",
+      "REFINE_WGS84_LOGT": "127.1871048630"
+    },
+    {
+      "BIZPLC_NM": "지코바역북1호점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로 33-6, B동 지1층 (역북동, 평촌)",
+      "REFINE_WGS84_LAT": "37.2327782304",
+      "REFINE_WGS84_LOGT": "127.1890339721"
+    },
+    {
+      "BIZPLC_NM": "진구네김치찌개",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로1281번길 10-13 (역북동, 1층일부)",
+      "REFINE_WGS84_LAT": "37.2374634923",
+      "REFINE_WGS84_LOGT": "127.1882593636"
+    },
+    {
+      "BIZPLC_NM": "진족발보쌈",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로16번길 9-23, 2층 204호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2329945",
+      "REFINE_WGS84_LOGT": "127.1880733"
+    },
+    {
+      "BIZPLC_NM": "진주옥냉면",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로 106 (역북동, B01호 일부(지면과 맞닿은 지층))",
+      "REFINE_WGS84_LAT": "37.2264995358",
+      "REFINE_WGS84_LOGT": "127.1871785894"
+    },
+    {
+      "BIZPLC_NM": "진진카롱",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로 24, 용인역북THE럭스나인 지1층 B119호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2338867863",
+      "REFINE_WGS84_LOGT": "127.1879628538"
+    },
+    {
+      "BIZPLC_NM": "쭈꾸씨네",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로1313번길 3, 1층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2361890",
+      "REFINE_WGS84_LOGT": "127.1907407"
+    },
+    {
+      "BIZPLC_NM": "차가네 손두부",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로 39, 1층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2321908898",
+      "REFINE_WGS84_LOGT": "127.1892095307"
+    },
+    {
+      "BIZPLC_NM": "차돌풍",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-3, 1층 102,103호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2310227",
+      "REFINE_WGS84_LOGT": "127.1871557"
+    },
+    {
+      "BIZPLC_NM": "차칸곱창",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 학산로 3-2, 1층 104호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2391581",
+      "REFINE_WGS84_LOGT": "127.1989636"
+    },
+    {
+      "BIZPLC_NM": "착한해물가",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로 71 (역북동)",
+      "REFINE_WGS84_LAT": "37.2295791",
+      "REFINE_WGS84_LOGT": "127.1883805"
+    },
+    {
+      "BIZPLC_NM": "처갓집양념치킨역북점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 9, 지석프라자 1층 114호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2322784578",
+      "REFINE_WGS84_LOGT": "127.1875141269"
+    },
+    {
+      "BIZPLC_NM": "천미방마라탕",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 4, 1층 105호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2326342321",
+      "REFINE_WGS84_LOGT": "127.1880386735"
+    },
+    {
+      "BIZPLC_NM": "천하장사",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 금학로 301 (역북동)",
+      "REFINE_WGS84_LAT": "37.2376924",
+      "REFINE_WGS84_LOGT": "127.1971567"
+    },
+    {
+      "BIZPLC_NM": "청년다방역북점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-4, 1층 112호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2308867",
+      "REFINE_WGS84_LOGT": "127.1876850"
+    },
+    {
+      "BIZPLC_NM": "청년포차",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 15-9, 유니버스트윈1 ,109,110호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2316274587",
+      "REFINE_WGS84_LOGT": "127.1867615078"
+    },
+    {
+      "BIZPLC_NM": "청년피자용인점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로1343번길 10-17, 1층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2359114389",
+      "REFINE_WGS84_LOGT": "127.1952927947"
+    },
+    {
+      "BIZPLC_NM": "청진동해장국",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로 29 (역북동,(1층))",
+      "REFINE_WGS84_LAT": "37.2333536",
+      "REFINE_WGS84_LOGT": "127.1889644"
+    },
+    {
+      "BIZPLC_NM": "청춘",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로1331번길 11 (역북동)",
+      "REFINE_WGS84_LAT": "37.2364919",
+      "REFINE_WGS84_LOGT": "127.1929051"
+    },
+    {
+      "BIZPLC_NM": "청춘닭발막창",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-11, 유니버스트윈 2동 102호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2315566878",
+      "REFINE_WGS84_LOGT": "127.1872690950"
+    },
+    {
+      "BIZPLC_NM": "초초네",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 10, 6층 602호 일부 (역북동)",
+      "REFINE_WGS84_LAT": "37.2326892",
+      "REFINE_WGS84_LOGT": "127.1874077"
+    },
+    {
+      "BIZPLC_NM": "최고당돈가스(명지대점)",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로16번길 9-11, 2층 204호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2332483906",
+      "REFINE_WGS84_LOGT": "127.1871048630"
+    },
+    {
+      "BIZPLC_NM": "최배달떡순튀",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로1331번길 7, 1층 일부 (역북동)",
+      "REFINE_WGS84_LAT": "37.2361589712",
+      "REFINE_WGS84_LOGT": "127.1926564181"
+    },
+    {
+      "BIZPLC_NM": "추억의돼지마당",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 낙은로 26 (역북동)",
+      "REFINE_WGS84_LAT": "37.2395461454",
+      "REFINE_WGS84_LOGT": "127.1986266108"
+    },
+    {
+      "BIZPLC_NM": "충무로닭도리탕",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 15-23, 1층 일부 (역북동)",
+      "REFINE_WGS84_LAT": "37.2300884859",
+      "REFINE_WGS84_LOGT": "127.1876809862"
+    },
+    {
+      "BIZPLC_NM": "취한밤",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 15-9, 1층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2305540138",
+      "REFINE_WGS84_LOGT": "127.1872898716"
+    },
+    {
+      "BIZPLC_NM": "치요남치킨용인역북점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-13, 1층 109호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2319084399",
+      "REFINE_WGS84_LOGT": "127.1873465550"
+    },
+    {
+      "BIZPLC_NM": "치킨두목",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 금학로 245 (역북동,2층)",
+      "REFINE_WGS84_LAT": "37.2380542928",
+      "REFINE_WGS84_LOGT": "127.1906777302"
+    },
+    {
+      "BIZPLC_NM": "치킨플러스용인역북점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로1281번길 10-1, 1층 102호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2375544",
+      "REFINE_WGS84_LOGT": "127.1876788"
+    },
+    {
+      "BIZPLC_NM": "친구네",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로1331번길 7 (역북동)",
+      "REFINE_WGS84_LAT": "37.2361589",
+      "REFINE_WGS84_LOGT": "127.1926564"
+    },
+    {
+      "BIZPLC_NM": "칠성식당",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 15-17, 2층 202호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2309695",
+      "REFINE_WGS84_LOGT": "127.1866035"
+    },
+    {
+      "BIZPLC_NM": "칠성포차역북점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-13, 204호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2318244658",
+      "REFINE_WGS84_LOGT": "127.1872929653"
+    },
+    {
+      "BIZPLC_NM": "카츠야미용인점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로 24, 용인역북THE럭스나인 1층 116호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2339744457",
+      "REFINE_WGS84_LOGT": "127.1880257114"
+    },
+    {
+      "BIZPLC_NM": "카츠젠용인역북점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 9, 지석프라자 1층 108호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2322209",
+      "REFINE_WGS84_LOGT": "127.1872939"
+    },
+    {
+      "BIZPLC_NM": "카파커피역북소공원점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 용문로 84 (역북동, 1층)",
+      "REFINE_WGS84_LAT": "37.2366327557",
+      "REFINE_WGS84_LOGT": "127.1949903559"
+    },
+    {
+      "BIZPLC_NM": "카페 제로투원",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 성산로 159, 101호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2503532",
+      "REFINE_WGS84_LOGT": "127.1907420"
+    },
+    {
+      "BIZPLC_NM": "카페도도",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로1343번길 10-19, 1층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2359770251",
+      "REFINE_WGS84_LOGT": "127.1955145821"
+    },
+    {
+      "BIZPLC_NM": "카페씨엘빈(Cafe Ciel Bean)",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 성산로 132, 1층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2477949569",
+      "REFINE_WGS84_LOGT": "127.1903524967"
+    },
+    {
+      "BIZPLC_NM": "카페테리아",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 금학로235번길 26, 선봉레스텔 1층 (역북동, 온누리마을)",
+      "REFINE_WGS84_LAT": "37.2408567946",
+      "REFINE_WGS84_LOGT": "127.1904930930"
+    },
+    {
+      "BIZPLC_NM": "칵테일집",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로 24, 용인역북더럭스나인 제지1층 제B109호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2338867863",
+      "REFINE_WGS84_LOGT": "127.1879628538"
+    },
+    {
+      "BIZPLC_NM": "커피블로그",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로1331번길 11, 1층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2364919",
+      "REFINE_WGS84_LOGT": "127.1929051"
+    },
+    {
+      "BIZPLC_NM": "커피상회",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로1331번길 10, 1층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2362213",
+      "REFINE_WGS84_LOGT": "127.1930735"
+    },
+    {
+      "BIZPLC_NM": "커피콩자매",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-13, 7층 702호 일부 (역북동)",
+      "REFINE_WGS84_LAT": "37.2318244",
+      "REFINE_WGS84_LOGT": "127.1872929"
+    },
+    {
+      "BIZPLC_NM": "코다리감동이되다",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 낙은로 113 (역북동, 1층)",
+      "REFINE_WGS84_LAT": "37.2449181481",
+      "REFINE_WGS84_LOGT": "127.1917239721"
+    },
+    {
+      "BIZPLC_NM": "콤파스",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 금학로241번길 7, 1층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2386312904",
+      "REFINE_WGS84_LOGT": "127.1904650386"
+    },
+    {
+      "BIZPLC_NM": "쿠우쿠우용인점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 9, 301호~307호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2322784578",
+      "REFINE_WGS84_LOGT": "127.1875141269"
+    },
+    {
+      "BIZPLC_NM": "쿠크봉",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로 1294, 4층 일부 (역북동)",
+      "REFINE_WGS84_LAT": "37.2354625173",
+      "REFINE_WGS84_LOGT": "127.1883126982"
+    },
+    {
+      "BIZPLC_NM": "큰고을",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 용문로 88 (역북동,1층)",
+      "REFINE_WGS84_LAT": "37.2366591",
+      "REFINE_WGS84_LOGT": "127.1954073"
+    },
+    {
+      "BIZPLC_NM": "키와마루아지",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-13, 1층 110호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2319084399",
+      "REFINE_WGS84_LOGT": "127.1873465550"
+    },
+    {
+      "BIZPLC_NM": "탁이네",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 15-7, 리치타워 207호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2319701972",
+      "REFINE_WGS84_LOGT": "127.1868390028"
+    },
+    {
+      "BIZPLC_NM": "탄야",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-3, 1층 104호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2310227598",
+      "REFINE_WGS84_LOGT": "127.1871557911"
+    },
+    {
+      "BIZPLC_NM": "태양부양꼬치",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-4, 2층 207호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2308867801",
+      "REFINE_WGS84_LOGT": "127.1876850784"
+    },
+    {
+      "BIZPLC_NM": "택이네조개전골",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로 75, 1층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2293269946",
+      "REFINE_WGS84_LOGT": "127.1883235618"
+    },
+    {
+      "BIZPLC_NM": "테라",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로 1216, 용인센트럴 코업 2층 일부 (역북동)",
+      "REFINE_WGS84_LAT": "37.2374143780",
+      "REFINE_WGS84_LOGT": "127.1799843907"
+    },
+    {
+      "BIZPLC_NM": "톨레랑스",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 23, 1층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2295820",
+      "REFINE_WGS84_LOGT": "127.1865437"
+    },
+    {
+      "BIZPLC_NM": "통닭쏠가호프쏠가",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 낙은로 1-2 (역북동)",
+      "REFINE_WGS84_LAT": "37.2376369",
+      "REFINE_WGS84_LOGT": "127.1980469"
+    },
+    {
+      "BIZPLC_NM": "통통치킨",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로 5 신성A상가101호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2351365",
+      "REFINE_WGS84_LOGT": "127.1896562"
+    },
+    {
+      "BIZPLC_NM": "투고샐러드용인명지대점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 9, 지석프라자 1층 117호 일부 (역북동)",
+      "REFINE_WGS84_LAT": "37.2322209",
+      "REFINE_WGS84_LOGT": "127.1872939"
+    },
+    {
+      "BIZPLC_NM": "투다리(명지점)",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로 15-6 (역북동,, 1층)",
+      "REFINE_WGS84_LAT": "37.2343259",
+      "REFINE_WGS84_LOGT": "127.1894288"
+    },
+    {
+      "BIZPLC_NM": "파스타5.17",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 낙은로 40-1, 1층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2409600484",
+      "REFINE_WGS84_LOGT": "127.1983582900"
+    },
+    {
+      "BIZPLC_NM": "팔도실비집 용인역북점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-3, J1주차타워 1층 109호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2310227598",
+      "REFINE_WGS84_LOGT": "127.1871557911"
+    },
+    {
+      "BIZPLC_NM": "팔칠닭강정",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 금학로235번길 22, 1층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2399915",
+      "REFINE_WGS84_LOGT": "127.1906825"
+    },
+    {
+      "BIZPLC_NM": "팔푼이역북점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로 1299, 2층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2362723",
+      "REFINE_WGS84_LOGT": "127.1893435"
+    },
+    {
+      "BIZPLC_NM": "퍼퓰러버거",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-11, 유니버스트윈2 118호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2315566878",
+      "REFINE_WGS84_LOGT": "127.1872690950"
+    },
+    {
+      "BIZPLC_NM": "펀비어킹역북지구점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 13, 2층 203호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2322485",
+      "REFINE_WGS84_LOGT": "127.1868770"
+    },
+    {
+      "BIZPLC_NM": "펄스맥",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로 1294, 102호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2354625173",
+      "REFINE_WGS84_LOGT": "127.1883126982"
+    },
+    {
+      "BIZPLC_NM": "페리카나치킨",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로1299번길 12 (역북동)",
+      "REFINE_WGS84_LAT": "37.2371097",
+      "REFINE_WGS84_LOGT": "127.1896836"
+    },
+    {
+      "BIZPLC_NM": "평안도찹쌀순대 명지대점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로 17 (역북동)",
+      "REFINE_WGS84_LAT": "37.2344550306",
+      "REFINE_WGS84_LOGT": "127.1891060007"
+    },
+    {
+      "BIZPLC_NM": "포메인(용인역북점)",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-10, 2층 203호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2315533",
+      "REFINE_WGS84_LOGT": "127.1878219"
+    },
+    {
+      "BIZPLC_NM": "포유부대찌개",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 용문로 68 (역북동)",
+      "REFINE_WGS84_LAT": "37.2367711",
+      "REFINE_WGS84_LOGT": "127.1929847"
+    },
+    {
+      "BIZPLC_NM": "포차천국용인명지대점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-3, 1층 112호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2311147665",
+      "REFINE_WGS84_LOGT": "127.1871807350"
+    },
+    {
+      "BIZPLC_NM": "포크포크",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-10, 1층 102호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2315533",
+      "REFINE_WGS84_LOGT": "127.1878219"
+    },
+    {
+      "BIZPLC_NM": "포항물회",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 용문로 90 (역북동)",
+      "REFINE_WGS84_LAT": "37.2366047",
+      "REFINE_WGS84_LOGT": "127.1955762"
+    },
+    {
+      "BIZPLC_NM": "푸지막용인역북점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-12, 2층 201,202,203(일부) 호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2317695430",
+      "REFINE_WGS84_LOGT": "127.1878449931"
+    },
+    {
+      "BIZPLC_NM": "퓨전마을",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로1331번길 7, 1층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2361589",
+      "REFINE_WGS84_LOGT": "127.1926564"
+    },
+    {
+      "BIZPLC_NM": "프래디컴퍼니(FREDDY COMPANY)",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-3, 1층 119호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2310227",
+      "REFINE_WGS84_LOGT": "127.1871557"
+    },
+    {
+      "BIZPLC_NM": "프렌치프라이(French Fries)",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 금학로265번길 6 (역북동)",
+      "REFINE_WGS84_LAT": "37.2383024063",
+      "REFINE_WGS84_LOGT": "127.1932928869"
+    },
+    {
+      "BIZPLC_NM": "플레이어스(PLAYUS)",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 15-17, 골든프라자2 306호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2309695",
+      "REFINE_WGS84_LOGT": "127.1866035"
+    },
+    {
+      "BIZPLC_NM": "피에스타",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로1299번길 8 (역북동,(1층))",
+      "REFINE_WGS84_LAT": "37.2368722444",
+      "REFINE_WGS84_LOGT": "127.1896597744"
+    },
+    {
+      "BIZPLC_NM": "피자나라치킨공주",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 금학로241번길 8 (역북동, 1층 일부)",
+      "REFINE_WGS84_LAT": "37.2385768",
+      "REFINE_WGS84_LOGT": "127.1906790"
+    },
+    {
+      "BIZPLC_NM": "피자어셈블",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로16번길 26, 상가119동 B120호 (역북동, 역북동원로얄듀크)",
+      "REFINE_WGS84_LAT": "37.2356373775",
+      "REFINE_WGS84_LOGT": "127.1862992945"
+    },
+    {
+      "BIZPLC_NM": "피자파는집 용인역북점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 9, 지석프라자 1층 111호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2322209188",
+      "REFINE_WGS84_LOGT": "127.1872939308"
+    },
+    {
+      "BIZPLC_NM": "하남돼지집용인역북점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-4, 1층 108~109호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2309539732",
+      "REFINE_WGS84_LOGT": "127.1877337821"
+    },
+    {
+      "BIZPLC_NM": "하정양평해장국(역북점)",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-13, 107호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2318244",
+      "REFINE_WGS84_LOGT": "127.1872929"
+    },
+    {
+      "BIZPLC_NM": "학마루",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 용인대학로 96 (역북동)",
+      "REFINE_WGS84_LAT": "37.2309074016",
+      "REFINE_WGS84_LOGT": "127.1738004095"
+    },
+    {
+      "BIZPLC_NM": "한그릇국수",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로1313번길 20-25 (역북동)",
+      "REFINE_WGS84_LAT": "37.2365192",
+      "REFINE_WGS84_LOGT": "127.1927362"
+    },
+    {
+      "BIZPLC_NM": "한뚝수육국밥",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로16번길 9-23 (역북동, 2층, 202호)",
+      "REFINE_WGS84_LAT": "37.2329945",
+      "REFINE_WGS84_LOGT": "127.1880733"
+    },
+    {
+      "BIZPLC_NM": "한량고기",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로16번길 9-11, 201호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2332688899",
+      "REFINE_WGS84_LOGT": "127.1870929211"
+    },
+    {
+      "BIZPLC_NM": "한산면옥",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 낙은로 32-3, 1층 일부 (역북동)",
+      "REFINE_WGS84_LAT": "37.2402848067",
+      "REFINE_WGS84_LOGT": "127.1986766672"
+    },
+    {
+      "BIZPLC_NM": "한신포차용인역북점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-10, 광장프라자 204호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2316123477",
+      "REFINE_WGS84_LOGT": "127.1878663456"
+    },
+    {
+      "BIZPLC_NM": "한옥집김치찜이마트용인점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로 53, 지하2층 일부 (역북동)",
+      "REFINE_WGS84_LAT": "37.2314895326",
+      "REFINE_WGS84_LOGT": "127.1891519966"
+    },
+    {
+      "BIZPLC_NM": "핫게이트99(처인점)",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 금학로 285 (역북동)",
+      "REFINE_WGS84_LAT": "37.2377432936",
+      "REFINE_WGS84_LOGT": "127.1953270919"
+    },
+    {
+      "BIZPLC_NM": "해담",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 낙은로 111 (역북동, 1층)",
+      "REFINE_WGS84_LAT": "37.2446300048",
+      "REFINE_WGS84_LOGT": "127.1918210953"
+    },
+    {
+      "BIZPLC_NM": "해람회수산시장",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로 1271, 1층 (역북동, 서룡빌라)",
+      "REFINE_WGS84_LAT": "37.2370530733",
+      "REFINE_WGS84_LOGT": "127.1864459352"
+    },
+    {
+      "BIZPLC_NM": "해원",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 낙은로 138, 2층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2469699694",
+      "REFINE_WGS84_LOGT": "127.1904302064"
+    },
+    {
+      "BIZPLC_NM": "해원일식",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 낙은로 138, 1층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2469699694",
+      "REFINE_WGS84_LOGT": "127.1904302064"
+    },
+    {
+      "BIZPLC_NM": "핵밥용인역북점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로 24, 용인역북THE럭스나인 137,138호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2339744457",
+      "REFINE_WGS84_LOGT": "127.1880257114"
+    },
+    {
+      "BIZPLC_NM": "향기나는꽃길",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 4, 3층 304호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2326342",
+      "REFINE_WGS84_LOGT": "127.1880386"
+    },
+    {
+      "BIZPLC_NM": "호탕",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 16, 2층 204호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2327440",
+      "REFINE_WGS84_LOGT": "127.1869571"
+    },
+    {
+      "BIZPLC_NM": "홀닭반한",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 15-17, 1층 102호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2309695",
+      "REFINE_WGS84_LOGT": "127.1866035"
+    },
+    {
+      "BIZPLC_NM": "홍게우동",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로1299번길 6, 1층 일부 (역북동)",
+      "REFINE_WGS84_LAT": "37.2367368876",
+      "REFINE_WGS84_LOGT": "127.1896039593"
+    },
+    {
+      "BIZPLC_NM": "홍대쌀국수(이마트용인점)",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로 53, 지면과 맞닿은 지하2층 일부 (역북동)",
+      "REFINE_WGS84_LAT": "37.2314895326",
+      "REFINE_WGS84_LOGT": "127.1891519966"
+    },
+    {
+      "BIZPLC_NM": "홍복씨푸드",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로1313번길 20-10, 1층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2366593003",
+      "REFINE_WGS84_LOGT": "127.1909571538"
+    },
+    {
+      "BIZPLC_NM": "홍복해물",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 중부대로 1323 (역북동)",
+      "REFINE_WGS84_LAT": "37.2357728",
+      "REFINE_WGS84_LOGT": "127.1918440"
+    },
+    {
+      "BIZPLC_NM": "홍성식당",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 성산로 101 (역북동, 1층일부)",
+      "REFINE_WGS84_LAT": "37.2451923",
+      "REFINE_WGS84_LOGT": "127.1895120"
+    },
+    {
+      "BIZPLC_NM": "홍짜장용인역북점",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 9, 지석프라자 112호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2322784578",
+      "REFINE_WGS84_LOGT": "127.1875141269"
+    },
+    {
+      "BIZPLC_NM": "화미가",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로 5, 103호 (역북동, 신성아파트 상가동)",
+      "REFINE_WGS84_LAT": "37.2351365633",
+      "REFINE_WGS84_LOGT": "127.1896562742"
+    },
+    {
+      "BIZPLC_NM": "화사랑숯불갈비",
+      "LICENSG_DE": "20190927",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로 107, 지하1층~지상1층 (역북동)",
+      "REFINE_WGS84_LAT": "37.2265787995",
+      "REFINE_WGS84_LOGT": "127.1883506366"
+    },
+    {
+      "BIZPLC_NM": "화포식당",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로60번길 8-3, 2층 201호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2310227",
+      "REFINE_WGS84_LOGT": "127.1871557"
+    },
+    {
+      "BIZPLC_NM": "황금꿀꿀이",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 금학로265번길 9 (역북동,외1필지)",
+      "REFINE_WGS84_LAT": "37.2384919",
+      "REFINE_WGS84_LOGT": "127.1930679"
+    },
+    {
+      "BIZPLC_NM": "황소가한우곱창",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 9, 지석프라자 1층 115호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2322209188",
+      "REFINE_WGS84_LOGT": "127.1872939308"
+    },
+    {
+      "BIZPLC_NM": "회포차",
+      "LICENSG_DE": "20150325",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 금학로 275 (역북동, 1층)",
+      "REFINE_WGS84_LAT": "37.2378235",
+      "REFINE_WGS84_LOGT": "127.1941256"
+    },
+    {
+      "BIZPLC_NM": "후라이드참잘하는집",
+      "LICENSG_DE": "20200724",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로16번길 26, B124호 (역북동, 역북동원로얄듀크)",
+      "REFINE_WGS84_LAT": "37.2359113130",
+      "REFINE_WGS84_LOGT": "127.1875893236"
+    },
+    {
+      "BIZPLC_NM": "훠궈스토리",
+      "REFINE_ROADNM_ADDR": "경기도 용인시 처인구 명지로40번길 15-15, 206호 (역북동)",
+      "REFINE_WGS84_LAT": "37.2311857",
+      "REFINE_WGS84_LOGT": "127.1866603"
+    }
+  ]
+}

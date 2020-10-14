@@ -1,8 +1,7 @@
 package com.example.forsolo.findmate.fragment;
 
+import android.content.res.AssetManager;
 import android.os.Bundle;
-import android.text.Layout;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,21 +9,29 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentActivity;
 
 import com.example.forsolo.R;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapView;
 import com.google.android.gms.maps.OnMapReadyCallback;
-import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 
 public class MapFragment extends Fragment implements OnMapReadyCallback {
     private View view;
     private GoogleMap mMap;
     private MapView mapView = null;
+
 
     @Nullable
     @Override
@@ -40,6 +47,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
     }
+
     @Override
     public void onStart() {
         super.onStart();
@@ -88,19 +96,62 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
 
 //액티비티가 처음 생성될 때 실행되는 함수
 
-        if(mapView != null)
-        {
+        if (mapView != null) {
             mapView.onCreate(savedInstanceState);
         }
     }
 
+
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
-        // Add a marker in MJU and move the camera
-        LatLng MJU = new LatLng(37.221870, 127.186669);
-        mMap.addMarker(new MarkerOptions().position(MJU).title("명지대"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(MJU, 15));
+    //방법 4
+        AssetManager assetManager = getActivity().getAssets();
+
+
+        try{
+            //파일을 읽기 위한 inputStream
+            InputStream is = assetManager.open("Restaurant.json");
+            InputStreamReader isr = new InputStreamReader(is);
+            BufferedReader reader = new BufferedReader(isr);
+
+            StringBuffer buffer = new StringBuffer();
+            String line = reader.readLine();
+            while(line!=null){
+                buffer.append(line+"\n");
+                line = reader.readLine();
+            }
+
+            String json = buffer.toString();
+
+            JSONObject jsonObject = new JSONObject(json);
+            String info = jsonObject.getString("info");
+            JSONArray jsonArray = new JSONArray(info);
+            for (int i = 0; i<info.length();i++){
+                JSONObject subJsonObject = jsonArray.getJSONObject(i);
+                String name = subJsonObject.getString("BIZPLC_NM");
+                String addr = subJsonObject.getString("REFINE_ROADNM_ADDR");
+                String lat = subJsonObject.getString("REFINE_WGS84_LAT");
+                String log = subJsonObject.getString("REFINE_WGS84_LOGT");
+
+                double LAT = Double.parseDouble(lat);
+                double LOG = Double.parseDouble(log);
+
+                LatLng latLng = new LatLng(LAT, LOG);
+                String makerSnippet = "도로명 주소" + String.valueOf("REFINE_LOTNO_ADDR")+"\n";
+                mMap.addMarker(new MarkerOptions().position(latLng).title(name));
+            }
+
+        }catch (JSONException | IOException e){
+            e.printStackTrace();
+        }
+
+
+        LatLng stand = new LatLng(37.229635, 127.187521);
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(stand, 15));
+
 
     }
+
+
 }
