@@ -14,7 +14,7 @@ public class UserFindActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_find);
+        setContentView(R.layout.activity_userfind);
 
         btn_backLogin = findViewById(R.id.btn_backLogin);
         btn_backLogin.setOnClickListener(new View.OnClickListener() {
