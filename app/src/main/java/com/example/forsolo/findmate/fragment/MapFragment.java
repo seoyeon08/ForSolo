@@ -32,11 +32,11 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
     private GoogleMap mMap;
     private MapView mapView = null;
 
-
+    //지도생성
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.activity_map, container, false); //[1006]h0: fragment_map -> activity_map 으로 교체해봄
+        view = inflater.inflate(R.layout.activity_map, container, false);
         mapView = (MapView) view.findViewById(R.id.map);
         mapView.getMapAsync(this);
 
@@ -94,7 +94,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-//액티비티가 처음 생성될 때 실행되는 함수
+        //액티비티가 처음 생성될 때 실행되는 함수
 
         if (mapView != null) {
             mapView.onCreate(savedInstanceState);
@@ -104,13 +104,14 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
 
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
+        MarkerOptions markerOptions = new MarkerOptions();
 
     //방법 4
         AssetManager assetManager = getActivity().getAssets();
 
 
         try{
-            //파일을 읽기 위한 inputStream
+            //파일을 읽기 위한 inputStream생성
             InputStream is = assetManager.open("Restaurant.json");
             InputStreamReader isr = new InputStreamReader(is);
             BufferedReader reader = new BufferedReader(isr);
@@ -123,35 +124,42 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
             }
 
             String json = buffer.toString();
-
+            //JSONObject 생성
             JSONObject jsonObject = new JSONObject(json);
             String info = jsonObject.getString("info");
+            //JSONArray 생성
             JSONArray jsonArray = new JSONArray(info);
+
             for (int i = 0; i<info.length();i++){
                 JSONObject subJsonObject = jsonArray.getJSONObject(i);
+                //JSONObject로 부터 json 파일의 키에 맞는 값 가져오기
                 String name = subJsonObject.getString("BIZPLC_NM");
                 String addr = subJsonObject.getString("REFINE_ROADNM_ADDR");
                 String lat = subJsonObject.getString("REFINE_WGS84_LAT");
                 String log = subJsonObject.getString("REFINE_WGS84_LOGT");
 
+                //String 타입의 위도, 경도를 double 타입으로 변환
                 double LAT = Double.parseDouble(lat);
                 double LOG = Double.parseDouble(log);
 
+
                 LatLng latLng = new LatLng(LAT, LOG);
-                String makerSnippet = "도로명 주소" + String.valueOf("REFINE_LOTNO_ADDR")+"\n";
-                mMap.addMarker(new MarkerOptions().position(latLng).title(name));
+
+                //marker에 식당 이름, 주소를 포함한 마커 생성
+                markerOptions.position(latLng);
+                markerOptions.title(name);
+                markerOptions.snippet(addr);
+                mMap.addMarker(markerOptions);
             }
 
         }catch (JSONException | IOException e){
             e.printStackTrace();
         }
 
-
+        //카메라를 해당 위치로 잡아둠
         LatLng stand = new LatLng(37.229635, 127.187521);
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(stand, 15));
 
 
     }
-
-
 }
