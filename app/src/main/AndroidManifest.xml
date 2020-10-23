@@ -6,6 +6,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera2" />
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera.autofocus" />
 
@@ -41,6 +42,7 @@
 
         <!--        채팅-->
         <activity android:name=".chat.ChatActivity"/>
+        <activity android:name=".chat.ChattingActivity"/>
 
         <!--지도!-->
         <meta-data

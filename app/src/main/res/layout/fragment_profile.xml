@@ -15,19 +15,26 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-        <ImageView
-            android:id="@+id/profileImageView"
+
+        <androidx.cardview.widget.CardView
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_marginRight="25dp"
-            android:scaleType="fitCenter"
-            android:background="@null"
-            android:src="@drawable/user"
-            ></ImageView>
+            app:cardCornerRadius="100dp">
+
+            <ImageView
+                android:id="@+id/profileImageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginRight="25dp"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/user"></ImageView>
+        </androidx.cardview.widget.CardView>
         <TextView
             android:id="@+id/profile_intro_TextView"
             android:layout_width="240dp"
             android:layout_height="100dp"
+            android:layout_marginLeft="25dp"
             android:textSize="15dp"
             android:paddingTop="15dp"
             android:gravity="center_horizontal"
@@ -35,23 +42,7 @@
 
     </LinearLayout>
 
-    <RelativeLayout
-        android:layout_width="115dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginLeft="15dp"
-        >
 
-        <Button
-            android:id="@+id/btn_capture"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/profile_btn"
-            android:gravity="center"
-            android:text="프로필 사진 변경"
-            android:textColor="#ffffff"
-            android:textSize="15dp"></Button>
-    </RelativeLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -105,13 +96,14 @@
             android:textSize="25dp" />
 
         <RadioGroup
-            android:id="@+id/add_sex"
+            android:id="@+id/gender"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:orientation="horizontal">
 
             <RadioButton
+                android:id="@+id/man"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingRight="20dp"
@@ -120,6 +112,7 @@
                 android:textSize="20dp"></RadioButton>
 
             <RadioButton
+                android:id="@+id/woman"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="여자"
@@ -159,26 +152,21 @@
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="270dp"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="22dp"
 
             android:src="@drawable/profile_image"></ImageView>
-
-    </LinearLayout>
-
-    <RelativeLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:gravity="bottom">
         <Button
             android:id="@+id/writeButton"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+
             android:background="@drawable/btn_pink"
             android:text="수정하기"
             android:textColor="#FFFFFF"
             android:textSize="30dp"></Button>
-    </RelativeLayout>
+
+    </LinearLayout>
 
     <RelativeLayout
         android:id="@+id/buttonsBackgroundLayout"

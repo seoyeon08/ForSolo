@@ -2,6 +2,7 @@ package com.example.forsolo.findmate.fragment;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -9,6 +10,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -54,6 +57,28 @@ public class ProfileFragment extends Fragment {
         final TextView ageTextView = root.findViewById(R.id.ageTextView);
         final TextView majorTextView = root.findViewById(R.id.majorTextView);
         final TextView introTextView = root.findViewById(R.id.profile_intro_TextView);
+        final RadioGroup radioGroup=root.findViewById(R.id.gender);
+        final RadioButton man=root.findViewById(R.id.man);
+        final RadioButton woman=root.findViewById(R.id.woman);
+
+        final SharedPreferences myPrefs= getActivity().getPreferences(Context.MODE_PRIVATE);
+        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                if(checkedId==R.id.man){
+                    myPrefs.edit().putInt("selected", 1).commit();
+                }else if (checkedId==R.id.woman){
+                    myPrefs.edit().putInt("selected",2).commit();
+                }
+            }
+        });
+        int s=myPrefs.getInt("selected",0);
+        if(s==1){
+            man.setChecked(true);
+        }else if(s==2){
+            woman.setChecked(true);
+        }
+
 
         write_btn.setOnClickListener(new View.OnClickListener() {
             @Override

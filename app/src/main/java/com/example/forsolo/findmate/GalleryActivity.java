@@ -30,7 +30,7 @@ public class GalleryActivity extends BasicActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gallery);
-        setToolbarTitle("갤러리");
+        //setToolbarTitle("갤러리");
 
         if (ContextCompat.checkSelfPermission(GalleryActivity.this,
                 Manifest.permission.READ_EXTERNAL_STORAGE)
@@ -48,6 +48,7 @@ public class GalleryActivity extends BasicActivity {
             recyclerInit();
         }
     }
+
 
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String permissions[], @NonNull int[] grantResults) {
@@ -74,7 +75,7 @@ public class GalleryActivity extends BasicActivity {
         recyclerView.setAdapter(mAdapter);
     }
 
-    public ArrayList<String> getImagesPath(Activity activity) {
+     public ArrayList<String> getImagesPath(Activity activity) {
         Uri uri;
         ArrayList<String> listOfAllImages = new ArrayList<String>();
         Cursor cursor;

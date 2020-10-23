@@ -94,8 +94,8 @@ public class ChatActivity extends AppCompatActivity {
 
         //바꾼것도 없고, 처음 접속도 아니고..
         if(!isChanged && !isFirst){
-            //ChatActivity로 전환
-            Intent intent= new Intent(this, ChatActivity.class);
+            //ChattingActivity로 전환
+            Intent intent= new Intent(this, ChattingActivity.class);
             startActivity(intent);
             finish();
         }else{
@@ -117,7 +117,7 @@ public class ChatActivity extends AppCompatActivity {
 
         //Firebase storage에 저장하기
         FirebaseStorage firebaseStorage= FirebaseStorage.getInstance();
-        final StorageReference imgRef= firebaseStorage.getReference("profileImages/"+fileName);
+        final StorageReference imgRef= firebaseStorage.getReference("users/"+fileName);
 
         //파일 업로드
         UploadTask uploadTask=imgRef.putFile(imgUri);

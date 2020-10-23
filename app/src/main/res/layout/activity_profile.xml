@@ -51,10 +51,44 @@
             android:textColor="#ffffff"
             android:textSize="15dp"></Button>
     </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/buttonsBackgroundLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:visibility="gone">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="13dp"
+            android:padding="5dp">
+
+            <Button
+                android:id="@+id/picture"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/profile_btn"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:text="사진촬영" />
+
+            <Button
+                android:id="@+id/gallery"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:background="@drawable/profile_btn"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:text="갤러리" />
+        </LinearLayout>
+
+    </RelativeLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="535dp"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         android:paddingLeft="20dp"
         android:paddingTop="30dp"
@@ -103,13 +137,14 @@
             android:hint="학과를 입력해주세요." />
 
         <RadioGroup
-            android:id="@+id/add_sex"
+            android:id="@+id/gender"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:orientation="horizontal">
 
             <RadioButton
+                android:id="@+id/man"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="남자"
@@ -117,6 +152,7 @@
                 android:textSize="20dp" />
 
             <RadioButton
+                android:id="@+id/woman"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="여자"
@@ -128,7 +164,7 @@
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="270dp"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="20dp"
 
             android:src="@drawable/profile_image"></ImageView>
 
@@ -148,42 +184,6 @@
                 android:textColor="#FFFFFF"
                 android:textSize="30dp"></Button>
         </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/buttonsBackgroundLayout"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#9AC2F8"
-            android:visibility="gone">
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:elevation="10dp"
-                app:cardCornerRadius="15dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:padding="5dp">
-
-                    <Button
-                        android:id="@+id/picture"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="사진촬영" />
-
-                    <Button
-                        android:id="@+id/gallery"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="갤러리" />
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-        </RelativeLayout>
     </LinearLayout>
+
 </LinearLayout>
