@@ -98,25 +98,15 @@
             />
     </LinearLayout>
 
-    <Button
-        android:id="@+id/btn_custom"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:layout_marginTop="20dp"
-        android:text="비회원"
-        android:textSize="20dp"
-        android:background="@color/colorWhite"
-        android:layout_gravity="right">
-    </Button>
 
     <Button
         android:id="@+id/btn_report"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="40dp"
         android:text="문의"
         android:textSize="20dp"
-        android:background="@color/colorWhite"
+        android:background="@drawable/btn_lightgray"
         android:layout_gravity="right">
     </Button>
 
