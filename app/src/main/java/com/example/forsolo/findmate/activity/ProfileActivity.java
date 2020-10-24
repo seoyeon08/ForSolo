@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.provider.MediaStore;
 import android.util.Log;
 import android.view.View;
@@ -40,7 +41,9 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
+import com.squareup.picasso.Picasso;
 
+import java.io.DataInput;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -59,6 +62,8 @@ public class ProfileActivity extends AppCompatActivity{
     private FirebaseUser user;
     private RadioButton man;
     private RadioButton woman;
+    Uri uri;
+    boolean isChanged= true;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -114,6 +119,12 @@ public class ProfileActivity extends AppCompatActivity{
         super.onBackPressed();
         finish();
     }
+    public void clickBtn(View view) {
+        //프로필 이미지 선택하도록 Gallery 앱 실행
+        Intent intent= new Intent(Intent.ACTION_PICK);
+        intent.setType("image/*");
+        startActivityForResult(intent,10);
+    }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
@@ -124,6 +135,22 @@ public class ProfileActivity extends AppCompatActivity{
                     profilePath = data.getStringExtra(INTENT_PATH);
                     Glide.with(this).load(profilePath).centerCrop().override(500).into(profileImageView);
                     buttonBackgroundLayout.setVisibility(View.GONE);
+                }
+                break;
+            }
+            case 10:{
+                if(resultCode==RESULT_OK){
+                    uri= data.getData();
+                    //Glide.with(this).load(imgUri).into(ivProfile);
+                    //Glide는 이미지를 읽어와서 보여줄때 내 device의 외장메모리에 접근하는 퍼미션이 요구됨.
+                    //(퍼미션이 없으면 이미지가 보이지 않음.)
+                    //Glide를 사용할 때는 동적 퍼미션 필요함.
+
+                    //Picasso 라이브러리는 퍼미션 없어도 됨.
+                    Picasso.get().load(uri).into(profileImageView);
+
+                    //변경된 이미지가 있다.
+                    isChanged=true;
                 }
                 break;
             }
@@ -147,8 +174,11 @@ public class ProfileActivity extends AppCompatActivity{
                     myStartActivity(CameraActivity.class);
                     break;
                 case R.id.gallery:
-                   myStartActivity(GalleryActivity.class);
-                    break;
+                    clickBtn(profileImageView);
+
+
+                    //myStartActivity(GalleryActivity.class);
+                   break;
             }
         }
     };

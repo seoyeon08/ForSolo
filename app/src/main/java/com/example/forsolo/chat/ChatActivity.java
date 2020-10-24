@@ -12,6 +12,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.forsolo.R;
+import com.example.forsolo.findmate.activity.ProfileActivity;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -100,8 +101,7 @@ public class ChatActivity extends AppCompatActivity {
         G.nickName= etName.getText().toString();
 
         //이미지를 선택하지 않았을 수도 있으므로
-        if(imgUri==null) return;
-
+        if(imgUri==null) return;;
         //Firebase storage에 이미지 저장하기 위해 파일명 만들기(날짜를 기반으로)
         SimpleDateFormat sdf= new SimpleDateFormat("yyyMMddhhmmss"); //20191024111224
         String fileName= sdf.format(new Date())+".png";
