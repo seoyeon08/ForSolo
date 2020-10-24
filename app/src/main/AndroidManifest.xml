@@ -47,7 +47,7 @@
         <!--지도!-->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyAji9AERbjXT56oh5qgn7Ikp3XjW7Le7ps" />
+            android:value="AIzaSyCAyDce01SkiKzsV8RAxZhnmes_xQnRYMQ" />
 
 
 
