@@ -16,7 +16,6 @@ import com.bumptech.glide.Glide;
 import com.example.forsolo.R;
 import com.example.forsolo.findmate.activity.SbordActivity;
 
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Locale;
 
@@ -27,7 +26,6 @@ public class BordAdapter extends RecyclerView.Adapter<BordAdapter.itemViewHolder
     private ArrayList<BordInfo> listData = new ArrayList<>();
     private ArrayList<BordInfo> arrayList;
     private Context contexts;
-
 
     public void addData(BordInfo data) {
         listData.add(data);

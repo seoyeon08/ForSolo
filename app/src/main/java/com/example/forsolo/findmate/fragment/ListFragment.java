@@ -12,7 +12,6 @@ import android.widget.EditText;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.widget.SearchView;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -138,6 +137,7 @@ public class ListFragment extends Fragment {
 
     public void getData() {
         // 데이터 받아오는 공간
+
 
         FirebaseFirestore db = FirebaseFirestore.getInstance();
 

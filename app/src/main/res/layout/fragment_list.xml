@@ -29,7 +29,6 @@
             android:hint="제목을 검색하세요."
             android:drawableLeft="@drawable/ic_baseline_search_24" />
 
-
     </RelativeLayout>
 
 
