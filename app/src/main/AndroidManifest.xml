@@ -47,7 +47,9 @@
         <!--지도!-->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyAaCpdCI44AfAAfGYW2nhOKL1JoqucwSqg" />
+            android:value="AIzaSyAji9AERbjXT56oh5qgn7Ikp3XjW7Le7ps" />
+
+
 
         <!--카메라!-->
         <activity android:name=".findmate.CameraActivity"/>

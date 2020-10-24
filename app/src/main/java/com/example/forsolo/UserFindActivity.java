@@ -19,6 +19,7 @@ import com.google.firebase.database.core.Tag;
 public class UserFindActivity extends AppCompatActivity {
 
     private TextView btn_backLogin;
+    private TextView btn_userfind;
 
 
     @Override
@@ -26,7 +27,10 @@ public class UserFindActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_userfind);
 
+//        변수랑 버튼연결
+        btn_userfind = findViewById(R.id.btn_userfind);
         btn_backLogin = findViewById(R.id.btn_backLogin);
+
         btn_backLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -34,22 +38,24 @@ public class UserFindActivity extends AppCompatActivity {
                 startActivity(intent);  //액티비티 이동
             }
         });
-    }
 
-    View.OnClickListener onClickListener = new View.OnClickListener() {
-        @Override
-        public void onClick(View view) {
-            switch (view.getId()){
-                case R.id.btn_userfind:
-                    send();
-                    break;
+        //비밀번호 찾기 버튼에다가 기능연결
+        btn_userfind.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                switch (view.getId()){
+                    case R.id.btn_userfind:
+                        send();     //point
+                        break;
             }
-        }
-    };
+            }
+        });
+
+    }
 
     private void send(){
         //이메일 입력정보 가져오기
-        String email = ((EditText)findViewById(R.id.emailEditText)).getText().toString();
+        String email = ((EditText)findViewById(R.id.email_userfind)).getText().toString();
 
         if(email.length() > 0){
             FirebaseAuth auth = FirebaseAuth.getInstance();
