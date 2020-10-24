@@ -114,8 +114,8 @@ public class ChattingActivity extends AppCompatActivity {
         et.setText("");
 
         //소프트키패드를 안보이도록..
-        InputMethodManager imm=(InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
-        imm.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(),0);
+        //InputMethodManager imm=(InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+        //imm.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(),0);
 
         //처음 시작할때 EditText가 다른 뷰들보다 우선시 되어 포커스를 받아 버림.
         //즉, 시작부터 소프트 키패드가 올라와 있음.

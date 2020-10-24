@@ -16,12 +16,15 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.auth.User;
 
 public class LoginActivity extends AppCompatActivity {
 
     public EditText loginEmailId, logInpasswd;
-    private TextView btnLogIn, btn_join;
-    private Button btn_custom, btn_report;
+
+    //각각의 버튼들을 의마함
+    private TextView btnLogIn, btn_join, btn_find;
+    private Button btn_report;
 
     FirebaseAuth firebaseAuth;
     private FirebaseAuth.AuthStateListener authStateListener;
@@ -38,10 +41,18 @@ public class LoginActivity extends AppCompatActivity {
         logInpasswd = findViewById(R.id.main_password);
         btnLogIn = findViewById(R.id.btn_login);
         btn_join = findViewById(R.id.btn_signUp_join);
-        btn_custom = findViewById(R.id.btn_custom);
+//        btn_custom = findViewById(R.id.btn_custom);
         btn_report = findViewById(R.id.btn_report);
+        btn_find = findViewById(R.id.btn_find);
 
-        // 비밀번호 찾기 버튼 만들기
+        // 비밀번호 찾기 버튼
+        btn_find.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LoginActivity.this, UserFindActivity.class);
+                startActivity(intent);  //액티비티 이동
+            }
+        });
 
         // 문의 이동 버튼
         btn_report.setOnClickListener(new View.OnClickListener() {
@@ -61,14 +72,14 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-        // 비회원 이동 버튼
-        btn_custom.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-                startActivity(intent);  //액티비티 이동
-            }
-        });
+//        // 비회원 이동 버튼
+//        btn_custom.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+//                startActivity(intent);  //액티비티 이동
+//            }
+//        });
 
         authStateListener = new FirebaseAuth.AuthStateListener() {
             @Override

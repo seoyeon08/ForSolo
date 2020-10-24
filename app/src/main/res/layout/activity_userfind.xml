@@ -21,37 +21,27 @@
         />
 
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        >
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_marginTop="10dp"
-            android:background="@drawable/btn_cloudy"
-            android:layout_width="300dp"
-            android:layout_height="35dp"
-            android:hint="   E-mail"
-            android:layout_marginBottom="3dp"
-            />
-    </com.google.android.material.textfield.TextInputLayout>
+    <EditText
+        android:id="@+id/email_userfind"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:hint="   E-mail"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/btn_cloudy"
+        android:layout_gravity="center"/>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp">
-        <com.google.android.material.textfield.TextInputEditText
-            android:background="@drawable/btn_cloudy"
-            android:layout_width="300dp"
-            android:layout_height="35dp"
-            android:hint="   Student-number"
-            android:layout_marginBottom="20dp"
-            />
-    </com.google.android.material.textfield.TextInputLayout>
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:hint="   Student-number"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_cloudy"
+        android:layout_gravity="center"/>
 
 
     <TextView
+        android:id="@+id/btn_userfind"
         android:layout_gravity="center"
         android:layout_width="300dp"
         android:layout_height="35dp"
@@ -78,5 +68,13 @@
         android:gravity="center"
         android:layout_marginBottom="10dp"
         android:layout_marginTop="10dp"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/profile_image"
+        android:layout_gravity="right"
+        android:layout_marginTop="40dp"
         />
 </LinearLayout>

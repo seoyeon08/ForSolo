@@ -5,21 +5,15 @@ import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.forsolo.R;
+import com.example.forsolo.findmate.activity.ProfileActivity;
 import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.firebase.database.ChildEventListener;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FirebaseStorage;
@@ -28,9 +22,7 @@ import com.google.firebase.storage.UploadTask;
 import com.squareup.picasso.Picasso;
 
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
@@ -94,8 +86,8 @@ public class ChatActivity extends AppCompatActivity {
 
         //바꾼것도 없고, 처음 접속도 아니고..
         if(!isChanged && !isFirst){
-            //ChatActivity로 전환
-            Intent intent= new Intent(this, ChatActivity.class);
+            //ChattingActivity로 전환
+            Intent intent= new Intent(this, ChattingActivity.class);
             startActivity(intent);
             finish();
         }else{
@@ -109,15 +101,14 @@ public class ChatActivity extends AppCompatActivity {
         G.nickName= etName.getText().toString();
 
         //이미지를 선택하지 않았을 수도 있으므로
-        if(imgUri==null) return;
-
+        if(imgUri==null) return;;
         //Firebase storage에 이미지 저장하기 위해 파일명 만들기(날짜를 기반으로)
         SimpleDateFormat sdf= new SimpleDateFormat("yyyMMddhhmmss"); //20191024111224
         String fileName= sdf.format(new Date())+".png";
 
         //Firebase storage에 저장하기
         FirebaseStorage firebaseStorage= FirebaseStorage.getInstance();
-        final StorageReference imgRef= firebaseStorage.getReference("profileImages/"+fileName);
+        final StorageReference imgRef= firebaseStorage.getReference("users/"+fileName);
 
         //파일 업로드
         UploadTask uploadTask=imgRef.putFile(imgUri);

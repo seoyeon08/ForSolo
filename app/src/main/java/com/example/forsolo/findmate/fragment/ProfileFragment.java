@@ -2,6 +2,7 @@ package com.example.forsolo.findmate.fragment;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -9,6 +10,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -54,7 +57,7 @@ public class ProfileFragment extends Fragment {
         final TextView ageTextView = root.findViewById(R.id.ageTextView);
         final TextView majorTextView = root.findViewById(R.id.majorTextView);
         final TextView introTextView = root.findViewById(R.id.profile_intro_TextView);
-
+        final TextView genderTextView=root.findViewById(R.id.genderTextView);
         write_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -79,6 +82,7 @@ public class ProfileFragment extends Fragment {
                                     ageTextView.setText(document.getData().get("age").toString());
                                     majorTextView.setText(document.getData().get("major").toString());
                                     introTextView.setText(document.getData().get("intro").toString());
+                                    genderTextView.setText(document.getData().get("gender").toString());
                                 } else {
                                     Log.d(TAG, "No such document");
                                 }

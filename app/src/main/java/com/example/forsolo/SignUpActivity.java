@@ -52,7 +52,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
 
         btnSignUp.setOnClickListener(this);
     }
-
+//    토스트메세지를 보내는 역할이죠
     private void toastMessage(String message) {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
     }

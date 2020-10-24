@@ -79,7 +79,7 @@ public class CameraActivity extends BasicActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_camera);
-       // setToolbarTitle(getResources().getString(R.string.app_name));
+       setToolbarTitle(getResources().getString(R.string.app_name));
         if (null == savedInstanceState) {
             camera2BasicFragment = new Camera2BasicFragment();
             camera2BasicFragment.setOnImageAvailableListener(mOnImageAvailableListener);
