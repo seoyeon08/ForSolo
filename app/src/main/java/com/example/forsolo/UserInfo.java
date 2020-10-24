@@ -7,21 +7,25 @@ public class UserInfo {
     private String major;
     private String photoUrl;
     private String Intro;
+    private String gender;
 
-    public UserInfo(String name, String age, String major, String Intro, String photoUrl){
+    public UserInfo(String name, String age, String major, String Intro, String gender, String photoUrl){
         this.name = name;
         this.age = age;
         this.major = major;
         this.Intro = Intro;
+        this.gender=gender;
         this.photoUrl = photoUrl;
     }
 
-    public UserInfo(String name, String age, String major, String Intro){
+    public UserInfo(String name, String age, String major, String Intro, String gender){
         this.name = name;
         this.age = age;
         this.major = major;
         this.Intro=Intro;
+        this.gender=gender;
     }
+
     public String getName() {
         return name;
     }
@@ -59,6 +63,13 @@ public class UserInfo {
     }
 
     public void setIntro(String intro) {
-        Intro = intro;
+        this.Intro = intro;
+    }
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
     }
 }

@@ -24,6 +24,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.forsolo.LoginActivity;
+import com.example.forsolo.MainActivity;
 import com.example.forsolo.SignUpActivity;
 import com.example.forsolo.UserInfo;
 import com.bumptech.glide.Glide;
@@ -48,6 +49,8 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.InputStream;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import static com.example.forsolo.findmate.Util.INTENT_PATH;
 import static com.example.forsolo.findmate.Util.showToast;
@@ -80,45 +83,8 @@ public class ProfileActivity extends AppCompatActivity{
         findViewById(R.id.picture).setOnClickListener(onClickListener);
         findViewById(R.id.gallery).setOnClickListener(onClickListener);
 
-        man=findViewById(R.id.man);
-        woman=findViewById(R.id.woman);
-
-        man.setChecked(Update("man"));
-        woman.setChecked(Update("woman"));
-
-        man.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton buttonView, boolean man_isChecked) {
-                SaveIntoSharedPrefs("man", man_isChecked);
-            }
-        });
-
-        woman.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton buttonView, boolean woman_isChecked) {
-
-                SaveIntoSharedPrefs("woman", woman_isChecked);
-            }
-        });
-
     }
 
-    private void SaveIntoSharedPrefs(String key, boolean value){
-        SharedPreferences sp = getSharedPreferences("gender", MODE_PRIVATE);
-        SharedPreferences.Editor editor = sp.edit();
-        editor.putBoolean(key, value);
-        editor.apply();
-    }
-
-    private boolean Update(String key){
-        SharedPreferences sp = getSharedPreferences("gender", MODE_PRIVATE);
-        return sp.getBoolean(key, false);
-    }
-
-    public void onBackPresserd(){
-        super.onBackPressed();
-        finish();
-    }
     public void clickBtn(View view) {
         //프로필 이미지 선택하도록 Gallery 앱 실행
         Intent intent= new Intent(Intent.ACTION_PICK);
@@ -148,13 +114,33 @@ public class ProfileActivity extends AppCompatActivity{
 
                     //Picasso 라이브러리는 퍼미션 없어도 됨.
                     Picasso.get().load(uri).into(profileImageView);
-
                     //변경된 이미지가 있다.
-                    isChanged=true;
+                    clickUpload(profileImageView);
                 }
                 break;
             }
         }
+    }
+
+    public void clickUpload(View view){
+        FirebaseStorage firebaseStorage = FirebaseStorage.getInstance();
+
+        //2. 업로드할 파일의 node를 참조하는 객체
+        //파일 명이 중복되지 않도록 날짜를 이용
+        SimpleDateFormat sdf= new SimpleDateFormat("yyyyMMddhhmmss");
+        String filename= sdf.format(new Date())+ ".png";//현재 시간으로 파일명 지정 20191023142634
+        //원래 확장자는 파일의 실제 확장자를 얻어와서 사용해야함. 그러려면 이미지의 절대 주소를 구해야함.
+
+        StorageReference imgRef= firebaseStorage.getReference("users/"+filename);
+        //users라는 폴더가 없으면 자동 생성
+
+        //참조 객체를 통해 이미지 파일 업로드
+        // imgRef.putFile(imgUri);
+        //업로드 결과를 받고 싶다면..
+        UploadTask uploadTask =imgRef.putFile(uri);
+
+        //업로드한 파일의 경로를 firebaseDB에 저장하면 게시판 같은 앱도 구현할 수 있음.
+
     }
 
     View.OnClickListener onClickListener = new View.OnClickListener() {
@@ -175,8 +161,6 @@ public class ProfileActivity extends AppCompatActivity{
                     break;
                 case R.id.gallery:
                     clickBtn(profileImageView);
-
-
                     //myStartActivity(GalleryActivity.class);
                    break;
             }
@@ -188,9 +172,9 @@ public class ProfileActivity extends AppCompatActivity{
         final String major = ((EditText) findViewById(R.id.majorEditText)).getText().toString();
         final String age = ((EditText) findViewById(R.id.ageEditText)).getText().toString();
         final String Intro = ((EditText) findViewById(R.id.profile_intro)).getText().toString();
-        //final RadioGroup sex = ((RadioGroup) findViewById(R.id.add_sex));
+        final String gender = ((EditText) findViewById(R.id.gender)).getText().toString();
 
-        if(name.length()>0 && major.length()>1 && age.length()>1&&Intro.length()>0){
+        if(name.length()>0 && major.length()>1 && age.length()>1&&Intro.length()>0 &&gender.length()>1){
             //loaderLayout.setVisibility(View.VISIBLE);
             FirebaseStorage storage = FirebaseStorage.getInstance();
             StorageReference storageRef = storage.getReference();
@@ -198,7 +182,7 @@ public class ProfileActivity extends AppCompatActivity{
             final StorageReference mountainImageRef = storageRef.child("users/" + user.getUid() + "/profileImage.jpg");
 
             if (profilePath == null) {
-                UserInfo userInfo = new UserInfo(name, age, major, Intro);
+                UserInfo userInfo = new UserInfo(name, age, major, Intro, gender);
                 storeUploader(userInfo);
             } else {
                 try {
@@ -218,7 +202,8 @@ public class ProfileActivity extends AppCompatActivity{
                             if (task.isSuccessful()) {
                                 Uri downloadUri = task.getResult();
 
-                                UserInfo userInfo = new UserInfo(name, age,major,Intro,downloadUri.toString());
+
+                                UserInfo userInfo = new UserInfo(name, age,major,Intro,gender,downloadUri.toString());
                                 storeUploader(userInfo);
                             } else {
                                 Toast.makeText(ProfileActivity.this, "회원정보를 보내는데 실패하였습니다.", Toast.LENGTH_SHORT).show();

@@ -57,29 +57,7 @@ public class ProfileFragment extends Fragment {
         final TextView ageTextView = root.findViewById(R.id.ageTextView);
         final TextView majorTextView = root.findViewById(R.id.majorTextView);
         final TextView introTextView = root.findViewById(R.id.profile_intro_TextView);
-        final RadioGroup radioGroup=root.findViewById(R.id.gender);
-        final RadioButton man=root.findViewById(R.id.man);
-        final RadioButton woman=root.findViewById(R.id.woman);
-
-        final SharedPreferences myPrefs= getActivity().getPreferences(Context.MODE_PRIVATE);
-        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(RadioGroup group, int checkedId) {
-                if(checkedId==R.id.man){
-                    myPrefs.edit().putInt("selected", 1).commit();
-                }else if (checkedId==R.id.woman){
-                    myPrefs.edit().putInt("selected",2).commit();
-                }
-            }
-        });
-        int s=myPrefs.getInt("selected",0);
-        if(s==1){
-            man.setChecked(true);
-        }else if(s==2){
-            woman.setChecked(true);
-        }
-
-
+        final TextView genderTextView=root.findViewById(R.id.genderTextView);
         write_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -104,6 +82,7 @@ public class ProfileFragment extends Fragment {
                                     ageTextView.setText(document.getData().get("age").toString());
                                     majorTextView.setText(document.getData().get("major").toString());
                                     introTextView.setText(document.getData().get("intro").toString());
+                                    genderTextView.setText(document.getData().get("gender").toString());
                                 } else {
                                     Log.d(TAG, "No such document");
                                 }
