@@ -23,7 +23,7 @@ import com.example.forsolo.LoginActivity;
 import com.example.forsolo.ManagementData;
 import com.example.forsolo.R;
 import com.example.forsolo.ReportActivity;
-import com.example.forsolo.SignOutActivity;
+//import com.example.forsolo.SignOutActivity;
 import com.example.forsolo.findmate.activity.ProfileActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
