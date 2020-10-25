@@ -160,7 +160,6 @@ public class WritePostActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<Void> task) {
                         if (task.isSuccessful()) {
                             Toast.makeText(getApplicationContext(), "업로드 성공!", Toast.LENGTH_LONG).show();
-                            onBackPressed();
                             finish();
                         }
                     }
