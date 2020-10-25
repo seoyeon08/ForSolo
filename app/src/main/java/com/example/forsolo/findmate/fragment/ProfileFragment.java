@@ -23,6 +23,7 @@ import com.example.forsolo.LoginActivity;
 import com.example.forsolo.ManagementData;
 import com.example.forsolo.R;
 import com.example.forsolo.ReportActivity;
+import com.example.forsolo.SignOutActivity;
 import com.example.forsolo.findmate.activity.ProfileActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -133,6 +134,15 @@ public class ProfileFragment extends Fragment {
 
                     }
                 });
+
+
+//        btnSignOut.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(ProfileFragment.this, SignOutActivity.class);
+//                startActivity(intent);  //액티비티 이동
+//            }
+//        });
 
         btnSignOut.setOnClickListener(new View.OnClickListener() {
                     @Override
