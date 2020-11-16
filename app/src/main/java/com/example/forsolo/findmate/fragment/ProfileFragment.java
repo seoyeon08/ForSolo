@@ -135,15 +135,6 @@ public class ProfileFragment extends Fragment {
                     }
                 });
 
-
-//        btnSignOut.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(ProfileFragment.this, SignOutActivity.class);
-//                startActivity(intent);  //액티비티 이동
-//            }
-//        });
-
         btnSignOut.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
