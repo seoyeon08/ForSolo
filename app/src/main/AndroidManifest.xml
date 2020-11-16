@@ -61,6 +61,9 @@
         <activity android:name=".findmate.activity.WritePostActivity" />
         <activity android:name=".findmate.activity.SbordActivity" />
 
+        <!--리뷰-->
+        <activity android:name=".findmate.activity.RWritePostActivity" />
+        <activity android:name=".findmate.activity.RbordActivity" />
     </application>
 
 </manifest>

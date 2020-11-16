@@ -13,6 +13,7 @@ import com.example.forsolo.R;
 import com.example.forsolo.findmate.fragment.ListFragment;
 import com.example.forsolo.findmate.fragment.MapFragment;
 import com.example.forsolo.findmate.fragment.ProfileFragment;
+import com.example.forsolo.findmate.fragment.ReviewFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class FindMateActivity extends AppCompatActivity {
@@ -23,6 +24,7 @@ public class FindMateActivity extends AppCompatActivity {
     private ListFragment listFragment;
     private MapFragment mapFragment;
     private ProfileFragment profileFragment;
+    private ReviewFragment reviewFragment;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -43,6 +45,9 @@ public class FindMateActivity extends AppCompatActivity {
                     case R.id.action_profile :
                         setFrag(2);
                         break;
+                    case R.id.action_review :
+                        setFrag(3);
+                        break;
                 }
 
                 return true;
@@ -51,6 +56,7 @@ public class FindMateActivity extends AppCompatActivity {
         listFragment = new ListFragment();
         mapFragment = new MapFragment();
         profileFragment = new ProfileFragment();
+        reviewFragment = new ReviewFragment();
         setFrag(0);     //첫 fragment 화면을 무엇으로 지정할 지 설정함
     }
 
@@ -71,6 +77,10 @@ public class FindMateActivity extends AppCompatActivity {
                 break;
             case 2:
                 ft.replace(R.id.frame_content, profileFragment);
+                ft.commit();
+                break;
+            case 3:
+                ft.replace(R.id.frame_content, reviewFragment);
                 ft.commit();
                 break;
         }
