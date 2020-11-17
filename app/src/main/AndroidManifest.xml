@@ -61,6 +61,12 @@
         <activity android:name=".findmate.activity.WritePostActivity" />
         <activity android:name=".findmate.activity.SbordActivity" />
 
+
+        <activity android:name=".groupBuying.GWritePostActivity" />
+        <activity android:name=".groupBuying.GbordActivity" />
+        <activity android:name=".groupBuying.groupBuyingActivity" />
+
+
     </application>
 
 </manifest>

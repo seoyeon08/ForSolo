@@ -8,10 +8,12 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.example.forsolo.findmate.activity.FindMateActivity;
+import com.example.forsolo.groupBuying.groupBuyingActivity;
 
 public class MainActivity extends AppCompatActivity {
 
     private ImageView btn_FindMate;
+    private ImageView btn_Findexchange;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,8 +26,26 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, FindMateActivity.class);
                 startActivity(intent);
+
+
+
+            }
+
+
+        });
+
+        btn_Findexchange = findViewById(R.id.btn_findExchange);
+        btn_Findexchange.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, groupBuyingActivity.class);
+                startActivity(intent);
+
+
+
             }
         });
     }
+
 
 }
