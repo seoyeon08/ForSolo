@@ -12,7 +12,6 @@ import androidx.annotation.NonNull;
 import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.bumptech.glide.Glide;
 import com.example.forsolo.R;
 import com.example.forsolo.findmate.activity.RbordActivity;
 
@@ -102,7 +101,6 @@ public class RBordAdapter extends RecyclerView.Adapter<RBordAdapter.itemViewHold
             subjectTextView = itemView.findViewById(R.id.r_bord_item_subject);
             itemLayout = itemView.findViewById(R.id.r_bord_item_layout);
             timeTextView = itemView.findViewById(R.id.r_bord_item_time);
-            circleImageView = itemView.findViewById(R.id.r_bord_item_Image);
 
             itemClickListener();
         }
@@ -144,11 +142,8 @@ public class RBordAdapter extends RecyclerView.Adapter<RBordAdapter.itemViewHold
             timeTextView.setText(uploadTimeText);
 
             userName = data.getUserName();
-            userProfileUrl = data.getUserProfileUrl();
 
-            if (userProfileUrl != null){
-                Glide.with(contexts).load(userProfileUrl).into(circleImageView);
-            }
+
         }
     }
 }

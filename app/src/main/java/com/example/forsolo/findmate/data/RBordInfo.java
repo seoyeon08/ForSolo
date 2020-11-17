@@ -59,5 +59,4 @@ public class RBordInfo {
 
     public String getUserName(){return this.userName;}
 
-    public String getUserProfileUrl() {return this.userProfileUrl;}
 }

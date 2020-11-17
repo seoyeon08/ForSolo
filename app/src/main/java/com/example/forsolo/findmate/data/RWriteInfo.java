@@ -36,5 +36,4 @@ public class RWriteInfo {
     public String getDate(){return this.date;}
     public String getSc(){return this.sc;}
     public String getUserName(){return this.name;}
-    public String getUserProfileURL(){return this.profileURL;}
 }
