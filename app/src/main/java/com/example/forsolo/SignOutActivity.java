@@ -1,5 +1,6 @@
 package com.example.forsolo;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -44,7 +45,11 @@ public class SignOutActivity extends AppCompatActivity {
             }
         });
 
-
+//        @Override
+//        public void onAttach(Context context) {
+//            super.onAttach(context);
+//        }
+//
 //        btn_signout.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {
@@ -64,4 +69,11 @@ public class SignOutActivity extends AppCompatActivity {
 //        }
 
     }
+
+
+
+
+
+
+
 }
