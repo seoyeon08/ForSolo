@@ -18,9 +18,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.example.forsolo.R;
-import com.example.forsolo.findmate.activity.WritePostActivity;
-import com.example.forsolo.findmate.data.BordAdapter;
-import com.example.forsolo.findmate.data.BordInfo;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
