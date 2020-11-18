@@ -1,4 +1,4 @@
-package com.example.forsolo.groupBuying;
+package com.example.forsolo.groupRecipe;
 
 import android.content.Context;
 import android.content.Intent;
@@ -14,16 +14,16 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.example.forsolo.R;
-import com.example.forsolo.groupBuying.GbordActivity;
+import com.example.forsolo.groupBuying.GBordAdapter;
 import com.example.forsolo.groupBuying.GBordInfo;
+import com.example.forsolo.groupBuying.GbordActivity;
 
 import java.util.ArrayList;
 import java.util.Locale;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
-public class GBordAdapter extends RecyclerView.Adapter<GBordAdapter.itemViewHolder> {
-
+public class RecipeBordAdapter extends RecyclerView.Adapter<RecipeBordAdapter.itemViewHolder> {
     private ArrayList<GBordInfo> listData = new ArrayList<>();
     private ArrayList<GBordInfo> arrayList;
     private Context contexts;
@@ -32,7 +32,7 @@ public class GBordAdapter extends RecyclerView.Adapter<GBordAdapter.itemViewHold
         listData.add(data);
     }
 
-    public GBordAdapter(Context context) {
+    public RecipeBordAdapter(Context context) {
         contexts = context;
     }
 
@@ -67,15 +67,15 @@ public class GBordAdapter extends RecyclerView.Adapter<GBordAdapter.itemViewHold
 
     @NonNull
     @Override
-    public itemViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public RecipeBordAdapter.itemViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.bord_recyclerview_item, parent, false);
 
-        return new itemViewHolder(view);
+        return new RecipeBordAdapter.itemViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull GBordAdapter.itemViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull RecipeBordAdapter.itemViewHolder holder, int position) {
         holder.onBind(listData.get(position));
     }
 
@@ -84,7 +84,7 @@ public class GBordAdapter extends RecyclerView.Adapter<GBordAdapter.itemViewHold
         return listData.size();
     }
 
-    public class itemViewHolder extends RecyclerView.ViewHolder {
+    class itemViewHolder extends RecyclerView.ViewHolder {
 
 
         String title, time, place, memberCount, content, uploadTimeText, email, sc, userName, userProfileUrl = null;
