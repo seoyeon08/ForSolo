@@ -1,5 +1,6 @@
 package com.example.forsolo.chat;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -48,7 +49,8 @@ public class ChatAdapter extends BaseAdapter {
         View itemView=null;
 
         //메세지가 내 메세지인지??
-        if(item.getName().equals(G.nickName)){
+        String name = item.getName();
+        if(name!=null && name.equals(G.nickName)){
             itemView= layoutInflater.inflate(R.layout.my_msgbox,viewGroup,false);
         }else{
             itemView= layoutInflater.inflate(R.layout.other_msgbox,viewGroup,false);

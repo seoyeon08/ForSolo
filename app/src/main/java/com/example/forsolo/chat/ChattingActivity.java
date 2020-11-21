@@ -1,9 +1,8 @@
 package com.example.forsolo.chat;
 
-import android.content.Context;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
-import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.ListView;
 
@@ -33,14 +32,23 @@ public class ChattingActivity extends AppCompatActivity {
 
     //'chat'노드의 참조객체 참조변수
     DatabaseReference chatRef;
+    private String roomCode;
+    private String roomTitle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chatting);
 
+        // TODO: 3.대화방 상대의 정보를 받아옴
+        roomCode = getIntent().getStringExtra("roomCode");
+        roomTitle = getIntent().getStringExtra("roomTitle");
+        Log.d("TEST", "onCreate: roomcode: "+roomCode + "/"+roomTitle);
+
         //제목줄 제목글시를 닉네임으로(또는 채팅방)
-        getSupportActionBar().setTitle(G.nickName);
+        // TODO: 4. 대화방 이름 수정
+//        getSupportActionBar().setTitle(G.nickName);
+        getSupportActionBar().setTitle("\uD83D\uDCAC" + roomTitle);
 
         et=findViewById(R.id.et);
         listView=findViewById(R.id.listview);
@@ -63,12 +71,15 @@ public class ChattingActivity extends AppCompatActivity {
                 //새로 추가된 데이터(값 : MessageItem객체) 가져오기
                 MessageItem messageItem= dataSnapshot.getValue(MessageItem.class);
 
-                //새로운 메세지를 리스뷰에 추가하기 위해 ArrayList에 추가
-                messageItems.add(messageItem);
+                // TODO: 6. 이 채팅방에 해당하는 메세지만 가져온다.
+                if(messageItem.roomCode !=null && messageItem.roomCode.equals(roomCode)) {
+                    //새로운 메세지를 리스뷰에 추가하기 위해 ArrayList에 추가
+                    messageItems.add(messageItem);
 
-                //리스트뷰를 갱신
-                adapter.notifyDataSetChanged();
-                listView.setSelection(messageItems.size()-1); //리스트뷰의 마지막 위치로 스크롤 위치 이동
+                    //리스트뷰를 갱신
+                    adapter.notifyDataSetChanged();
+                    listView.setSelection(messageItems.size()-1); //리스트뷰의 마지막 위치로 스크롤 위치 이동
+                }
             }
 
             @Override
@@ -106,7 +117,7 @@ public class ChattingActivity extends AppCompatActivity {
         String time=calendar.get(Calendar.HOUR_OF_DAY)+":"+calendar.get(Calendar.MINUTE); //14:16
 
         //firebase DB에 저장할 값(MessageItem객체) 설정
-        MessageItem messageItem= new MessageItem(nickName,message,time,pofileUrl);
+        MessageItem messageItem= new MessageItem(nickName,message,time,pofileUrl, roomCode);
         //'char'노드에 MessageItem객체를 통해
         chatRef.push().setValue(messageItem);
 

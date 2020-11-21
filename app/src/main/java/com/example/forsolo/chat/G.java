@@ -4,4 +4,5 @@ package com.example.forsolo.chat;
 public class G {
     public static String nickName;
     public static String porfileUrl;
+    public static String email;
 }

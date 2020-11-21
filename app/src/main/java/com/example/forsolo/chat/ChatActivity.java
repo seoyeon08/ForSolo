@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -34,6 +35,8 @@ public class ChatActivity extends AppCompatActivity {
 
     boolean isFirst= true; //앱을 처음 실행한 것인가?
     boolean isChanged= false; //프로필을 변경한 적이 있는가?
+    private String roomCode;
+    private String roomTitle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +45,12 @@ public class ChatActivity extends AppCompatActivity {
 
         etName=findViewById(R.id.et_name);
         ivProfile=findViewById(R.id.iv_profile);
+
+
+        // TODO: 3.대화방 정보를 받아옴
+        roomCode = getIntent().getStringExtra("roomCode");
+        roomTitle = getIntent().getStringExtra("roomTitle");
+        Log.d("TEST", "onCreate: roomcode: "+roomCode + "/"+roomTitle);
 
         //폰에 저장되어 있는 프로필 읽어오기
         loadData();
@@ -88,6 +97,8 @@ public class ChatActivity extends AppCompatActivity {
         if(!isChanged && !isFirst){
             //ChattingActivity로 전환
             Intent intent= new Intent(this, ChattingActivity.class);
+            intent.putExtra("roomCode", roomCode);
+            intent.putExtra("roomTitle", roomTitle);
             startActivity(intent);
             finish();
         }else{
@@ -144,6 +155,8 @@ public class ChatActivity extends AppCompatActivity {
                         editor.commit();
                         //저장이 완료되었으니 ChattingActivity로 전환
                         Intent intent=new Intent(ChatActivity.this, ChattingActivity.class);
+                        intent.putExtra("roomCode", roomCode);
+                        intent.putExtra("roomTitle", roomTitle);
                         startActivity(intent);
                         finish();
 

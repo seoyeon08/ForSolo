@@ -22,6 +22,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.bumptech.glide.Glide;
 import com.example.forsolo.R;
 import com.example.forsolo.chat.ChatActivity;
+import com.example.forsolo.chat.ChattingActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
@@ -314,11 +315,13 @@ public class SbordActivity extends AppCompatActivity {
 
 
     private void onClickListener() {
+        // TODO: 1.상대방을 지정하기 위해서 대화 상대의 정보를 지정함
         chatButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), ChatActivity.class);
-                intent.putExtra("email", emailText);
+                intent.putExtra("roomCode", sc);
+                intent.putExtra("roomTitle", titleText);
                 startActivity(intent);
             }
         });

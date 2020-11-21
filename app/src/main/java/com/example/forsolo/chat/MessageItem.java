@@ -6,12 +6,14 @@ public class MessageItem {
     String message;
     String time;
     String pofileUrl;
+    String roomCode;
 
-    public MessageItem(String name, String message, String time, String pofileUrl) {
+    public MessageItem(String name, String message, String time, String pofileUrl, String receiver) {
         this.name = name;
         this.message = message;
         this.time = time;
         this.pofileUrl = pofileUrl;
+        this.roomCode = receiver;
     }
 
     //firebase DB에 객체로 값을 읽어올 때..
@@ -50,6 +52,25 @@ public class MessageItem {
 
     public void setPofileUrl(String pofileUrl) {
         this.pofileUrl = pofileUrl;
+    }
+
+    public String getRoomCode() {
+        return roomCode;
+    }
+
+    public void setRoomCode(String roomCode) {
+        this.roomCode = roomCode;
+    }
+
+    @Override
+    public String toString() {
+        return "MessageItem{" +
+                "name='" + name + '\'' +
+                ", message='" + message + '\'' +
+                ", time='" + time + '\'' +
+                ", pofileUrl='" + pofileUrl + '\'' +
+                ", roomName='" + roomCode + '\'' +
+                '}';
     }
 }
 

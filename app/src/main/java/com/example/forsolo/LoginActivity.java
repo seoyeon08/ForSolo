@@ -12,6 +12,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.forsolo.chat.G;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
@@ -129,7 +130,9 @@ public class LoginActivity extends AppCompatActivity {
                                 // 앱 상에서 전반적인 유저 데이터 저장
                                 mData = ManagementData.getInstance();
                                 mData.setUserData(new UserData(user.getUid(), user.getDisplayName(), user.getEmail(), null));
-
+                                // TODO: 로그인시 내 정보를 저장하도록
+                                G.nickName = user.getDisplayName();
+                                G.email = user.getEmail();
                                 startActivity(new Intent(LoginActivity.this, MainActivity.class));
                             }
                         }
