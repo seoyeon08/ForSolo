@@ -115,7 +115,7 @@
             android:visibility="gone"
             app:layout_constraintBottom_toTopOf="@+id/g_justLine"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/del_btn" />
+            app:layout_constraintEnd_toStartOf="@+id/g_del_btn" />
 
         <Button
             android:id="@+id/g_del_btn"
