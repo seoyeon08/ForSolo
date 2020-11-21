@@ -25,16 +25,16 @@ public class SignOutActivity extends AppCompatActivity {
 
     private static final String TAG = "SignOUTActivity";
 
-    private Button btn_signout;
+    private Button btnSignOut;
     private Button btn_backProfile;
 
 
-
+//수정중
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
-        btn_signout = findViewById(R.id.btn_signout);
+        btnSignOut = findViewById(R.id.btnSignOut);
         btn_backProfile = findViewById(R.id.btn_backProfile);
 
         btn_backProfile.setOnClickListener(new View.OnClickListener() {

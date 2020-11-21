@@ -61,6 +61,16 @@
         <activity android:name=".findmate.activity.WritePostActivity" />
         <activity android:name=".findmate.activity.SbordActivity" />
 
+        <!--리뷰-->
+        <activity android:name=".findmate.activity.RWritePostActivity" />
+        <activity android:name=".findmate.activity.RbordActivity" />
+
+        <!--공동구매-->
+        <activity android:name=".groupBuying.GbordActivity" />
+        <activity android:name=".groupBuying.groupBuyingActivity" />
+        <activity android:name=".groupBuying.GWritePostActivity" />
+
+
     </application>
 
 </manifest>

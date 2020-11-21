@@ -1,4 +1,4 @@
-package com.example.forsolo.findmate.activity;
+package com.example.forsolo.groupRecipe;
 
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -16,7 +16,7 @@ import com.example.forsolo.findmate.fragment.ProfileFragment;
 import com.example.forsolo.findmate.fragment.ReviewFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class FindMateActivity extends AppCompatActivity {
+public class RecipeActivity extends AppCompatActivity {
 
     private BottomNavigationView bottomNavigationView;  //bottom navigation view
     private FragmentManager fm;
@@ -29,7 +29,7 @@ public class FindMateActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_findmate);
+        setContentView(R.layout.activity_recipe);
 
         bottomNavigationView = findViewById(R.id.bottom_nav);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -85,4 +85,5 @@ public class FindMateActivity extends AppCompatActivity {
                 break;
         }
     }
+
 }

@@ -49,14 +49,13 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/colorCloudyGray"
-            android:text="물품 나눔 친구 찾기 "
-            android:textSize="20dp"
-            android:textStyle="italic"
-            android:gravity="right"
             android:layout_marginBottom="20dp"
+            android:background="@color/colorCloudyGray"
+            android:gravity="right"
             android:paddingBottom="10dp"
-            />
+            android:text="식재료 공동 구매"
+            android:textSize="20dp"
+            android:textStyle="italic" />
 
         <ImageView
             android:id="@+id/btn_recipie"

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/fragmentList"
+    android:id="@+id/fragmentReview"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -20,7 +20,7 @@
         android:elevation="4dp">
 
         <EditText
-            android:id="@+id/searchView"
+            android:id="@+id/r_searchView"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_centerInParent="true"
@@ -33,26 +33,26 @@
 
 
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
-        android:id="@+id/swipe"
+        android:id="@+id/r_swipe"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="65dp">
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/Bord_RecyclerView"
+            android:id="@+id/r_Bord_RecyclerView"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/write_text"
+        android:id="@+id/r_write_text"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="30dp"
-        android:layout_marginBottom="60dp"
+        android:layout_marginBottom="30dp"
         android:backgroundTint="@color/colorPastelBlue"
         android:src="@drawable/edit_icon_white" />
 
