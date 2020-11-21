@@ -13,7 +13,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.forsolo.R;
-import com.example.forsolo.findmate.data.WriteInfo;
+import com.example.forsolo.findmate.data.RWriteInfo;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
@@ -146,7 +146,7 @@ public class RWritePostActivity extends AppCompatActivity {
         Log.d("asd", sc);
 
 
-        WriteInfo data = new WriteInfo(title, time, place, memberCount, content, email, uploadTimeText, sc, name, userProfileUrl);
+        RWriteInfo data = new RWriteInfo(title, time, place, memberCount, content, email, uploadTimeText, sc);
 
         fireStore.collection("review").document(sc).set(data)
                 .addOnCompleteListener(new OnCompleteListener<Void>() {

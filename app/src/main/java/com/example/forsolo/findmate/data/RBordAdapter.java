@@ -129,7 +129,7 @@ public class RBordAdapter extends RecyclerView.Adapter<RBordAdapter.itemViewHold
         void onBind(RBordInfo data) {
 
             titleTextView.setText(data.getTitle());
-            subjectTextView.setText(data.getPlace());
+            subjectTextView.setText(data.getContents());
 
             title = data.getTitle();
             time = data.getTime();

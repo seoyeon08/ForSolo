@@ -10,11 +10,9 @@ public class RWriteInfo {
     private String email;
     private String date;
     private String sc;
-    private String name;
-    private String profileURL;
 
 
-    public RWriteInfo(String title, String time, String place, String person, String contents, String email, String date, String sc, String name, String profileURL){
+    public RWriteInfo(String title, String time, String place, String person, String contents, String email, String date, String sc){
         this.title=title;
         this.time=time;
         this.place=place;
@@ -23,8 +21,6 @@ public class RWriteInfo {
         this.email=email;
         this.date=date;
         this.sc=sc;
-        this.name=name;
-        this.profileURL=profileURL;
     }
 
     public String getTitle(){return this.title;}
@@ -35,5 +31,4 @@ public class RWriteInfo {
     public String getEmail(){return this.email;}
     public String getDate(){return this.date;}
     public String getSc(){return this.sc;}
-    public String getUserName(){return this.name;}
 }
