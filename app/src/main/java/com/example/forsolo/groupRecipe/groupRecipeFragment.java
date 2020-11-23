@@ -18,9 +18,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.example.forsolo.R;
-import com.example.forsolo.groupBuying.GBordAdapter;
-import com.example.forsolo.groupBuying.GBordInfo;
-import com.example.forsolo.groupBuying.GWritePostActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -34,9 +31,10 @@ import java.util.List;
 import java.util.Locale;
 
 public class groupRecipeFragment extends Fragment {
+
     private View view;
 
-    private GBordAdapter bordAdapter;
+    private RecipeBordAdapter bordAdapter;
 
     RecyclerView recyclerView;
 
@@ -44,12 +42,12 @@ public class groupRecipeFragment extends Fragment {
 
     EditText searchView;
 
-    ArrayList<GBordInfo> getDataList = new ArrayList<>();
+    ArrayList<RecipeBoardInfo> r_getDataList = new ArrayList<>();
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.fragment_list, container, false);
+        view = inflater.inflate(R.layout.fragment_recipe, container, false);
 
         recyclerViewAction();
         fabAction();
@@ -64,10 +62,10 @@ public class groupRecipeFragment extends Fragment {
     public void onResume() {
         super.onResume();
 
-        searchView = view.findViewById(R.id.searchView);
+        searchView = view.findViewById(R.id.RecipeSearchView);
         searchView.setText("");
 
-        getDataList.clear();
+        r_getDataList.clear();
         bordAdapter.notifyDataSetChanged();
         recyclerView.removeAllViewsInLayout();
         recyclerView.removeAllViews();
@@ -78,12 +76,12 @@ public class groupRecipeFragment extends Fragment {
     }
 
     private void refresh() {
-        final SwipeRefreshLayout swipeRefreshLayout = view.findViewById(R.id.swipe);
+        final SwipeRefreshLayout swipeRefreshLayout = view.findViewById(R.id.RecipeSwipe);
         swipeRefreshLayout.setColorSchemeResources(R.color.colorPinkPurple);
         swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
-                getDataList.clear();
+                r_getDataList.clear();
                 bordAdapter.notifyDataSetChanged();
                 recyclerView.removeAllViewsInLayout();
                 recyclerView.removeAllViews();
@@ -97,16 +95,16 @@ public class groupRecipeFragment extends Fragment {
 
 
     public void fabAction() {
-        fab = view.findViewById(R.id.write_text);
+        fab = view.findViewById(R.id.recipe_write_text);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent(getActivity(), GWritePostActivity.class);
+                Intent intent = new Intent(getActivity(), RecipeWritePostActivity.class);
 
                 onDestroyView();
 
-                getDataList.clear();
+                r_getDataList.clear();
                 bordAdapter.notifyDataSetChanged();
                 recyclerView.removeAllViewsInLayout();
                 recyclerView.removeAllViews();
@@ -122,11 +120,11 @@ public class groupRecipeFragment extends Fragment {
     public void recyclerViewAction() {
         LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity());
 
-        recyclerView = view.findViewById(R.id.Bord_RecyclerView);
+        recyclerView = view.findViewById(R.id.Recipe_Bord_RecyclerView);
 
         recyclerView.setLayoutManager(layoutManager);
 
-        bordAdapter = new GBordAdapter(getActivity());
+        bordAdapter = new RecipeBordAdapter(getActivity());
 
         bordAdapter.refresh();
 
@@ -140,29 +138,29 @@ public class groupRecipeFragment extends Fragment {
 
         FirebaseFirestore db = FirebaseFirestore.getInstance();
 
-        db.collection("groupBuying").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+        db.collection("Recipe").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
             @Override
             public void onComplete(@NonNull Task<QuerySnapshot> task) {
                 if (task.isSuccessful()) {
 
-                    List<GBordInfo> resultData = task.getResult().toObjects(GBordInfo.class);
+                    List<RecipeBoardInfo> resultData = task.getResult().toObjects(RecipeBoardInfo.class);
 
-                    getDataList.clear();
+                    r_getDataList.clear();
 
-                    getDataList.addAll(resultData);
+                    r_getDataList.addAll(resultData);
 
                     // 정렬 해보자
-                    Collections.sort(getDataList, new Comparator<GBordInfo>() {
+                    Collections.sort(r_getDataList, new Comparator<RecipeBoardInfo>() {
                         @Override
-                        public int compare(GBordInfo o1, GBordInfo o2) {
-                            return o1.getDate().compareTo(o2.getDate());
+                        public int compare(RecipeBoardInfo o1, RecipeBoardInfo o2) {
+                            return o1.r_getDate().compareTo(o2.r_getDate());
                         }
                     });
 
-                    Collections.reverse(getDataList);
+                    Collections.reverse(r_getDataList);
 
-                    for (int i = 0; i < getDataList.size(); i++) {
-                        bordAdapter.addData(getDataList.get(i));
+                    for (int i = 0; i < r_getDataList.size(); i++) {
+                        bordAdapter.addData(r_getDataList.get(i));
                     }
 
                     bordAdapter.setList();
@@ -177,7 +175,7 @@ public class groupRecipeFragment extends Fragment {
     }
 
     public void filter() {
-        searchView = view.findViewById(R.id.searchView);
+        searchView = view.findViewById(R.id.RecipeSearchView);
 
         searchView.addTextChangedListener(new TextWatcher() {
             @Override

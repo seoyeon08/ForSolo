@@ -41,18 +41,16 @@ public class RecipeWritePostActivity extends AppCompatActivity {
     TextView titleTextView;
     TextView timeTextView;
     TextView placeTextView;
-    TextView memberCountTextView;
 
     EditText titleEditText;
     EditText timeEditText;
     EditText placeEditText;
-    EditText memberEditText;
     EditText contentEditText;
 
     Button upload_btn;
 
     // EditText에서 가져온 데이터
-    String title, time, place, memberCount, content = null;
+    String title, time, place, content = null;
 
     // 업로드 시간을 체크하는 데이터
     String uploadTimeText = "";
@@ -69,7 +67,7 @@ public class RecipeWritePostActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_group);
+        setContentView(R.layout.activity_recipe_group);
 
         init();
         setting();
@@ -81,7 +79,7 @@ public class RecipeWritePostActivity extends AppCompatActivity {
             public void onClick(View view) {
                 getData();
 
-                if (title != null && time != null && place != null && memberCount != null && content != null) {
+                if (title != null && time != null && place != null && content != null) {
                     uploadData();
                     finish();
                 } else {
@@ -97,22 +95,20 @@ public class RecipeWritePostActivity extends AppCompatActivity {
 
     private void init() {
 
-        upload_btn = findViewById(R.id.g_upload_button);
+        upload_btn = findViewById(R.id.rc_upload_button);
 
-        View titleLayout = findViewById(R.id.g_title_Layer);
-        View timeLayout = findViewById(R.id.g_time_Layer);
-        View placeLayout = findViewById(R.id.g_place_Layer);
-        View memberLayout = findViewById(R.id.g_memberCount_Layer);
+        View titleLayout = findViewById(R.id.rc_title_Layer);
+        View timeLayout = findViewById(R.id.rc_time_Layer);
+        View placeLayout = findViewById(R.id.rc_place_Layer);
+        View memberLayout = findViewById(R.id.rc_memberCount_Layer);
 
         titleTextView = titleLayout.findViewById(R.id.textView_Bord);
         timeTextView = timeLayout.findViewById(R.id.textView_Bord);
         placeTextView = placeLayout.findViewById(R.id.textView_Bord);
-        memberCountTextView = memberLayout.findViewById(R.id.textView_Bord);
 
         titleEditText = titleLayout.findViewById(R.id.editText_Bord);
         timeEditText = timeLayout.findViewById(R.id.editText_Bord);
         placeEditText = placeLayout.findViewById(R.id.editText_Bord);
-        memberEditText = memberLayout.findViewById(R.id.editText_Bord);
         contentEditText = findViewById(R.id.content_Edit);
 
     }
@@ -120,9 +116,8 @@ public class RecipeWritePostActivity extends AppCompatActivity {
 
     private void setting() {
         titleTextView.setText("글제목 :");
-        timeTextView.setText("진행 날짜 :");
-        placeTextView.setText("물품 :");
-        memberCountTextView.setText("최소 금액 :");
+        timeTextView.setText("날짜 :");
+        placeTextView.setText("요리 순서 :");
     }
 
     private void getData() {
@@ -130,7 +125,6 @@ public class RecipeWritePostActivity extends AppCompatActivity {
         title = titleEditText.getText().toString();
         time = timeEditText.getText().toString();
         place = placeEditText.getText().toString();
-        memberCount = memberEditText.getText().toString();
         content = contentEditText.getText().toString();
 
         Date uploadTime = new Date(System.currentTimeMillis());
@@ -153,9 +147,9 @@ public class RecipeWritePostActivity extends AppCompatActivity {
         Log.d("asd", sc);
 
 
-        WriteInfo data = new WriteInfo(title, time, place, memberCount, content, email, uploadTimeText, sc, name, userProfileUrl);
+        RecipeWriteInfo data = new RecipeWriteInfo(title, time, place, content, email, uploadTimeText, sc, name, userProfileUrl);
 
-        fireStore.collection("groupBuying").document(sc).set(data)
+        fireStore.collection("recipe").document(sc).set(data)
                 .addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {

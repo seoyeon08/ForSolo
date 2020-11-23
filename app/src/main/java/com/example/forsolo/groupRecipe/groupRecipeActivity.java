@@ -10,7 +10,6 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.example.forsolo.R;
-import com.example.forsolo.groupBuying.groupBuyingFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class groupRecipeActivity extends AppCompatActivity {
@@ -18,12 +17,12 @@ public class groupRecipeActivity extends AppCompatActivity {
     private BottomNavigationView bottomNavigationView;  //bottom navigation view
     private FragmentManager fm;
     private FragmentTransaction ft;
-    private com.example.forsolo.groupBuying.groupBuyingFragment groupBuyingFragment;
+    private groupRecipeFragment groupRecipeFragment;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_groupbuying);
+        setContentView(R.layout.activity_recipe_nav);      //음 지금 이 부분 잘 모르겠습니다. 수정 요
 
         bottomNavigationView = findViewById(R.id.bottom_nav_2);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -38,7 +37,7 @@ public class groupRecipeActivity extends AppCompatActivity {
                 return true;
             }
         });
-        groupBuyingFragment =  new groupBuyingFragment();
+        groupRecipeFragment =  new groupRecipeFragment();
         setFrag(0);     //첫 fragment 화면을 무엇으로 지정할 지 설정함
     }
 
@@ -50,7 +49,7 @@ public class groupRecipeActivity extends AppCompatActivity {
 
         switch (n){
             case 0:
-                ft.replace(R.id.frame_content, groupBuyingFragment);
+                ft.replace(R.id.re_frame_content, groupRecipeFragment);
                 ft.commit();        //저장을 의미합니다.
                 break;
 
