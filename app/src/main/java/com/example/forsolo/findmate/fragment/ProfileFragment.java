@@ -37,6 +37,12 @@ public class ProfileFragment extends Fragment {
     private FirebaseAuth firebaseAuth;
     private View root;
     Button write_btn;
+    private ImageView profileImageView;
+    private TextView  nameTextView;
+    private TextView  ageTextView;
+    private TextView  majorTextView;
+    private TextView  introTextView;
+    private TextView  genderTextView;
 
     public ProfileFragment() {
         // Required empty public constructor
@@ -53,12 +59,12 @@ public class ProfileFragment extends Fragment {
         initialize();
 
         write_btn=root.findViewById(R.id.writeButton);
-        final ImageView profileImageView = root.findViewById(R.id.profileImageView);
-        final TextView nameTextView = root.findViewById(R.id.nameTextView);
-        final TextView ageTextView = root.findViewById(R.id.ageTextView);
-        final TextView majorTextView = root.findViewById(R.id.majorTextView);
-        final TextView introTextView = root.findViewById(R.id.profile_intro_TextView);
-        final TextView genderTextView=root.findViewById(R.id.genderTextView);
+        profileImageView = root.findViewById(R.id.profileImageView);
+        nameTextView = root.findViewById(R.id.nameTextView);
+        ageTextView = root.findViewById(R.id.ageTextView);
+        majorTextView = root.findViewById(R.id.majorTextView);
+        introTextView = root.findViewById(R.id.profile_intro_TextView);
+        genderTextView=root.findViewById(R.id.genderTextView);
         write_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -67,34 +73,8 @@ public class ProfileFragment extends Fragment {
             }
         });
 
-        DocumentReference documentReference = FirebaseFirestore.getInstance().collection("users").document(FirebaseAuth.getInstance().getCurrentUser().getUid());
-        documentReference.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
-                    @Override
-                    public void onComplete(@NonNull Task<DocumentSnapshot> task) {
-                        if (task.isSuccessful()) {
-                            DocumentSnapshot document = task.getResult();
-                            if (document != null) {
-                                if (document.exists()) {
-                                    Log.d(TAG, "DocumentSnapshot data: " + document.getData());
-                                    if(document.getData().get("photoUrl") != null){
-                                        Glide.with(getActivity()).load(document.getData().get("photoUrl")).centerCrop().override(500).into(profileImageView);
-                                    }
-                                    nameTextView.setText(document.getData().get("name").toString());
-                                    ageTextView.setText(document.getData().get("age").toString());
-                                    majorTextView.setText(document.getData().get("major").toString());
-                                    introTextView.setText(document.getData().get("intro").toString());
-                                    genderTextView.setText(document.getData().get("gender").toString());
-                                } else {
-                                    Log.d(TAG, "No such document");
-                                }
-                            }
-                        } else {
-                            Log.d(TAG, "get failed with ", task.getException());
-                        }
-                    }
-                });
-                return root;
-            }
+        return root;
+    }
 
 
     @Override
@@ -121,43 +101,79 @@ public class ProfileFragment extends Fragment {
         firebaseAuth = FirebaseAuth.getInstance();
 
         btnLogOut.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        logOut();
-                        Intent intent = new Intent(
-                                getContext(), LoginActivity.class);
+            @Override
+            public void onClick(View v) {
+                logOut();
+                Intent intent = new Intent(
+                        getContext(), LoginActivity.class);
 
-                        // 데이터 초기화 및 생성
-                        ManagementData.getInstance().delAllData();
+                // 데이터 초기화 및 생성
+                ManagementData.getInstance().delAllData();
 
-                        startActivity(intent);
+                startActivity(intent);
 
-                    }
-                });
-
+            }
+        });
 
         btnSignOut.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        logOut();
-                        Intent intent = new Intent(
-                                getContext(), LoginActivity.class);
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(
+                        getContext(), LoginActivity.class);
 
-                        // 데이터 초기화 및 생성
-                        ManagementData.getInstance().delAllData();
+                // 데이터 초기화 및 생성
+                ManagementData.getInstance().delAllData();
 
-                        startActivity(intent);
+                startActivity(intent);
 
-                        signOut();
+                signOut();
+            }
+        });
+    }
+
+    private void loadData() {
+
+        DocumentReference documentReference = FirebaseFirestore.getInstance().collection("users").document(FirebaseAuth.getInstance().getCurrentUser().getUid());
+        documentReference.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
+            @Override
+            public void onComplete(@NonNull Task<DocumentSnapshot> task) {
+                if (task.isSuccessful()) {
+                    DocumentSnapshot document = task.getResult();
+                    if (document != null) {
+                        if (document.exists()) {
+                            Log.d(TAG, "DocumentSnapshot data: " + document.getData());
+                            if(document.getData().get("photoUrl") != null){
+                                Glide.with(getActivity()).load(document.getData().get("photoUrl")).centerCrop().override(500).into(profileImageView);
+                            }
+                            nameTextView.setText(document.getData().get("name").toString());
+                            ageTextView.setText(document.getData().get("age").toString());
+                            majorTextView.setText(document.getData().get("major").toString());
+                            introTextView.setText(document.getData().get("intro").toString());
+                            genderTextView.setText(document.getData().get("gender").toString());
+                        } else {
+                            Log.d(TAG, "No such document");
+                        }
                     }
-                });
+                } else {
+                    Log.d(TAG, "get failed with ", task.getException());
+                }
             }
+        });
+    }
 
-            private void logOut() {
-                firebaseAuth.getInstance().signOut();
-            }
+    private void logOut() {
+        firebaseAuth.getInstance().signOut();
+    }
 
-            private void signOut() {
-                firebaseAuth.getCurrentUser().delete();
-            }
+    private void signOut() {
+        firebaseAuth.getCurrentUser().delete();
+    }
+
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        // TODO: onResume은 화면이 다시 열릴때 실행됩니다. 최초 화면 실행시 onCreateView 다음으로 실행됩니다.
+        loadData();
+    }
 }
