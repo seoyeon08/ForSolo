@@ -38,13 +38,13 @@ public class RecipeBordActivity extends AppCompatActivity {
 
     Button chatButton, modify_btn, del_btn, update_btn;
 
-    TextView name, date, place, time, member, content, title;
+    TextView name, date, place, time, content, title;
 
-    EditText placeEdit, timeEdit, memberEdit, contentEdit, titleEdit;
+    EditText timeEdit, placeEdit, contentEdit, titleEdit;
 
-    String titleText, timeText, placeText, memberCountText, contentText, uploadTimeText, emailText, sc, userName, userProfile = "";
+    String titleText, timeText,  placeText,  contentText, uploadTimeText, emailText, sc, userName, userProfile = "";
 
-    String titleUpdate, timeUpdate, placeUpdate, memberCountUpdate, contentUpdate, uploadTimeUpdate, emailUpdate = "";
+    String titleUpdate, timeUpdate,  placeUpdate, contentUpdate, uploadTimeUpdate, emailUpdate = "";
 
     CircleImageView circleImageView;
 
@@ -53,7 +53,7 @@ public class RecipeBordActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_g_board);
+        setContentView(R.layout.activity_recipe_board);
 
         init();
 
@@ -74,27 +74,26 @@ public class RecipeBordActivity extends AppCompatActivity {
         alpha.setAlpha(100);
     }
 
+    //초기화
     private void init() {
 
-        circleImageView = findViewById(R.id.g_userProfile_s);
-        title = findViewById(R.id.g_title_textView);
-        name = findViewById(R.id.g_userName_s);
-        date = findViewById(R.id.g_dateCount);
-        place = findViewById(R.id.g_placeText);
+        circleImageView = findViewById(R.id.x_userProfile_s);
+        title = findViewById(R.id.x_title_textView);
+        name = findViewById(R.id.x_userName_s);
+        date = findViewById(R.id.x_dateCount);
+        place = findViewById(R.id.x_placeText);
         time = findViewById(R.id.g_timeText);
-        member = findViewById(R.id.g_memberCountText);
-        content = findViewById(R.id.g_contentText);
+        content = findViewById(R.id.x_contentText);
 
-        titleEdit = findViewById(R.id.g_titleEditText);
-        placeEdit = findViewById(R.id.g_placeEditText);
-        timeEdit = findViewById(R.id.g_timeEditText);
-        memberEdit = findViewById(R.id.g_memberCountEditText);
-        contentEdit = findViewById(R.id.g_contentEditText);
+        titleEdit = findViewById(R.id.x_titleEditText);
+        placeEdit = findViewById(R.id.x_placeEditText);
+        timeEdit = findViewById(R.id.x_timeEditText);
+        contentEdit = findViewById(R.id.x_contentEditText);
 
-        chatButton = findViewById(R.id.g_chatButton);
-        modify_btn = findViewById(R.id.g_modify_btn);
-        del_btn = findViewById(R.id.g_del_btn);
-        update_btn = findViewById(R.id.g_update_btn);
+        chatButton = findViewById(R.id.x_chatButton);
+        modify_btn = findViewById(R.id.x_modify_btn);
+        del_btn = findViewById(R.id.x_del_btn);
+        update_btn = findViewById(R.id.x_update_btn);
     }
 
     private void checkUser() {
@@ -135,7 +134,7 @@ public class RecipeBordActivity extends AppCompatActivity {
                             public void onClick(final DialogInterface dialog, int which) {
                                 fireStore = FirebaseFirestore.getInstance();
 
-                                fireStore.collection("groupBuying").document(sc).delete()
+                                fireStore.collection("Recipe").document(sc).delete()
                                         .addOnCompleteListener(new OnCompleteListener<Void>() {
                                             @Override
                                             public void onComplete(@NonNull Task<Void> task) {
@@ -173,21 +172,18 @@ public class RecipeBordActivity extends AppCompatActivity {
 
         titleEdit.setVisibility(View.VISIBLE);
         timeEdit.setVisibility(View.VISIBLE);
-        memberEdit.setVisibility(View.VISIBLE);
         placeEdit.setVisibility(View.VISIBLE);
         contentEdit.setVisibility(View.VISIBLE);
 
         titleEdit.setText(titleText);
         timeEdit.setText(timeText);
-        memberEdit.setText(memberCountText);
         placeEdit.setText(placeText);
         contentEdit.setText(contentText);
 
 
-        time.setText("진행 날짜 : ");
-        place.setText("물품 : ");
-        member.setText("최소 금액 : ");
-        content.setText("내용 : \n\n");
+        time.setText("한줄 소개 : ");
+        place.setText("메뉴명 : ");
+        content.setText("요리 순서 : \n\n");
 
     }
 
@@ -200,8 +196,6 @@ public class RecipeBordActivity extends AppCompatActivity {
         update_btn.setVisibility(View.GONE);
 
         titleEdit.setVisibility(View.INVISIBLE);
-        timeEdit.setVisibility(View.INVISIBLE);
-        memberEdit.setVisibility(View.INVISIBLE);
         placeEdit.setVisibility(View.INVISIBLE);
         contentEdit.setVisibility(View.INVISIBLE);
 
@@ -217,7 +211,6 @@ public class RecipeBordActivity extends AppCompatActivity {
                 titleUpdate = titleEdit.getText().toString();
                 placeUpdate = placeEdit.getText().toString();
                 timeUpdate = timeEdit.getText().toString();
-                memberCountUpdate = memberEdit.getText().toString();
                 contentUpdate = contentEdit.getText().toString();
 
                 Date uploadTime = new Date(System.currentTimeMillis());
@@ -228,8 +221,7 @@ public class RecipeBordActivity extends AppCompatActivity {
 
                 emailUpdate = emailText;
 
-                if (!titleUpdate.equals("") && !placeUpdate.equals("") && !timeUpdate.equals("")
-                        && !memberCountUpdate.equals("") && !contentUpdate.equals("") && emailUpdate != null) {
+                if (!titleUpdate.equals("") && !placeUpdate.equals("") && !contentUpdate.equals("") && emailUpdate != null) {
 
                     Log.d("asd", "asd");
 
@@ -237,7 +229,6 @@ public class RecipeBordActivity extends AppCompatActivity {
                     upDateMap.put("title", titleUpdate);
                     upDateMap.put("time", timeUpdate);
                     upDateMap.put("place", placeUpdate);
-                    upDateMap.put("person", memberCountUpdate);
                     upDateMap.put("contents", contentUpdate);
                     upDateMap.put("email", emailUpdate);
                     upDateMap.put("date", uploadTimeUpdate);
@@ -245,7 +236,7 @@ public class RecipeBordActivity extends AppCompatActivity {
 
                     fireStore = FirebaseFirestore.getInstance();
 
-                    fireStore.collection("groupBuying").document(sc).update(upDateMap)
+                    fireStore.collection("recipe").document(sc).update(upDateMap)
                             .addOnCompleteListener(new OnCompleteListener<Void>() {
                                 @Override
                                 public void onComplete(@NonNull Task<Void> task) {
@@ -256,10 +247,9 @@ public class RecipeBordActivity extends AppCompatActivity {
                             });
 
                     title.setText(titleUpdate);
-                    time.setText("진행 날짜 : " + timeUpdate);
-                    place.setText("물품 : " + placeUpdate);
-                    member.setText("최소 금액 : " + memberCountUpdate);
-                    content.setText("내용 : \n\n" + contentUpdate);
+                    time.setText("한줄 소개 : " + timeUpdate);
+                    place.setText("메뉴명 : " + placeUpdate);
+                    content.setText("요리 순서 : \n\n" + contentUpdate);
 
                     date.setText(uploadTimeUpdate);
 
@@ -280,7 +270,6 @@ public class RecipeBordActivity extends AppCompatActivity {
         titleText = intent.getStringExtra("title");
         timeText = intent.getStringExtra("time");
         placeText = intent.getStringExtra("place");
-        memberCountText = intent.getStringExtra("memberCount");
         contentText = intent.getStringExtra("content");
         uploadTimeText = intent.getStringExtra("uploadTimeText");
         emailText = intent.getStringExtra("email");
@@ -303,12 +292,9 @@ public class RecipeBordActivity extends AppCompatActivity {
         // 정상 데이터
         title.setText(titleText);
         date.setText(uploadTimeText);
-        place.setText("물품 : " + placeText);
-        time.setText("진행 날짜 : " + timeText);
-        member.setText("최소금액 : " + memberCountText);
-
-
-        content.setText("내용 : \n\n" + contentText);
+        place.setText("메뉴명 : " + placeText);
+        time.setText("한줄 소개 : " + timeText);
+        content.setText("요리 순서 : \n\n" + contentText);
     }
 
 

@@ -14,9 +14,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.example.forsolo.R;
-import com.example.forsolo.groupBuying.GBordAdapter;
-import com.example.forsolo.groupBuying.GBordInfo;
-import com.example.forsolo.groupBuying.GbordActivity;
 
 import java.util.ArrayList;
 import java.util.Locale;
@@ -24,12 +21,13 @@ import java.util.Locale;
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class RecipeBordAdapter extends RecyclerView.Adapter<RecipeBordAdapter.itemViewHolder> {
-    private ArrayList<GBordInfo> listData = new ArrayList<>();
-    private ArrayList<GBordInfo> arrayList;
+
+    private ArrayList<RecipeBoardInfo> r_listData = new ArrayList<>();
+    private ArrayList<RecipeBoardInfo> arrayList;
     private Context contexts;
 
-    public void addData(GBordInfo data) {
-        listData.add(data);
+    public void addData(RecipeBoardInfo data) {
+        r_listData.add(data);
     }
 
     public RecipeBordAdapter(Context context) {
@@ -37,27 +35,27 @@ public class RecipeBordAdapter extends RecyclerView.Adapter<RecipeBordAdapter.it
     }
 
     public void refresh() {
-        listData.clear();
+        r_listData.clear();
     }
 
     public void setList() {
         arrayList = new ArrayList<>();
-        arrayList.addAll(listData);
+        arrayList.addAll(r_listData);
     }
 
     public void filter(String searchText) {
         searchText = searchText.toLowerCase(Locale.getDefault());
-        listData.clear();
+        r_listData.clear();
         if (searchText.length() == 0) {
             if (arrayList != null) {
-                listData.addAll(arrayList);
+                r_listData.addAll(arrayList);
             }
         } else {
             if (arrayList != null) {
-                for (GBordInfo bordInfo : arrayList) {
+                for (RecipeBoardInfo bordInfo : arrayList) {
                     String name = bordInfo.getTitle();
                     if (name.toLowerCase().contains(searchText)) {
-                        listData.add(bordInfo);
+                        r_listData.add(bordInfo);
                     }
                 }
             }
@@ -71,23 +69,23 @@ public class RecipeBordAdapter extends RecyclerView.Adapter<RecipeBordAdapter.it
 
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.bord_recyclerview_item, parent, false);
 
-        return new RecipeBordAdapter.itemViewHolder(view);
+        return new itemViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull RecipeBordAdapter.itemViewHolder holder, int position) {
-        holder.onBind(listData.get(position));
+        holder.onBind(r_listData.get(position));
     }
 
     @Override
     public int getItemCount() {
-        return listData.size();
+        return r_listData.size();
     }
 
     class itemViewHolder extends RecyclerView.ViewHolder {
 
 
-        String title, time, place, memberCount, content, uploadTimeText, email, sc, userName, userProfileUrl = null;
+        String title, time, place, content, uploadTimeText, email, sc, userName, userProfileUrl = null;
 
         private TextView titleTextView;
         private TextView subjectTextView;
@@ -113,11 +111,10 @@ public class RecipeBordAdapter extends RecyclerView.Adapter<RecipeBordAdapter.it
             itemLayout.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent intent = new Intent(contexts, GbordActivity.class);
+                    Intent intent = new Intent(contexts, RecipeBordActivity.class);
                     intent.putExtra("title", title);
                     intent.putExtra("time", time);
                     intent.putExtra("place", place);
-                    intent.putExtra("memberCount", memberCount);
                     intent.putExtra("content", content);
                     intent.putExtra("email", email);
                     intent.putExtra("uploadTimeText", uploadTimeText);
@@ -129,7 +126,7 @@ public class RecipeBordAdapter extends RecyclerView.Adapter<RecipeBordAdapter.it
             });
         }
 
-        void onBind(GBordInfo data) {
+        void onBind(RecipeBoardInfo data) {
 
             titleTextView.setText(data.getTitle());
             subjectTextView.setText(data.getPlace());
@@ -137,10 +134,8 @@ public class RecipeBordAdapter extends RecyclerView.Adapter<RecipeBordAdapter.it
             title = data.getTitle();
             time = data.getTime();
             place = data.getPlace();
-            memberCount = data.getPerson();
             content = data.getContents();
             email = data.getEmail();
-            uploadTimeText = data.getDate();
             sc = data.getSC();
             timeTextView.setText(uploadTimeText);
 

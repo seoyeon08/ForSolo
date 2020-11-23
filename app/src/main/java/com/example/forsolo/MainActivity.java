@@ -9,11 +9,13 @@ import android.widget.ImageView;
 
 import com.example.forsolo.findmate.activity.FindMateActivity;
 import com.example.forsolo.groupBuying.groupBuyingActivity;
+import com.example.forsolo.groupRecipe.groupRecipeActivity;
 
 public class MainActivity extends AppCompatActivity {
 
     private ImageView btn_FindMate;
     private ImageView btn_Findexchange;
+    private ImageView btn_recipie;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +41,18 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, groupBuyingActivity.class);
+                startActivity(intent);
+
+
+
+            }
+        });
+
+        btn_recipie = findViewById(R.id.btn_recipie);
+        btn_recipie.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, groupRecipeActivity.class);
                 startActivity(intent);
 
 

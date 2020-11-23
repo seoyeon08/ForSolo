@@ -18,9 +18,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.example.forsolo.R;
-import com.example.forsolo.groupBuying.GBordAdapter;
-import com.example.forsolo.groupBuying.GBordInfo;
-import com.example.forsolo.groupBuying.GWritePostActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -34,9 +31,10 @@ import java.util.List;
 import java.util.Locale;
 
 public class groupRecipeFragment extends Fragment {
+
     private View view;
 
-    private GBordAdapter bordAdapter;
+    private RecipeBordAdapter bordAdapter;
 
     RecyclerView recyclerView;
 
@@ -44,12 +42,12 @@ public class groupRecipeFragment extends Fragment {
 
     EditText searchView;
 
-    ArrayList<GBordInfo> getDataList = new ArrayList<>();
+    ArrayList<RecipeBoardInfo> getDataList = new ArrayList<>();
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.fragment_list, container, false);
+        view = inflater.inflate(R.layout.fragment_list, container, false); //fragment_recipe고려
 
         recyclerViewAction();
         fabAction();
@@ -102,7 +100,7 @@ public class groupRecipeFragment extends Fragment {
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent(getActivity(), GWritePostActivity.class);
+                Intent intent = new Intent(getActivity(), RecipeWritePostActivity.class);
 
                 onDestroyView();
 
@@ -126,7 +124,7 @@ public class groupRecipeFragment extends Fragment {
 
         recyclerView.setLayoutManager(layoutManager);
 
-        bordAdapter = new GBordAdapter(getActivity());
+        bordAdapter = new RecipeBordAdapter(getActivity());
 
         bordAdapter.refresh();
 
@@ -140,22 +138,22 @@ public class groupRecipeFragment extends Fragment {
 
         FirebaseFirestore db = FirebaseFirestore.getInstance();
 
-        db.collection("groupBuying").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+        db.collection("recipe").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
             @Override
             public void onComplete(@NonNull Task<QuerySnapshot> task) {
                 if (task.isSuccessful()) {
 
-                    List<GBordInfo> resultData = task.getResult().toObjects(GBordInfo.class);
+                    List<RecipeBoardInfo> resultData = task.getResult().toObjects(RecipeBoardInfo.class);
 
                     getDataList.clear();
 
                     getDataList.addAll(resultData);
 
                     // 정렬 해보자
-                    Collections.sort(getDataList, new Comparator<GBordInfo>() {
+                    Collections.sort(getDataList, new Comparator<RecipeBoardInfo>() {
                         @Override
-                        public int compare(GBordInfo o1, GBordInfo o2) {
-                            return o1.getDate().compareTo(o2.getDate());
+                        public int compare(RecipeBoardInfo o1, RecipeBoardInfo o2) {
+                            return o1.r_getDate().compareTo(o2.r_getDate());
                         }
                     });
 
