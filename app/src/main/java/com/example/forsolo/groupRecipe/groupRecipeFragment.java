@@ -42,12 +42,12 @@ public class groupRecipeFragment extends Fragment {
 
     EditText searchView;
 
-    ArrayList<RecipeBoardInfo> r_getDataList = new ArrayList<>();
+    ArrayList<RecipeBoardInfo> getDataList = new ArrayList<>();
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.fragment_recipe, container, false);
+        view = inflater.inflate(R.layout.fragment_list, container, false); //fragment_recipe고려
 
         recyclerViewAction();
         fabAction();
@@ -62,10 +62,10 @@ public class groupRecipeFragment extends Fragment {
     public void onResume() {
         super.onResume();
 
-        searchView = view.findViewById(R.id.RecipeSearchView);
+        searchView = view.findViewById(R.id.searchView);
         searchView.setText("");
 
-        r_getDataList.clear();
+        getDataList.clear();
         bordAdapter.notifyDataSetChanged();
         recyclerView.removeAllViewsInLayout();
         recyclerView.removeAllViews();
@@ -76,12 +76,12 @@ public class groupRecipeFragment extends Fragment {
     }
 
     private void refresh() {
-        final SwipeRefreshLayout swipeRefreshLayout = view.findViewById(R.id.RecipeSwipe);
+        final SwipeRefreshLayout swipeRefreshLayout = view.findViewById(R.id.swipe);
         swipeRefreshLayout.setColorSchemeResources(R.color.colorPinkPurple);
         swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
-                r_getDataList.clear();
+                getDataList.clear();
                 bordAdapter.notifyDataSetChanged();
                 recyclerView.removeAllViewsInLayout();
                 recyclerView.removeAllViews();
@@ -95,7 +95,7 @@ public class groupRecipeFragment extends Fragment {
 
 
     public void fabAction() {
-        fab = view.findViewById(R.id.recipe_write_text);
+        fab = view.findViewById(R.id.write_text);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -104,7 +104,7 @@ public class groupRecipeFragment extends Fragment {
 
                 onDestroyView();
 
-                r_getDataList.clear();
+                getDataList.clear();
                 bordAdapter.notifyDataSetChanged();
                 recyclerView.removeAllViewsInLayout();
                 recyclerView.removeAllViews();
@@ -120,7 +120,7 @@ public class groupRecipeFragment extends Fragment {
     public void recyclerViewAction() {
         LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity());
 
-        recyclerView = view.findViewById(R.id.Recipe_Bord_RecyclerView);
+        recyclerView = view.findViewById(R.id.Bord_RecyclerView);
 
         recyclerView.setLayoutManager(layoutManager);
 
@@ -138,29 +138,29 @@ public class groupRecipeFragment extends Fragment {
 
         FirebaseFirestore db = FirebaseFirestore.getInstance();
 
-        db.collection("Recipe").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+        db.collection("recipe").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
             @Override
             public void onComplete(@NonNull Task<QuerySnapshot> task) {
                 if (task.isSuccessful()) {
 
                     List<RecipeBoardInfo> resultData = task.getResult().toObjects(RecipeBoardInfo.class);
 
-                    r_getDataList.clear();
+                    getDataList.clear();
 
-                    r_getDataList.addAll(resultData);
+                    getDataList.addAll(resultData);
 
                     // 정렬 해보자
-                    Collections.sort(r_getDataList, new Comparator<RecipeBoardInfo>() {
+                    Collections.sort(getDataList, new Comparator<RecipeBoardInfo>() {
                         @Override
                         public int compare(RecipeBoardInfo o1, RecipeBoardInfo o2) {
                             return o1.r_getDate().compareTo(o2.r_getDate());
                         }
                     });
 
-                    Collections.reverse(r_getDataList);
+                    Collections.reverse(getDataList);
 
-                    for (int i = 0; i < r_getDataList.size(); i++) {
-                        bordAdapter.addData(r_getDataList.get(i));
+                    for (int i = 0; i < getDataList.size(); i++) {
+                        bordAdapter.addData(getDataList.get(i));
                     }
 
                     bordAdapter.setList();
@@ -175,7 +175,7 @@ public class groupRecipeFragment extends Fragment {
     }
 
     public void filter() {
-        searchView = view.findViewById(R.id.RecipeSearchView);
+        searchView = view.findViewById(R.id.searchView);
 
         searchView.addTextChangedListener(new TextWatcher() {
             @Override

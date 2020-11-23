@@ -4,7 +4,6 @@ public class RecipeBoardInfo {
     private String title;
     private String time;
     private String place;
-    private String person;
     private String contents;
     private String email;
     private String date;
@@ -12,11 +11,10 @@ public class RecipeBoardInfo {
     private String userName;
     private String userProfileUrl;
 
-    public RecipeBoardInfo(String title, String time, String place, String person, String contents, String email, String date, String sc, String userName, String userProfileUrl) {
+    public RecipeBoardInfo(String title, String time, String place, String contents, String email, String date, String sc, String userName, String userProfileUrl) {
         this.title = title;
         this.time = time;
         this.place = place;
-        this.person = person;
         this.contents = contents;
         this.email = email;
         this.date = date;
@@ -37,10 +35,6 @@ public class RecipeBoardInfo {
 
     public String getPlace() {
         return this.place;
-    }
-
-    public String getPerson() {
-        return this.person;
     }
 
     public String getContents() {

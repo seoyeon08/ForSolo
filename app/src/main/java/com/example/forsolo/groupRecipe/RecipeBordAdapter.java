@@ -21,6 +21,7 @@ import java.util.Locale;
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class RecipeBordAdapter extends RecyclerView.Adapter<RecipeBordAdapter.itemViewHolder> {
+
     private ArrayList<RecipeBoardInfo> r_listData = new ArrayList<>();
     private ArrayList<RecipeBoardInfo> arrayList;
     private Context contexts;
@@ -68,7 +69,7 @@ public class RecipeBordAdapter extends RecyclerView.Adapter<RecipeBordAdapter.it
 
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.bord_recyclerview_item, parent, false);
 
-        return new RecipeBordAdapter.itemViewHolder(view);
+        return new itemViewHolder(view);
     }
 
     @Override
@@ -84,7 +85,7 @@ public class RecipeBordAdapter extends RecyclerView.Adapter<RecipeBordAdapter.it
     class itemViewHolder extends RecyclerView.ViewHolder {
 
 
-        String title, time, place, memberCount, content, uploadTimeText, email, sc, userName, userProfileUrl = null;
+        String title, time, place, content, uploadTimeText, email, sc, userName, userProfileUrl = null;
 
         private TextView titleTextView;
         private TextView subjectTextView;

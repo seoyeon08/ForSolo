@@ -4,6 +4,7 @@ public class GBordInfo {
     private String title;
     private String time;
     private String place;
+    private String person;
     private String contents;
     private String email;
     private String date;
@@ -35,6 +36,10 @@ public class GBordInfo {
 
     public String getPlace() {
         return this.place;
+    }
+
+    public String getPerson() {
+        return this.person;
     }
 
     public String getContents() {

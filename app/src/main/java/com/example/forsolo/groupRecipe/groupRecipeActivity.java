@@ -22,7 +22,7 @@ public class groupRecipeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_recipe_nav);      //음 지금 이 부분 잘 모르겠습니다. 수정 요
+        setContentView(R.layout.activity_groupbuying);      //음 지금 이 부분 잘 모르겠습니다.
 
         bottomNavigationView = findViewById(R.id.bottom_nav_2);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -49,7 +49,7 @@ public class groupRecipeActivity extends AppCompatActivity {
 
         switch (n){
             case 0:
-                ft.replace(R.id.re_frame_content, groupRecipeFragment);
+                ft.replace(R.id.frame_content, groupRecipeFragment);
                 ft.commit();        //저장을 의미합니다.
                 break;
 
