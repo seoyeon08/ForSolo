@@ -40,6 +40,8 @@
         <activity android:name=".findmate.activity.FindMateActivity" />
         <activity android:name=".findmate.activity.ProfileActivity"/>
 
+
+
         <!--        채팅-->
         <activity android:name=".chat.ChatActivity"/>
         <activity android:name=".chat.ChattingActivity"/>
@@ -69,6 +71,11 @@
         <activity android:name=".groupBuying.GbordActivity" />
         <activity android:name=".groupBuying.groupBuyingActivity" />
         <activity android:name=".groupBuying.GWritePostActivity" />
+
+        <!--레시피-->
+        <activity android:name=".groupRecipe.RecipeBordActivity" />
+        <activity android:name=".groupRecipe.RecipeWritePostActivity" />
+        <activity android:name=".groupRecipe.groupRecipeActivity" />
 
 
     </application>
