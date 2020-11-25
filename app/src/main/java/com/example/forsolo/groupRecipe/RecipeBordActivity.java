@@ -38,13 +38,13 @@ public class RecipeBordActivity extends AppCompatActivity {
 
     Button chatButton, modify_btn, del_btn, update_btn;
 
-    TextView name, date, place, content, title;
+    TextView name, date, place, time, content, title;
 
-    EditText placeEdit, contentEdit, titleEdit;
+    EditText timeEdit, placeEdit, contentEdit, titleEdit;
 
-    String titleText, placeText, contentText, uploadTimeText, emailText, sc, userName, userProfile = "";
+    String titleText, timeText,  placeText,  contentText, uploadTimeText, emailText, sc, userName, userProfile = "";
 
-    String titleUpdate, placeUpdate, contentUpdate, uploadTimeUpdate, emailUpdate = "";
+    String titleUpdate, timeUpdate,  placeUpdate, contentUpdate, uploadTimeUpdate, emailUpdate = "";
 
     CircleImageView circleImageView;
 
@@ -82,10 +82,12 @@ public class RecipeBordActivity extends AppCompatActivity {
         name = findViewById(R.id.x_userName_s);
         date = findViewById(R.id.x_dateCount);
         place = findViewById(R.id.x_placeText);
+        time = findViewById(R.id.g_timeText);
         content = findViewById(R.id.x_contentText);
 
         titleEdit = findViewById(R.id.x_titleEditText);
         placeEdit = findViewById(R.id.x_placeEditText);
+        timeEdit = findViewById(R.id.x_timeEditText);
         contentEdit = findViewById(R.id.x_contentEditText);
 
         chatButton = findViewById(R.id.x_chatButton);
@@ -169,14 +171,17 @@ public class RecipeBordActivity extends AppCompatActivity {
         update_btn.setVisibility(View.VISIBLE);
 
         titleEdit.setVisibility(View.VISIBLE);
+        timeEdit.setVisibility(View.VISIBLE);
         placeEdit.setVisibility(View.VISIBLE);
         contentEdit.setVisibility(View.VISIBLE);
 
         titleEdit.setText(titleText);
+        timeEdit.setText(timeText);
         placeEdit.setText(placeText);
         contentEdit.setText(contentText);
 
 
+        time.setText("한줄 소개 : ");
         place.setText("메뉴명 : ");
         content.setText("요리 순서 : \n\n");
 
@@ -205,6 +210,7 @@ public class RecipeBordActivity extends AppCompatActivity {
 
                 titleUpdate = titleEdit.getText().toString();
                 placeUpdate = placeEdit.getText().toString();
+                timeUpdate = timeEdit.getText().toString();
                 contentUpdate = contentEdit.getText().toString();
 
                 Date uploadTime = new Date(System.currentTimeMillis());
@@ -221,6 +227,7 @@ public class RecipeBordActivity extends AppCompatActivity {
 
                     Map<String, Object> upDateMap = new HashMap<>();
                     upDateMap.put("title", titleUpdate);
+                    upDateMap.put("time", timeUpdate);
                     upDateMap.put("place", placeUpdate);
                     upDateMap.put("contents", contentUpdate);
                     upDateMap.put("email", emailUpdate);
@@ -229,7 +236,7 @@ public class RecipeBordActivity extends AppCompatActivity {
 
                     fireStore = FirebaseFirestore.getInstance();
 
-                    fireStore.collection("Recipe").document(sc).update(upDateMap)
+                    fireStore.collection("recipe").document(sc).update(upDateMap)
                             .addOnCompleteListener(new OnCompleteListener<Void>() {
                                 @Override
                                 public void onComplete(@NonNull Task<Void> task) {
@@ -240,6 +247,7 @@ public class RecipeBordActivity extends AppCompatActivity {
                             });
 
                     title.setText(titleUpdate);
+                    time.setText("한줄 소개 : " + timeUpdate);
                     place.setText("메뉴명 : " + placeUpdate);
                     content.setText("요리 순서 : \n\n" + contentUpdate);
 
@@ -260,6 +268,7 @@ public class RecipeBordActivity extends AppCompatActivity {
         Intent intent = getIntent();
 
         titleText = intent.getStringExtra("title");
+        timeText = intent.getStringExtra("time");
         placeText = intent.getStringExtra("place");
         contentText = intent.getStringExtra("content");
         uploadTimeText = intent.getStringExtra("uploadTimeText");
@@ -284,7 +293,7 @@ public class RecipeBordActivity extends AppCompatActivity {
         title.setText(titleText);
         date.setText(uploadTimeText);
         place.setText("메뉴명 : " + placeText);
-
+        time.setText("한줄 소개 : " + timeText);
         content.setText("요리 순서 : \n\n" + contentText);
     }
 

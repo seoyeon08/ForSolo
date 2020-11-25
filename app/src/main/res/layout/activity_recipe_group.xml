@@ -41,9 +41,6 @@
                 android:id="@+id/rc_place_Layer"
                 layout="@layout/input_layout" />
 
-            <include
-                android:id="@+id/rc_memberCount_Layer"
-                layout="@layout/input_layout" />
 
             <TextView
                 android:layout_width="70dp"

@@ -100,7 +100,6 @@ public class RecipeWritePostActivity extends AppCompatActivity {
         View titleLayout = findViewById(R.id.rc_title_Layer);
         View timeLayout = findViewById(R.id.rc_time_Layer);
         View placeLayout = findViewById(R.id.rc_place_Layer);
-        View memberLayout = findViewById(R.id.rc_memberCount_Layer);
 
         titleTextView = titleLayout.findViewById(R.id.textView_Bord);
         timeTextView = timeLayout.findViewById(R.id.textView_Bord);
@@ -116,8 +115,8 @@ public class RecipeWritePostActivity extends AppCompatActivity {
 
     private void setting() {
         titleTextView.setText("글제목 :");
-        timeTextView.setText("날짜 :");
-        placeTextView.setText("요리 순서 :");
+        timeTextView.setText("한줄소개 :");
+        placeTextView.setText("메뉴명 :");
     }
 
     private void getData() {
@@ -167,35 +166,35 @@ public class RecipeWritePostActivity extends AppCompatActivity {
         String uid = auth.getUid();
 
 
-        databaseReference.child(uid).addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                UserInfo userInfo = snapshot.getValue(UserInfo.class);
-
-                Log.d("userInfo", userInfo.toString());
-                name = userInfo.getUser_Name();
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-            }
-        });
-
-        DocumentReference documentReference = FirebaseFirestore.getInstance().collection("users").document(FirebaseAuth.getInstance().getCurrentUser().getUid());
-        documentReference.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
-            @Override
-            public void onComplete(@NonNull Task<DocumentSnapshot> task) {
-                if (task.isSuccessful()) {
-                    DocumentSnapshot document = task.getResult();
-                    if (document != null && document.getData() != null) {
-                        userProfileUrl = (String) document.getData().get("photoUrl");
-                    }
-                } else {
-                    Log.d("tag", "get failed with ", task.getException());
-                }
-            }
-        });
+//        databaseReference.child(uid).addValueEventListener(new ValueEventListener() {
+//            @Override
+//            public void onDataChange(@NonNull DataSnapshot snapshot) {
+//                UserInfo userInfo = snapshot.getValue(UserInfo.class);
+//
+//                Log.d("userInfo", userInfo.toString());
+//                name = userInfo.getUser_Name();
+//            }
+//
+//            @Override
+//            public void onCancelled(@NonNull DatabaseError error) {
+//
+//            }
+//        });
+//
+//        DocumentReference documentReference = FirebaseFirestore.getInstance().collection("users").document(FirebaseAuth.getInstance().getCurrentUser().getUid());
+//        documentReference.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
+//            @Override
+//            public void onComplete(@NonNull Task<DocumentSnapshot> task) {
+//                if (task.isSuccessful()) {
+//                    DocumentSnapshot document = task.getResult();
+//                    if (document != null && document.getData() != null) {
+//                        userProfileUrl = (String) document.getData().get("photoUrl");
+//                    }
+//                } else {
+//                    Log.d("tag", "get failed with ", task.getException());
+//                }
+//            }
+//        });
 
     }
 

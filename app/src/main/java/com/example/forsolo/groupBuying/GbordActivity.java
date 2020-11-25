@@ -311,14 +311,14 @@ public class GbordActivity extends AppCompatActivity {
         content.setText("내용 : \n\n" + contentText);
     }
 
-
-
     private void onClickListener() {
+        // TODO: 1. 상대방을 지정하기 위해서 대화 상대의 정보를 지정함
         chatButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), ChatActivity.class);
-                intent.putExtra("email", emailText);
+                intent.putExtra("roomCode", sc);
+                intent.putExtra("roomTitle", titleText);
                 startActivity(intent);
             }
         });
