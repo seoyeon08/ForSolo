@@ -59,7 +59,7 @@ public class RecipeBordActivity extends AppCompatActivity {
 
         getData();
 
-        onClickListener();
+//        onClickListener();
 
         transparency();
 
@@ -134,7 +134,7 @@ public class RecipeBordActivity extends AppCompatActivity {
                             public void onClick(final DialogInterface dialog, int which) {
                                 fireStore = FirebaseFirestore.getInstance();
 
-                                fireStore.collection("Recipe").document(sc).delete()
+                                fireStore.collection("recipe").document(sc).delete()
                                         .addOnCompleteListener(new OnCompleteListener<Void>() {
                                             @Override
                                             public void onComplete(@NonNull Task<Void> task) {
@@ -299,14 +299,14 @@ public class RecipeBordActivity extends AppCompatActivity {
 
 
 
-    private void onClickListener() {
-        chatButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), ChatActivity.class);
-                intent.putExtra("email", emailText);
-                startActivity(intent);
-            }
-        });
-    }
+//    private void onClickListener() {
+//        chatButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(getApplicationContext(), ChatActivity.class);
+//                intent.putExtra("email", emailText);
+//                startActivity(intent);
+//            }
+//        });
+//    }
 }

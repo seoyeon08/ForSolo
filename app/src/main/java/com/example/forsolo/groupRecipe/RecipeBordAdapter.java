@@ -67,7 +67,7 @@ public class RecipeBordAdapter extends RecyclerView.Adapter<RecipeBordAdapter.it
     @Override
     public RecipeBordAdapter.itemViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.bord_recyclerview_item, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.recipe_bord_recyclerview_item, parent, false);
 
         return new itemViewHolder(view);
     }
@@ -97,11 +97,11 @@ public class RecipeBordAdapter extends RecyclerView.Adapter<RecipeBordAdapter.it
         itemViewHolder(View itemView) {
             super(itemView);
 
-            titleTextView = itemView.findViewById(R.id.bord_item_title);
-            subjectTextView = itemView.findViewById(R.id.bord_item_subject);
-            itemLayout = itemView.findViewById(R.id.bord_item_layout);
-            timeTextView = itemView.findViewById(R.id.bord_item_time);
-            circleImageView = itemView.findViewById(R.id.bord_item_Image);
+            titleTextView = itemView.findViewById(R.id.recipe_bord_item_title);
+            subjectTextView = itemView.findViewById(R.id.recipe_bord_item_subject);
+            itemLayout = itemView.findViewById(R.id.recipe_bord_item_layout);
+            timeTextView = itemView.findViewById(R.id.recipe_bord_item_time);
+            circleImageView = itemView.findViewById(R.id.recipe_bord_item_Image);
 
             itemClickListener();
         }

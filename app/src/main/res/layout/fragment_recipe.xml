@@ -39,7 +39,7 @@
         android:layout_marginTop="65dp">
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/Recipe_Bord_RecyclerView"
+            android:id="@+id/Bord_RecyclerView"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 

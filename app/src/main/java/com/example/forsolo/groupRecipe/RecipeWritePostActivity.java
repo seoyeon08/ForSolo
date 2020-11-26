@@ -108,7 +108,7 @@ public class RecipeWritePostActivity extends AppCompatActivity {
         titleEditText = titleLayout.findViewById(R.id.editText_Bord);
         timeEditText = timeLayout.findViewById(R.id.editText_Bord);
         placeEditText = placeLayout.findViewById(R.id.editText_Bord);
-        contentEditText = findViewById(R.id.content_Edit);
+        contentEditText = findViewById(R.id.rc_content_Edit);
 
     }
 

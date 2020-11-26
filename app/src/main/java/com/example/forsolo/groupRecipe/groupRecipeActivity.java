@@ -24,7 +24,7 @@ public class groupRecipeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recipe_nav);      //음 지금 이 부분 잘 모르겠습니다.
 
-        bottomNavigationView = findViewById(R.id.bottom_nav_2);
+        bottomNavigationView = findViewById(R.id.bottom_nav_3);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
