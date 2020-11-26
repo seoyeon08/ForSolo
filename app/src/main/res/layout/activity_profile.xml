@@ -86,95 +86,101 @@
 
     </RelativeLayout>
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:paddingLeft="20dp"
-        android:paddingTop="30dp"
-        android:paddingRight="16dp">
+        android:layout_height="match_parent">
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="10dp"
-            android:text="이름"
-            android:textColor="#000000"
-            android:textSize="20dp"></TextView>
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingTop="30dp"
+            android:paddingRight="16dp">
 
-        <EditText
-            android:id="@+id/nameEditText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="이름을 입력해주세요." />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="10dp"
-            android:text="나이"
-            android:textColor="#000000"
-            android:textSize="20dp"></TextView>
-
-        <EditText
-            android:id="@+id/ageEditText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="나이를 입력해주세요." />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="10dp"
-            android:text="학과"
-            android:textColor="#000000"
-            android:textSize="20dp"></TextView>
-
-        <EditText
-            android:id="@+id/majorEditText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="학과를 입력해주세요." />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="10dp"
-            android:text="성별(여자/남자)"
-            android:textColor="#000000"
-            android:textSize="20dp"></TextView>
-
-        <EditText
-            android:id="@+id/gender"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="성별을 입력해주세요." />
-
-
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="270dp"
-            android:layout_marginTop="20dp"
-
-            android:src="@drawable/profile_image"></ImageView>
-
-
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="bottom">
-
-            <Button
-                android:id="@+id/checkButton"
-                android:layout_width="fill_parent"
+            <TextView
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@drawable/btn_pink"
-                android:text="저장하기"
-                android:textColor="#FFFFFF"
-                android:textSize="30dp"></Button>
-        </RelativeLayout>
-    </LinearLayout>
+                android:paddingTop="10dp"
+                android:text="이름"
+                android:textColor="#000000"
+                android:textSize="20dp"></TextView>
+
+            <EditText
+                android:id="@+id/nameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="이름을 입력해주세요." />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="나이"
+                android:textColor="#000000"
+                android:textSize="20dp"></TextView>
+
+            <EditText
+                android:id="@+id/ageEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="나이를 입력해주세요." />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="학과"
+                android:textColor="#000000"
+                android:textSize="20dp"></TextView>
+
+            <EditText
+                android:id="@+id/majorEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="학과를 입력해주세요." />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="성별(여자/남자)"
+                android:textColor="#000000"
+                android:textSize="20dp"></TextView>
+
+            <EditText
+                android:id="@+id/gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="성별을 입력해주세요." />
+
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="270dp"
+                android:layout_marginTop="20dp"
+
+                android:src="@drawable/profile_image"></ImageView>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="bottom">
+
+                <Button
+                    android:id="@+id/checkButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_pink"
+                    android:text="저장하기"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30dp"></Button>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
 
 </LinearLayout>
