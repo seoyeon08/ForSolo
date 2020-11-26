@@ -82,7 +82,7 @@ public class RecipeBordActivity extends AppCompatActivity {
         name = findViewById(R.id.x_userName_s);
         date = findViewById(R.id.x_dateCount);
         place = findViewById(R.id.x_placeText);
-        time = findViewById(R.id.g_timeText);
+        time = findViewById(R.id.x_timeText);
         content = findViewById(R.id.x_contentText);
 
         titleEdit = findViewById(R.id.x_titleEditText);
