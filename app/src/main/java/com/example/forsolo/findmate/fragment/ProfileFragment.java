@@ -1,8 +1,8 @@
 package com.example.forsolo.findmate.fragment;
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -10,20 +10,19 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
 
 import com.bumptech.glide.Glide;
+import com.example.forsolo.LoadingActivity;
 import com.example.forsolo.LoginActivity;
 import com.example.forsolo.ManagementData;
 import com.example.forsolo.R;
-import com.example.forsolo.ReportActivity;
-import com.example.forsolo.SignOutActivity;
 import com.example.forsolo.findmate.activity.ProfileActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -43,6 +42,7 @@ public class ProfileFragment extends Fragment {
     private TextView  majorTextView;
     private TextView  introTextView;
     private TextView  genderTextView;
+    private Context context;
 
     public ProfileFragment() {
         // Required empty public constructor
@@ -96,7 +96,7 @@ public class ProfileFragment extends Fragment {
         Button btnLogOut, btnSignOut;
 
         btnLogOut = root.findViewById(R.id.btnLogOut);
-        btnSignOut = root.findViewById(R.id.btnSignOut);
+        btnSignOut = root.findViewById(R.id.btnSignOut);    //btnSignOut을 연결해준다.
 
         firebaseAuth = FirebaseAuth.getInstance();
 
@@ -115,20 +115,40 @@ public class ProfileFragment extends Fragment {
             }
         });
 
+
+        //회원탈퇴를 하는 과정
         btnSignOut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(
-                        getContext(), LoginActivity.class);
-
-                // 데이터 초기화 및 생성
-                ManagementData.getInstance().delAllData();
-
-                startActivity(intent);
-
-                signOut();
+                onClick_signOut();
             }
         });
+    }
+
+    //회원탈퇴 메소드
+    public void onClick_signOut(){
+        new AlertDialog.Builder(getContext())
+                .setTitle("회원 탈퇴")
+                .setMessage("정말로 탈퇴 하시겠습니까?")
+                .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int whichButton) {
+                        // 확인시 처리 로직
+                        Intent intent = new Intent(getContext(), LoadingActivity.class);
+                        // 데이터 초기화 및 생성
+                        ManagementData.getInstance().delAllData();
+
+                        startActivity(intent);
+
+                        signOut();
+
+                        Toast.makeText(getActivity(),"탈퇴가 완료되었습니다.", Toast.LENGTH_SHORT).show();
+                    }})
+                .setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int whichButton) {
+                        // 취소시 처리 로직
+                        Toast.makeText(getActivity(), "취소하였습니다.", Toast.LENGTH_SHORT).show();
+                    }})
+                .show();
     }
 
     private void loadData() {
@@ -165,9 +185,9 @@ public class ProfileFragment extends Fragment {
         firebaseAuth.getInstance().signOut();
     }
 
+    //회원 탈퇴부분
     private void signOut() {
-        firebaseAuth.getCurrentUser().delete();
-    }
+        firebaseAuth.getCurrentUser().delete(); }
 
 
     @Override
