@@ -45,9 +45,7 @@ public class ChattingActivity extends AppCompatActivity {
         roomTitle = getIntent().getStringExtra("roomTitle");
         Log.d("TEST", "onCreate: roomcode: "+roomCode + "/"+roomTitle);
 
-        //제목줄 제목글시를 닉네임으로(또는 채팅방)
         // TODO: 4. 대화방 이름 수정
-//        getSupportActionBar().setTitle(G.nickName);
         getSupportActionBar().setTitle("\uD83D\uDCAC" + roomTitle);
 
         et=findViewById(R.id.et);
