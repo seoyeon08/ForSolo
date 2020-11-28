@@ -16,6 +16,7 @@ public class GBordInfo {
         this.title = title;
         this.time = time;
         this.place = place;
+        this.person = person;
         this.contents = contents;
         this.email = email;
         this.date = date;
