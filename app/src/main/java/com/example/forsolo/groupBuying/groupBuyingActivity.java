@@ -10,6 +10,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.example.forsolo.R;
+import com.example.forsolo.findmate.fragment.ProfileFragment;
 import com.example.forsolo.groupBuying.groupBuyingFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -18,7 +19,9 @@ public class groupBuyingActivity extends AppCompatActivity {
     private BottomNavigationView bottomNavigationView;  //bottom navigation view
     private FragmentManager fm;
     private FragmentTransaction ft;
+    private ProfileFragment profileFragment;
     private groupBuyingFragment groupBuyingFragment;
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -33,12 +36,16 @@ public class groupBuyingActivity extends AppCompatActivity {
                     case R.id.action_list_ :
                         setFrag(0);
                         break;
+                    case R.id.action_profile :
+                        setFrag(1);
+                        break;
                 }
 
                 return true;
             }
         });
         groupBuyingFragment =  new groupBuyingFragment();
+        profileFragment = new ProfileFragment();
         setFrag(0);     //첫 fragment 화면을 무엇으로 지정할 지 설정함
     }
 
@@ -52,6 +59,10 @@ public class groupBuyingActivity extends AppCompatActivity {
             case 0:
                 ft.replace(R.id.frame_content, groupBuyingFragment);
                 ft.commit();        //저장을 의미합니다.
+                break;
+            case 1:
+                ft.replace(R.id.frame_content, profileFragment);
+                ft.commit();
                 break;
 
         }

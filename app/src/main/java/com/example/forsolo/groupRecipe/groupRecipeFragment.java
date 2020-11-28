@@ -47,7 +47,7 @@ public class groupRecipeFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.fragment_list, container, false); //fragment_recipe고려
+        view = inflater.inflate(R.layout.fragment_recipe, container, false); //과연
 
         recyclerViewAction();
         fabAction();
@@ -62,7 +62,7 @@ public class groupRecipeFragment extends Fragment {
     public void onResume() {
         super.onResume();
 
-        searchView = view.findViewById(R.id.searchView);
+        searchView = view.findViewById(R.id.RecipeSearchView);
         searchView.setText("");
 
         getDataList.clear();
@@ -76,7 +76,7 @@ public class groupRecipeFragment extends Fragment {
     }
 
     private void refresh() {
-        final SwipeRefreshLayout swipeRefreshLayout = view.findViewById(R.id.swipe);
+        final SwipeRefreshLayout swipeRefreshLayout = view.findViewById(R.id.RecipeSwipe);
         swipeRefreshLayout.setColorSchemeResources(R.color.colorPinkPurple);
         swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
@@ -95,7 +95,7 @@ public class groupRecipeFragment extends Fragment {
 
 
     public void fabAction() {
-        fab = view.findViewById(R.id.write_text);
+        fab = view.findViewById(R.id.recipe_write_text);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -153,7 +153,7 @@ public class groupRecipeFragment extends Fragment {
                     Collections.sort(getDataList, new Comparator<RecipeBoardInfo>() {
                         @Override
                         public int compare(RecipeBoardInfo o1, RecipeBoardInfo o2) {
-                            return o1.r_getDate().compareTo(o2.r_getDate());
+                            return o1.getDate().compareTo(o2.getDate());
                         }
                     });
 
@@ -175,7 +175,7 @@ public class groupRecipeFragment extends Fragment {
     }
 
     public void filter() {
-        searchView = view.findViewById(R.id.searchView);
+        searchView = view.findViewById(R.id.RecipeSearchView);
 
         searchView.addTextChangedListener(new TextWatcher() {
             @Override

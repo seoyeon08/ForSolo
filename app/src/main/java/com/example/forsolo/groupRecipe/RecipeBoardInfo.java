@@ -45,7 +45,7 @@ public class RecipeBoardInfo {
         return this.email;
     }
 
-    public String r_getDate() {
+    public String getDate() {
         return this.date;
     }
 

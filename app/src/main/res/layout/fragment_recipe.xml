@@ -39,7 +39,7 @@
         android:layout_marginTop="65dp">
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/Recipe_Bord_RecyclerView"
+            android:id="@+id/Bord_RecyclerView"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
@@ -52,7 +52,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="30dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="60dp"
         android:backgroundTint="@color/colorPastelBlue"
         android:src="@drawable/edit_icon_white" />
 

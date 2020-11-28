@@ -7,5 +7,11 @@
         android:icon="@drawable/list_item"
         android:title="글목록"/>
 
+    <item
+        android:id="@+id/action_profile"
+        android:enabled="true"
+        android:icon="@drawable/profile_icon"
+        android:title="내프로필"/>
+
 
 </menu>
