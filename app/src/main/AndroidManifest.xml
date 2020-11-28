@@ -57,7 +57,6 @@
         <activity android:name=".findmate.CameraActivity"/>
 
         <!--갤러리!-->
-        <activity android:name=".findmate.GalleryActivity"/>
 
         <!--게시판-->
         <activity android:name=".findmate.activity.WritePostActivity" />

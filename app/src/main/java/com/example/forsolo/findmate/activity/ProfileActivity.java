@@ -41,20 +41,15 @@ import static com.example.forsolo.findmate.Util.showToast;
 public class ProfileActivity extends AppCompatActivity{
     private static final String TAG = "ProfileActivity";
     private ImageView profileImageView;
-    //private LinearLayout loaderLayout;
     private RelativeLayout buttonBackgroundLayout;
     private Button btn_capture;
     private FirebaseUser user;
-    private RadioButton man;
-    private RadioButton woman;
     private Uri profileImageUri;
     boolean isChanged= true;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
-        //setToolbarTitle("회원정보");
-        //loaderLayout = findViewById(R.id.LoaderLayout);
         profileImageView =findViewById(R.id.profileImageView);
         buttonBackgroundLayout = findViewById(R.id.buttonsBackgroundLayout);
         btn_capture=findViewById(R.id.btn_capture);
@@ -82,7 +77,6 @@ public class ProfileActivity extends AppCompatActivity{
                 if (resultCode == Activity.RESULT_OK) {
                     String profilePath = data.getStringExtra(INTENT_PATH);
                     Glide.with(this).load(profilePath).centerCrop().override(500).into(profileImageView);
-//                    storageUri = Uri.parse(profilePath);
                     profileImageUri = Uri.fromFile(new File(profilePath));
                     buttonBackgroundLayout.setVisibility(View.GONE);
                     Log.d(TAG, "onActivityResult: store-Uri="+ profileImageUri);
@@ -92,53 +86,14 @@ public class ProfileActivity extends AppCompatActivity{
             case 10:{
                 if(resultCode==RESULT_OK){
                     profileImageUri = data.getData();
-                    //Glide.with(this).load(imgUri).into(ivProfile);
-                    //Glide는 이미지를 읽어와서 보여줄때 내 device의 외장메모리에 접근하는 퍼미션이 요구됨.
-                    //(퍼미션이 없으면 이미지가 보이지 않음.)
-                    //Glide를 사용할 때는 동적 퍼미션 필요함.
-
                     //Picasso 라이브러리는 퍼미션 없어도 됨.
                     Picasso.get().load(profileImageUri).into(profileImageView);
-                    //변경된 이미지가 있다.
-                    //TODO: 이미지 업로드 시점은 저장할떄 이므로, 이부분은 삭제
-                    //clickUpload(profileImageView);
                     Log.d(TAG, "onActivityResult: capture-Uri="+ profileImageUri);
                 }
                 break;
             }
         }
     }
-
-    /*
-    public void clickUpload(View view){
-        FirebaseStorage firebaseStorage = FirebaseStorage.getInstance();
-
-        //2. 업로드할 파일의 node를 참조하는 객체
-        //파일 명이 중복되지 않도록 날짜를 이용
-        SimpleDateFormat sdf= new SimpleDateFormat("yyyyMMddhhmmss");
-        String filename= sdf.format(new Date())+ ".png";//현재 시간으로 파일명 지정 20191023142634
-        //원래 확장자는 파일의 실제 확장자를 얻어와서 사용해야함. 그러려면 이미지의 절대 주소를 구해야함.
-
-        StorageReference imgRef= firebaseStorage.getReference("users/"+filename);
-        //users라는 폴더가 없으면 자동 생성
-
-        //참조 객체를 통해 이미지 파일 업로드
-        // imgRef.putFile(imgUri);
-        //업로드 결과를 받고 싶다면..
-        UploadTask uploadTask =imgRef.putFile(imageUploadUri);
-
-        uploadTask.addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-            @Override
-            public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-                Log.d(TAG, "onSuccess: " + imageUploadUri.toString());
-                Toast.makeText(ProfileActivity.this, "프로필 저장 완료", Toast.LENGTH_SHORT).show();
-
-            }
-        });
-        //업로드한 파일의 경로를 firebaseDB에 저장하면 게시판 같은 앱도 구현할 수 있음.
-
-    }
-     */
 
     View.OnClickListener onClickListener = new View.OnClickListener() {
         @Override
@@ -171,7 +126,6 @@ public class ProfileActivity extends AppCompatActivity{
         final String gender = ((EditText) findViewById(R.id.gender)).getText().toString();
 
         if(name.length()>0 && major.length()>1 && age.length()>1&&Intro.length()>0 &&gender.length()>1){
-            //loaderLayout.setVisibility(View.VISIBLE);
             final FirebaseStorage storage = FirebaseStorage.getInstance();
             StorageReference storageRef = storage.getReference();
             user = FirebaseAuth.getInstance().getCurrentUser();
