@@ -10,6 +10,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.example.forsolo.R;
+import com.example.forsolo.findmate.fragment.ProfileFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class groupRecipeActivity extends AppCompatActivity {
@@ -17,6 +18,7 @@ public class groupRecipeActivity extends AppCompatActivity {
     private BottomNavigationView bottomNavigationView;  //bottom navigation view
     private FragmentManager fm;
     private FragmentTransaction ft;
+    private ProfileFragment profileFragment;
     private groupRecipeFragment groupRecipeFragment;
 
     @Override
@@ -32,12 +34,16 @@ public class groupRecipeActivity extends AppCompatActivity {
                     case R.id.action_list_ :
                         setFrag(0);
                         break;
+                    case R.id.action_profile :
+                        setFrag(1);
+                        break;
                 }
 
                 return true;
             }
         });
         groupRecipeFragment =  new groupRecipeFragment();
+        profileFragment = new ProfileFragment();
         setFrag(0);     //첫 fragment 화면을 무엇으로 지정할 지 설정함
     }
 
@@ -52,7 +58,10 @@ public class groupRecipeActivity extends AppCompatActivity {
                 ft.replace(R.id.frame_content, groupRecipeFragment);
                 ft.commit();        //저장을 의미합니다.
                 break;
-
+            case 1:
+                ft.replace(R.id.frame_content, profileFragment);
+                ft.commit();
+                break;
         }
     }
 
