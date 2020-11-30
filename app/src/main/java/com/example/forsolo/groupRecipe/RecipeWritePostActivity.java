@@ -166,35 +166,35 @@ public class RecipeWritePostActivity extends AppCompatActivity {
         String uid = auth.getUid();
 
 
-//        databaseReference.child(uid).addValueEventListener(new ValueEventListener() {
-//            @Override
-//            public void onDataChange(@NonNull DataSnapshot snapshot) {
-//                UserInfo userInfo = snapshot.getValue(UserInfo.class);
-//
-//                Log.d("userInfo", userInfo.toString());
-//                name = userInfo.getUser_Name();
-//            }
-//
-//            @Override
-//            public void onCancelled(@NonNull DatabaseError error) {
-//
-//            }
-//        });
-//
-//        DocumentReference documentReference = FirebaseFirestore.getInstance().collection("users").document(FirebaseAuth.getInstance().getCurrentUser().getUid());
-//        documentReference.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
-//            @Override
-//            public void onComplete(@NonNull Task<DocumentSnapshot> task) {
-//                if (task.isSuccessful()) {
-//                    DocumentSnapshot document = task.getResult();
-//                    if (document != null && document.getData() != null) {
-//                        userProfileUrl = (String) document.getData().get("photoUrl");
-//                    }
-//                } else {
-//                    Log.d("tag", "get failed with ", task.getException());
-//                }
-//            }
-//        });
+        databaseReference.child(uid).addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                UserInfo userInfo = snapshot.getValue(UserInfo.class);
+
+                Log.d("userInfo", userInfo.toString());
+                name = userInfo.getUser_Name();
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+
+        DocumentReference documentReference = FirebaseFirestore.getInstance().collection("users").document(FirebaseAuth.getInstance().getCurrentUser().getUid());
+        documentReference.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
+            @Override
+            public void onComplete(@NonNull Task<DocumentSnapshot> task) {
+                if (task.isSuccessful()) {
+                    DocumentSnapshot document = task.getResult();
+                    if (document != null && document.getData() != null) {
+                        userProfileUrl = (String) document.getData().get("photoUrl");
+                    }
+                } else {
+                    Log.d("tag", "get failed with ", task.getException());
+                }
+            }
+        });
 
     }
 

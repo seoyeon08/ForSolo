@@ -33,6 +33,7 @@ import java.util.Date;
 import java.util.Random;
 
 public class GWritePostActivity extends AppCompatActivity {
+
     private static final String Tag = "GWritePostActivity";
 
     String itemRandomString;

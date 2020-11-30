@@ -82,7 +82,7 @@ public class RecipeBordAdapter extends RecyclerView.Adapter<RecipeBordAdapter.it
         return r_listData.size();
     }
 
-    class itemViewHolder extends RecyclerView.ViewHolder {
+    public class itemViewHolder extends RecyclerView.ViewHolder {
 
 
         String title, time, place, content, uploadTimeText, email, sc, userName, userProfileUrl = null;
