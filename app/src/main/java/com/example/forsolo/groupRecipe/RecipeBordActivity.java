@@ -90,7 +90,7 @@ public class RecipeBordActivity extends AppCompatActivity {
         timeEdit = findViewById(R.id.x_timeEditText);
         contentEdit = findViewById(R.id.x_contentEditText);
 
-        chatButton = findViewById(R.id.x_chatButton);
+        //chatButton = findViewById(R.id.x_chatButton);
         modify_btn = findViewById(R.id.x_modify_btn);
         del_btn = findViewById(R.id.x_del_btn);
         update_btn = findViewById(R.id.x_update_btn);
